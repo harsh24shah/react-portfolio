@@ -1,0 +1,134 @@
+$aligns: left, center, right;
+$displays: flex, block, inline-block, none;
+$spacings: 4, 8, 12, 16, 20, 30, 40, 50, 60, 100, 150;
+$fonts: 8, 12, 16, 18, 22, 24, 30, 40, 50, 60, 80;
+$colors: white, black;
+
+@each $align in $aligns {
+  .text-#{$align} {
+    text-align: #{$align};
+  }
+}
+
+@each $color in $colors {
+  .text-#{$color} {
+    color: #{$color};
+  }
+  .bg-#{$color} {
+    background-color: #{$color};
+  }
+}
+
+@each $diaplay in $displays {
+  .#{$diaplay} {
+    display: #{$diaplay};
+  }
+}
+
+@each $margin in $spacings {
+  .m-#{$margin} {
+    margin: #{$margin}px;
+  }
+
+  .ml-#{$margin} {
+    margin-left: #{$margin}px;
+  }
+
+  .mr-#{$margin} {
+    margin-right: #{$margin}px;
+  }
+
+  .mt-#{$margin} {
+    margin-top: #{$margin}px;
+  }
+
+  .mb-#{$margin} {
+    margin-bottom: #{$margin}px;
+  }
+
+  .mx-#{$margin} {
+    margin-right: #{$margin}px;
+    margin-left: #{$margin}px;
+  }
+
+  .my-#{$margin} {
+    margin-top: #{$margin}px;
+    margin-bottom: #{$margin}px;
+  }
+
+  .p-#{$margin} {
+    padding: #{$margin}px;
+  }
+
+  .pl-#{$margin} {
+    padding-left: #{$margin}px;
+  }
+
+  .pr-#{$margin} {
+    padding-right: #{$margin}px;
+  }
+
+  .pt-#{$margin} {
+    padding-top: #{$margin}px;
+  }
+
+  .pb-#{$margin} {
+    padding-bottom: #{$margin}px;
+  }
+
+  .py-#{$margin} {
+    padding-top: #{$margin}px;
+    padding-bottom: #{$margin}px;
+  }
+
+  .px-#{$margin} {
+    padding-right: #{$margin}px;
+    padding-left: #{$margin}px;
+  }
+}
+
+@each $font in $fonts {
+  .fs#{$font} {
+    font-size: #{$font}px;
+  }
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+p,
+ul {
+  font-size: 18px;
+  margin-bottom: 20px;
+  line-height: 26px;
+  font-weight: 100;
+}
+
+.w-100 {
+  width: 100%;
+}
