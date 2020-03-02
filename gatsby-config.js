@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Harsh Portfolio`,
+    description: `Harsh Shah, UI designer(developer sometimes), works with every thing in front end`,
+    author: `@Harsh`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -32,9 +32,23 @@ module.exports = {
     {
       resolve: "gatsby-plugin-transition-link",
       options: {
-          layout: require.resolve(`./src/components/Layout.js`)
-        }
-   }
+        layout: require.resolve(`./src/components/Layout.js`)
+      }
+    },
+    {
+      resolve: `gatsby-plugin-scroll-reveal`,
+      options: {
+          threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
+          once: true, // Defines if animation needs to be launched once
+          disable: false, // Flag for disabling animations
+          
+          // Advanced Options
+          selector: '[data-sal]', // Selector of the elements to be animated
+          animateClassName: 'sal-animate', // Class name which triggers animation
+          disabledClassName: 'sal-disabled', // Class name which defines the disabled state
+          rootMargin: '0% 0%', // Corresponds to root's bounding box margin
+      }
+    }
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

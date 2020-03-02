@@ -17,11 +17,12 @@ class Image extends Component {
     handleLoad = () => {
         // updates cached values after image dimensions have loaded
         this.props.parallaxController.update();
+
     };
 
     render() {
         return (
-            <img src={this.props.src} onLoad={this.handleLoad} alt={this.props.alt} />
+            <img src={this.props.src} onLoad={this.handleLoad} alt={this.props.alt} className={this.props.class} />
         );
     }
 }

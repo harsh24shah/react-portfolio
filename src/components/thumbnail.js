@@ -13,15 +13,17 @@ export default class Thumbnail extends Component {
     render() {
         return (
             <div className="project">
-                <div className="project-image">
-                    <a href={this.props.link} className="hover-this">
-                        <Parallax className="custom-class" y={[-20, 20]} tagOuter="figure" ParallaxCache>
-                            <Image src={this.props.thumbImage} alt={this.props.title} />
+                <div className="project-image" data-sal="slide-up" data-sal-easing="ease">
+                    <a href={this.props.link} className="hover-this project-url">
+                        <Parallax y={[-10, 10]} tagOuter="figure" ParallaxCache>
+                            <Image id="effect-image" src={this.props.thumbImage} alt={this.props.title} />
                         </Parallax>
                         <div className="project-title inline-block text-white font-roboto">
-                            <span className="fs60 block mb-20">{this.props.title}</span>
-                            <span className="block">{this.props.subtitle}</span>
-                            <span className="block fs12">{this.props.technology}</span>
+                            <Parallax x={[-10, 10]} ParallaxCache>
+                                <span className="block mb-10 project-title-inline">{this.props.title}</span>
+                                <span className="block">{this.props.subtitle}</span>
+                                <span className="block">{this.props.technology}</span>
+                            </Parallax>
                         </div>
                     </a>
                 </div>

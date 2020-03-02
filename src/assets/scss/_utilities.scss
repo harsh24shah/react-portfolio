@@ -3,6 +3,17 @@ $displays: flex, block, inline-block, none;
 $spacings: 4, 8, 12, 16, 20, 30, 40, 50, 60, 100, 150;
 $fonts: 8, 12, 16, 18, 22, 24, 30, 40, 50, 60, 80;
 $colors: white, black;
+$index: 0, 1, 2, 3, 4;
+
+@each $i in $index {
+  .z-index#{$i} {
+    z-index: #{$i};
+  }
+
+  .z-index-n#{$i} {
+    z-index: -#{$i};
+  }
+}
 
 @each $align in $aligns {
   .text-#{$align} {
@@ -56,6 +67,36 @@ $colors: white, black;
     margin-bottom: #{$margin}px;
   }
 
+  .m-n#{$margin} {
+    margin: -#{$margin}px;
+  }
+
+  .ml-n#{$margin} {
+    margin-left: -#{$margin}px;
+  }
+
+  .mr-n#{$margin} {
+    margin-right: -#{$margin}px;
+  }
+
+  .mt-n#{$margin} {
+    margin-top: -#{$margin}px;
+  }
+
+  .mb-n#{$margin} {
+    margin-bottom: -#{$margin}px;
+  }
+
+  .mx-n#{$margin} {
+    margin-right: -#{$margin}px;
+    margin-left: -#{$margin}px;
+  }
+
+  .my-n#{$margin} {
+    margin-top: -#{$margin}px;
+    margin-bottom: -#{$margin}px;
+  }
+
   .p-#{$margin} {
     padding: #{$margin}px;
   }
@@ -101,6 +142,36 @@ $colors: white, black;
   flex-direction: column;
 }
 
+.flex-equal {
+  display: flex;
+  flex-wrap: nowrap;
+
+  @media (max-width: 767px) {
+    flex-wrap: wrap;
+  }
+
+  > * {
+    flex: 1;
+
+    @media (max-width: 767px) {
+      flex: 0 0 100%;
+    }
+  }
+}
+
+.flex-auto {
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    flex: auto;
+
+    @media (max-width: 767px) {
+      flex: 0 0 100%;
+    }
+  }
+}
+
 .flex-row-reverse {
   flex-direction: row-reverse;
 }
@@ -127,8 +198,37 @@ ul {
   margin-bottom: 20px;
   line-height: 26px;
   font-weight: 100;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
 }
 
 .w-100 {
   width: 100%;
+}
+
+.fw-100 {
+  font-weight: 100;
+}
+
+.fw-400 {
+  font-weight: 400;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.fw-600 {
+  font-weight: 600;
+}
+
+.fw-900 {
+  font-weight: 900;
+}
+
+strong {
+  font-weight: bold;
 }

@@ -1,15 +1,18 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Mono:400,700&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Muli:300,400,900&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700&display=swap');
 
 body {
-  font-family: "Roboto Mono", monospace;
-  -webkit-font-smoothing: antialiased;
+  font-family: "Montserrat", sans-serif;
+  -webkit-text-size-adjust: 100%; 
+  -webkit-font-smoothing: antialiased; 
   -moz-osx-font-smoothing: grayscale;
   line-height: 1;
+  font-size: 1.8rem; 
   cursor: none;
 }
 
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
