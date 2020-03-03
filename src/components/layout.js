@@ -10,11 +10,10 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from "./header"
 import Footer from "./footer"
-import SmoothScroll from './smoothScroll';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import { creatCursor } from '../assets/js/helper';
 
-import "./app.scss"; 
+import "./app.scss";
 
 
 const Layout = ({ children }) => {
@@ -35,22 +34,18 @@ const Layout = ({ children }) => {
 
   return (
     <>
-    
       <ParallaxProvider>
         <React.Fragment>
           <div className="main">
             <main className='routed'>
               <Header siteTitle={data.site.siteMetadata.title} />
               <div className="cursor"></div>
-              <SmoothScroll>
               <div className="main-content">{children}</div>
-              </SmoothScroll>
               <Footer />
             </main>
           </div>
         </React.Fragment>
       </ParallaxProvider>
- 
     </>
   )
 }

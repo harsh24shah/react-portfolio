@@ -22,9 +22,9 @@ class Image extends Component {
 
     render() {
         return (
-            <img src={this.props.src} onLoad={this.handleLoad} alt={this.props.alt} className={this.props.class} />
+            <img src={this.props.src} onLoad={this.handleLoad} alt={this.props.alt} className={this.props.class} role="presentation" />
         );
     }
-}
+} 
 
 export default withController(Image);

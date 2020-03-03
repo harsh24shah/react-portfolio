@@ -18,7 +18,7 @@ export default class Thumbnail extends Component {
                         <Parallax y={[-10, 10]} tagOuter="figure" ParallaxCache>
                             <Image id="effect-image" src={this.props.thumbImage} alt={this.props.title} />
                         </Parallax>
-                        <div className="project-title inline-block text-white font-roboto">
+                        <div className="project-title inline-block text-white">
                             <Parallax x={[-10, 10]} ParallaxCache>
                                 <span className="block mb-10 project-title-inline">{this.props.title}</span>
                                 <span className="block">{this.props.subtitle}</span>
