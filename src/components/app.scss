@@ -66,11 +66,15 @@ h1 {
     font-weight: 900;
     line-height: 0.7;
 
-    @media (max-width: 991px) {
+    @media (max-width: 1400px) {
       font-size: 100px;
     }
 
     @media (max-width: 991px) {
+      font-size: 70px;
+    }
+
+    @media (max-width: 767px) {
       font-size: 50px;
     }
   }
@@ -80,8 +84,12 @@ h1 {
     font-weight: 700;
     line-height: 1;
 
-    @media (max-width: 991px) {
+    @media (max-width: 1400px) {
       font-size: 80px;
+    }
+
+    @media (max-width: 991px) {
+      font-size: 60px;
     }
 
     @media (max-width: 767px) {
@@ -157,7 +165,7 @@ a {
 }
 
 .about-content-main {
-  margin: 60px 0;
+  margin: 0;
 
   @media (max-width: 991px) {
     margin: 50px 0;
@@ -191,7 +199,7 @@ a {
     left: 0;
     bottom: 2px;
     height: 14px;
-    background: rgba($primary, .5);
+    background: rgba($primary, 0.5);
     width: 0;
     transition: width 1.5s cubic-bezier(0.19, 1, 0.22, 1);
   }
@@ -246,7 +254,7 @@ a {
 
   .content-wrapper {
     max-width: 1400px;
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
     padding-left: 16px;
     padding-right: 16px;
@@ -260,6 +268,7 @@ a {
     }
 
     @media (max-width: 767px) {
+      width: 100%;
       padding-left: 20px;
       padding-right: 20px;
     }
@@ -363,6 +372,7 @@ a {
         transform: rotate(45deg) translateY(-50%) translateZ(0);
         position: absolute;
         top: 50%;
+        left: -1px;
       }
 
       &:nth-child(2) {
@@ -373,7 +383,7 @@ a {
     }
 
     &:hover {
-      transform: rotate(90deg);
+      transform: scale(.5);
       transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
 
@@ -420,14 +430,14 @@ a {
   background: $primary;
   z-index: 1;
   transform: translate3d(110%, 0, 0);
-  transition: all 0.4s 0.4s cubic-bezier(0.615, 0.19, 0.305, 0.91);
+  transition: all 0.4s 0.1s cubic-bezier(0.615, 0.19, 0.305, 0.91);
 
   @media (max-width: 991px) {
     width: 70%;
   }
 
   @media (max-width: 767px) {
-    width: 90%;
+    width: 80%;
   }
 
   &.active {
@@ -440,6 +450,11 @@ a {
           transform: translate3d(0, 0, 0);
           transition: all 0.8s cubic-bezier(0.615, 0.19, 0.305, 0.91);
         }
+      }
+
+      a.button{
+        opacity: 1;
+        transition: all 0.8s cubic-bezier(0.615, 0.19, 0.305, 0.91);
       }
     }
   }
@@ -475,10 +490,16 @@ a {
         transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
 
         &:after {
-          background: rgba($secondary, .5);
+          background: rgba($secondary, 0.5);
           height: 14px;
         }
       }
+    }
+
+    a.button {
+      display: inline-block;
+      opacity: 0;
+      transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
     }
   }
 }
@@ -496,7 +517,7 @@ a {
   .project {
     display: inline-flex;
     width: 100%;
-    margin: 100px 0;
+    margin: 60px 0;
 
     .parallax-inner {
       @media (max-width: 767px) {
@@ -814,7 +835,7 @@ ul {
 .mail-fixed {
   position: fixed;
   left: 40px;
-  bottom: 40px;
+  bottom: 10px;
   transform: rotate(-90deg);
   transform-origin: left;
 

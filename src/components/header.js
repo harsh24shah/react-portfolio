@@ -28,7 +28,7 @@ export default class Header extends Component {
               <Image src="https://i.picsum.photos/id/1048/80/80.jpg" alt="logo" />
             </Link>
           </div>
-          <div className={'overlay ' + this.toggleMenu}></div>
+          <div className={'overlay ' + this.toggleMenu} onClick={this.toggleSidenav}></div>
           <div className={'navigation ' + this.toggleMenu}>
             <nav className="menu-items">
               <Link to="/" className="hover-this" activeClassName="current" onClick={this.toggleSidenav}>
@@ -43,7 +43,7 @@ export default class Header extends Component {
               <Link to="/contact" className="hover-this" activeClassName="current" onClick={this.toggleSidenav}>
                 <span className="underlined">Contact</span>
               </Link>
-              <Link to="/contact" className="button invert my-20">Resume</Link>
+              <Link to="/contact" className="button invert my-20"><span>Resume</span></Link>
             </nav>
           </div> 
           <a onClick={this.toggleSidenav} className={'hover-this menu-burger ' + this.toggleMenu} role="button" onKeyDown={this.toggleSidenav} tabIndex="0">

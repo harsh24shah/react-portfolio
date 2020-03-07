@@ -38,7 +38,7 @@ export default class Projects extends Component {
             'title': 'project5',
             'subtitle': 'subtitle goes here',
             'link': 'https://google.co.in',
-            'thumbImage': 'https://i.picsum.photos/id/1048/700/900.jpg',
+            'thumbImage': 'https://i.picsum.photos/id/1048/700/200.jpg',
             'technology': 'JQuery, HTML5, CSS3'
         }
     ];
@@ -70,7 +70,7 @@ export default class Projects extends Component {
                 <div className="component-wrap" data-bg-text="Projects">
                     <div className="content-wrapper scrollable">
                         <div className="project-wrap" >
-                            <h1 className="inline-block mb-30 outlined fs150" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease"> Projects</h1>
+                            <h1 className="inline-block mb-30 fs110" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease"> Projects</h1>
                             {this.projectRender}
                         </div> 
                     </div>
