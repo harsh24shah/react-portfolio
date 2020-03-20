@@ -2,7 +2,6 @@ import React, { Component } from "react"
 import SEO from "../components/seo"
 import { Parallax } from 'react-scroll-parallax';
 import Image from '../components/image';
-
 import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 
 
