@@ -26,8 +26,8 @@ module.exports = {
         background_color: `black`,
         theme_color: `black`,
         display: `standalone`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
-      },
+        icon: `src/images/harsh-logo-icon.svg`, // This path is relative to the root of the site.
+      }, 
     },
     {
       resolve: "gatsby-plugin-transition-link",
@@ -46,7 +46,7 @@ module.exports = {
           selector: '[data-sal]', // Selector of the elements to be animated
           animateClassName: 'sal-animate', // Class name which triggers animation
           disabledClassName: 'sal-disabled', // Class name which defines the disabled state
-          rootMargin: '0% 0%', // Corresponds to root's bounding box margin
+          rootMargin: '10% 10%', // Corresponds to root's bounding box margin
       }
     }
     // this (optional) plugin enables Progressive Web App + Offline functionality

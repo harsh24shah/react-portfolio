@@ -37,7 +37,7 @@ export default class Header extends Component {
           }  
         `}
           render={data => (
-            <header>
+            <header data-sal="fade" data-sal-delay="1000" data-sal-easing="ease">
               <div className="logo">
                 <Link to="/" className="hover-this">
                   {/* <Img fixed={data.file.childImageSharp.fixed} alt="Harsh logo" /> */}
@@ -59,7 +59,7 @@ export default class Header extends Component {
                   <Link to="/contact" className="hover-this" activeClassName="current" onClick={this.toggleSidenav}>
                     <span className="underlined">Contact</span>
                   </Link>
-                  <Link to="/contact" className="button invert my-20"><span>Resume</span></Link>
+                  <a href="https://drive.google.com/file/d/17Bnsc5N94yIAEUlUUrabf4OQZtD47bE2/view?usp=sharing" target="_blank" className="button invert my-20"><span>Resume</span></a>
                 </nav>
               </div>
               <a onClick={this.toggleSidenav} className={'hover-this menu-burger ' + this.toggleMenu} role="button" onKeyDown={this.toggleSidenav} tabIndex="0">
@@ -69,19 +69,19 @@ export default class Header extends Component {
               <div className={'social-media-logos ' + this.toggleMenu}>
                 <div className="inline-block my-12">
                   <span className="mr-20">
-                    <a href="github.com" className="hover-this"><IoLogoGithub size="30px" /></a>
+                    <a href="http://github.com/harsh24shah" target="_blank" className="hover-this"><IoLogoGithub size="30px" /></a>
                   </span>
                   <span className="mr-20">
-                    <a href="linkedin.com" className="hover-this"><IoLogoLinkedin size="30px" /></a>
+                    <a href="https://www.linkedin.com/in/24hjs" target="_blank" className="hover-this"><IoLogoLinkedin size="30px" /></a>
                   </span>
                   <span className="mr-20">
-                    <a href="linkedin.com" className="hover-this"><IoLogoFacebook size="30px" /> </a>
+                    <a href="https://www.facebook.com/24hjs" target="_blank" className="hover-this"><IoLogoFacebook size="30px" /> </a>
                   </span>
                   <span className="mr-20">
-                    <a href="linkedin.com" className="hover-this"><FaBehance size="30px" /></a>
+                    <a href="https://www.behance.net/024hrshe832" target="_blank" className="hover-this"><FaBehance size="30px" /></a>
                   </span>
                   <span className="mr-20">
-                    <a href="github.com" className="hover-this"><IoLogoInstagram size="30px" /></a>
+                    <a href="https://www.instagram.com/24harsh" target="_blank" className="hover-this"><IoLogoInstagram size="30px" /></a>
                   </span>
                 </div>
               </div>

@@ -194,8 +194,8 @@ $index: 0, 1, 2, 3, 4;
 
 p,
 ul {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 16px;
+  margin-bottom: 16px;
   line-height: 26px;
   font-weight: 100;
   letter-spacing: 1px;
@@ -206,8 +206,26 @@ ul {
   }
 }
 
+ul{
+  li{
+    margin-bottom: 4px;
+  }
+}
+
 .w-100 {
   width: 100%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-33 {
+  width: 33.333%;
 }
 
 .fw-100 {

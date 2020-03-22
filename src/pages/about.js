@@ -20,49 +20,48 @@ export default class About extends Component {
               <div className="about-wrap">
                 <h1 className="inline-block mb-30 fs110" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">About</h1>
                 <div className="about-content-main">
-                  <div className="heading fw-100" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis rutrum purus.
-                Nullam a ante vitae velit facilisis vulputate. Morbi dui urna. <a href="google.com">Fusce vitae</a> risus quis tortor scelerisque blandit at ut libero
+                  <div className="heading fw-100 text-grey" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">
+                    Hi, I'm Harsh J. Shah basd on Vadodara, India, a software engineer who loves working and building with all things relate to web.
+                I build morden web apps with pixel perfect and clean UI.
                 </div>
-                  <div className="align-items-top flex-equal mt-50" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">
+                  <div className="align-items-top flex-equal mt-60" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">
                     <div className="about-column">
-                      <h2 className="heading outlined-grey fw-900"><Parallax y={[0, -20]} ParallaxCache>Work Experience</Parallax></h2>
-                      <ul className="mt-n20 z-index1">
-                        <li><strong>2018</strong> Odysseus Solutions,Vadodara</li>
-                        <li><strong>2016-2018</strong> Investis Digital, Vadodara</li>
-                      </ul>
+                      <h2 className="heading text-grey mb-8"><Parallax y={[0, -20]} ParallaxCache>Work Experience</Parallax></h2>
+                      <ul>
+                        <li><strong>2018 - Present</strong> <a className="underlined thin" href="https://www.odysseussolutions.com/" target="_blank">Odysseus Solutions</a>, Vadodara</li>
+                        <li><strong>2016 - 2018</strong> <a className="underlined thin" href="https://www.investisdigital.com/" target="_blank">Investis Digital</a>, Vadodara</li>
+                      </ul> 
                     </div>
                     <div className="about-column">
-                      <h2 className="heading outlined-grey fw-900"><Parallax y={[0, -20]} ParallaxCache>Personal Skill</Parallax></h2>
-                      <p className="mt-n20 z-index1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis rutrum purus. Nullam a ante vitae velit facilisis vulputate. Morbi dui urna.</p>
+                      <h2 className="heading text-grey mb-8"><Parallax y={[0, -20]} ParallaxCache>Personal Skill</Parallax></h2>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis rutrum purus. Nullam a ante vitae velit facilisis vulputate. Morbi dui urna.</p>
                     </div>
                   </div>
-                  <div className="align-items-top flex-equal mt-30" data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease">
+                  <div className="align-items-top flex-equal mt-50" data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease">
                     <div className="about-column">
-                      <h2 className="heading outlined-grey fw-900"><Parallax y={[0, -20]} ParallaxCache>Education</Parallax></h2>
-                      <ul className="mt-n20 z-index1" >
-                        <li><strong>2012-2016</strong> Lorem ipsum dolor sit amet</li>
-                        <li><strong>2012</strong> Lorem ipsum dolor sit amet</li>
-                        <li><strong>2010</strong> Lorem ipsum dolor sit amet</li>
+                      <h2 className="heading text-grey mb-8"><Parallax y={[0, -20]} ParallaxCache>Education</Parallax></h2>
+                      <ul>
+                        <li><strong>2012-2016</strong> Bechlor in Engineering, S.V.I.T., Vasad</li>
+                        <li><strong>2012</strong> HSC, Dayaram Highschool, Dabhoi</li>
+                        <li><strong>2010</strong> SSC, Dayaram School, Dabhoi</li>
                       </ul>
                     </div>
                     <div className="flex-equal">
                       <div className="about-column">
-                        <h2 className="heading outlined-grey fw-900"><Parallax y={[0, -20]} ParallaxCache>Skills</Parallax></h2>
-                        <ul className="mt-n20 z-index1">
-                          <li>Loremipsum</li>
-                          <li>dolor</li>
-                          <li>dolor</li>
-                          <li>sit amet</li>
-                          <li>sit amet</li>
+                        <h2 className="heading text-grey mb-8"><Parallax y={[0, -20]} ParallaxCache>Skills</Parallax></h2>
+                        <ul>
+                          <li>HTML5 & (S)CSS</li>
+                          <li>Javascript (ES6+)</li>
+                          <li>Angular</li>
+                          <li>React</li>
+                          <li>Node js</li>
                         </ul>
                       </div>
                       <div className="about-column">
-                        <h2 className="heading outlined-grey fw-900"><Parallax y={[0, -20]} ParallaxCache>Pasion</Parallax></h2>
-                        <ul className="mt-n20 z-index1">
-                          <li>Loremipsum</li>
-                          <li>dolor</li>
-                          <li>dolor</li>
+                        <h2 className="heading text-grey mb-8"><Parallax y={[0, -20]} ParallaxCache>Pasion</Parallax></h2>
+                        <ul>
+                          <li>Programming</li>
+                          <li>Sketching</li>
                         </ul>
                       </div>
                     </div>
