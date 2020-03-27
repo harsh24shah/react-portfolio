@@ -30,6 +30,26 @@ body {
   overflow: -moz-scrollbars-none;
 }
 
+.morph-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.morph {
+  position: relative;
+  height: 100%;
+  fill: var(--background-color-2);
+  flex: none;
+}
+
 .bg-acent {
   background-color: $grey-color;
   color: $secondary;
@@ -45,7 +65,7 @@ body {
 }
 
 .text-grey {
-  color: lighten($grey-color, 28);
+  color: lighten($grey-color, 38);
 }
 
 .viewport {
@@ -83,18 +103,22 @@ h1 {
     font-size: 110px;
     font-weight: 100;
     line-height: 1;
+    margin-left: -10px;
 
     @media (max-width: 1400px) {
       font-size: 80px;
+      margin-left: -8px;
     }
 
     @media (max-width: 991px) {
       font-size: 60px;
+      margin-left: -6px;
     }
 
     @media (max-width: 767px) {
       font-size: 40px;
       line-height: 1.2;
+      margin-left: -3px;
     }
   }
 
@@ -193,15 +217,15 @@ a {
   position: relative;
   display: inline-block;
 
-  &.thin{
+  &.thin {
     color: $white-color;
-    &::after{
+    &::after {
       width: 100%;
       height: 1px;
-    } 
+    }
 
-    &:hover{
-      &::after{
+    &:hover {
+      &::after {
         height: 2px;
       }
     }
@@ -242,7 +266,7 @@ a {
   border-radius: 50%;
   transform: translate(-15px, -10px);
   mix-blend-mode: difference;
-  transition: transform .1s ease;
+  transition: transform 0.1s ease;
   z-index: 99;
 
   @media (max-width: 991px) {
@@ -518,112 +542,69 @@ a {
 }
 
 .project-wrap {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-content: center;
+  display: block;
+  width: 100%;
 
   .project {
-    display: inline-flex;
-    width: 100%;
-    margin: 60px 0;
+    margin-bottom: 200px;
+    display: block;
 
-    @media (max-width: 991px) {
-      margin: 80px 0;
-    }
+    .project-image {
+      display: flex;
+      align-items: center;
 
-    @media (max-width: 767px) {
-      display: inline-block;
-      margin: 50px 0;
-    }
+      @media (max-width: 1024px) {
+        display: block;
+      }
 
-    &:nth-child(odd) {
-      flex-direction: row-reverse;
+      img {
+        margin-right: 100px;
+        margin-left: 0;
+        max-width: 60%;
 
-      .project-title {
-        right: 88%;
-        left: auto;
-        text-align: right;
-
-        @media (max-width: 767px) {
-          right: auto;
-          left: 0;
-          text-align: left;
+        @media (max-width: 1024px) {
+          max-width: 100%;
+          margin-right: 0;
         }
       }
 
-      .project-image {
-        text-align: right;
-      }
+      .project-title {
+        max-width: 40%;
+
+        @media (max-width: 1024px) {
+          max-width: 100%;
+        }
+      } 
     }
 
-    a {
-      display: inline-flex;
+    .project-title-inline {
+      font-size: 60px;
+      margin-bottom: 26px;
 
-      @media (max-width: 767px) {
-        display: inline-block;
-        width: 100%;
-      }
-    }
-
-    .project-image {
-      flex: 0 0 50%;
-      width: 50%;
-      position: relative;
-
-      @media (max-width: 767px) {
-        width: 100%;
-      }
-    }
-
-    .project-title {
-      width: 100%;
-      position: absolute;
-      top: 50%;
-      left: 88%;
-      transform: translate3d(0, -50%, 0);
-      mix-blend-mode: difference;
-      color: $primary;
-
-      @media (max-width: 767px) {
-        padding: 16px;
-        top: auto;
-        left: 0;
-        right: auto;
-        bottom: 0;
-        transform: translate(0, 0);
-        mix-blend-mode: normal;
-
+      @media (max-width: 1024px) {
+        font-size: 50px;
       }
 
       span {
-        font-weight: 100;
-        line-height: 1.5;
-        letter-spacing: 1.3px;
-
-        @media (max-width: 767px) {
-          font-size: 12px;
-        }
+        letter-spacing: 2px;
+        margin: 15px 0;
       }
+    }
 
-      .project-title-inline {
-        font-size: 60px;
+    &:nth-child(odd) {
+      .project-image {
+        flex-direction: row-reverse;
 
-        @media (max-width: 991px) {
-          font-size: 40px;
-        }
+        img {
+          margin-right: 0;
+          margin-left: 100px;
 
-        @media (max-width: 767px) {
-          font-size: 24px;
+          @media (max-width: 1024px) {
+            margin-left: 0;
+          }
         }
       }
     }
-  }
-
-  img {
-    display: block;
-    width: 100%;
-    height: auto;
   }
 }
 
@@ -874,4 +855,3 @@ button,
     font-size: 12px;
   }
 }
-

@@ -48,7 +48,8 @@ module.exports = {
           disabledClassName: 'sal-disabled', // Class name which defines the disabled state
           rootMargin: '10% 10%', // Corresponds to root's bounding box margin
       }
-    }
+    },
+    `animejs`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

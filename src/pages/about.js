@@ -28,8 +28,8 @@ export default class About extends Component {
                     <div className="about-column">
                       <h2 className="heading text-grey mb-8"><Parallax y={[0, -20]} ParallaxCache>Work Experience</Parallax></h2>
                       <ul>
-                        <li><strong>2018 - Present</strong> <a className="underlined thin" href="https://www.odysseussolutions.com/" target="_blank">Odysseus Solutions</a>, Vadodara</li>
-                        <li><strong>2016 - 2018</strong> <a className="underlined thin" href="https://www.investisdigital.com/" target="_blank">Investis Digital</a>, Vadodara</li>
+                        <li><strong>2018 - Present</strong> <a className="underlined thin" rel="noopener noreferrer" href="https://www.odysseussolutions.com/" target="_blank">Odysseus Solutions</a>, Vadodara</li>
+                        <li><strong>2016 - 2018</strong> <a className="underlined thin" rel="noopener noreferrer" href="https://www.investisdigital.com/" target="_blank">Investis Digital</a>, Vadodara</li>
                       </ul> 
                     </div>
                     <div className="about-column">

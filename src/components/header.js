@@ -59,7 +59,7 @@ export default class Header extends Component {
                   <Link to="/contact" className="hover-this" activeClassName="current" onClick={this.toggleSidenav}>
                     <span className="underlined">Contact</span>
                   </Link>
-                  <a href="https://drive.google.com/file/d/17Bnsc5N94yIAEUlUUrabf4OQZtD47bE2/view?usp=sharing" target="_blank" className="button invert my-20"><span>Resume</span></a>
+                  <a href="https://drive.google.com/file/d/17Bnsc5N94yIAEUlUUrabf4OQZtD47bE2/view?usp=sharing" rel="noopener noreferrer" target="_blank" className="button invert my-20"><span>Resume</span></a>
                 </nav>
               </div>
               <a onClick={this.toggleSidenav} className={'hover-this menu-burger ' + this.toggleMenu} role="button" onKeyDown={this.toggleSidenav} tabIndex="0">
@@ -69,7 +69,7 @@ export default class Header extends Component {
               <div className={'social-media-logos ' + this.toggleMenu}>
                 <div className="inline-block my-12">
                   <span className="mr-20">
-                    <a href="http://github.com/harsh24shah" target="_blank" className="hover-this"><IoLogoGithub size="30px" /></a>
+                    <a href="http://github.com/harsh24shah" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoGithub size="30px" /></a>
                   </span>
                   <span className="mr-20">
                     <a href="https://www.linkedin.com/in/24hjs" target="_blank" className="hover-this"><IoLogoLinkedin size="30px" /></a>

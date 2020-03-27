@@ -1,33 +1,44 @@
-import React, { Component } from "react";
-import { Parallax } from 'react-scroll-parallax';
-import Image from './image'; // Import the Thumbnail component
+import React, { Component } from "react"
+import Image from "./image" // Import the Thumbnail component
 
 export default class Thumbnail extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
 
-    constructor(props) {
-        super(props);
-        this.state = {
-        };
-    }
+  componentDidMount() {
+    // LiquidSvg();
+  }
 
-    render() {
-        return (
-            <div className="project">
-                <div className="project-image" data-sal="slide-up" data-sal-easing="ease">
-                    <a href={this.props.link} className="hover-this project-url">
-                        <Parallax y={[-5, 5]} tagOuter="figure" ParallaxCache>
-                            <Image id="effect-image" src={this.props.thumbImage} alt={this.props.title} />
-                        </Parallax>
-                        <div className="project-title inline-block text-white">
-                            <Parallax x={[-8, 8]} ParallaxCache>
-                                <span className="block mb-10 project-title-inline">{this.props.title}</span>
-                                <span className="block">{this.props.subtitle}</span>
-                                <span className="block">{this.props.technology}</span>
-                            </Parallax>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        )
-    }
+  render() {
+    return (
+      <div className="project" data-sal="slide-up" data-sal-delay="0" data-sal-easing="ease">
+        <div
+          className="project-image"
+          data-sal="slide-up"
+          data-sal-easing="ease"
+        >
+          
+            <Image
+            className="effect-image"
+            src={this.props.thumbImage}
+            alt={this.props.title}
+          />
+          
+          <div className="project-title inline-block text-white">
+            <span className="block mb-10 project-title-inline">
+              {this.props.title}
+              <span className="block fw-600 fs16 text-grey">{this.props.technology}</span>
+            </span>
+            <div className="project-description mb-40"><p>{this.props.subtitle}</p></div>
+            <a className="button" href={this.props.link}>
+              Discover
+            </a>
+          </div>
+          
+        </div>
+      </div>
+    )
+  }
 }
