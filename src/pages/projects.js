@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import SEO from "../components/seo"
 import Thumbnail from "../components/thumbnail" // Import the Thumbnail component
+import { LiquidSvg } from "../assets/js/helper"
 
 export default class Projects extends Component {
   projects = [
@@ -59,16 +60,23 @@ export default class Projects extends Component {
     this.state = {}
   }
 
-  componentDidMount() { }
+  componentDidMount() {
+    LiquidSvg(3);
+  }
 
   render() {
     return (
       <div>
+        <div className="morph-wrap1">
+          <svg className="morph1" width="1400" height="770" viewBox="0 0 1400 770">
+            <polygon points="700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6" />
+          </svg>
+        </div>
         <SEO title="projects" />
-        <div className="component-wrap" data-bg-text="Projects">
+        <div className="component-wrap" >
           <div className="content-wrapper scrollable">
             <div className="project-wrap">
-              <h1 className="inline-block mb-100 fs110" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease">
+              <h1 className="inline-block fs50 title">
                 Projects
               </h1>
               {this.projectRender}

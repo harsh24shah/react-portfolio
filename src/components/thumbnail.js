@@ -19,13 +19,13 @@ export default class Thumbnail extends Component {
           data-sal="slide-up"
           data-sal-easing="ease"
         >
-          
+          <span className="image-wrap">
             <Image
-            className="effect-image"
-            src={this.props.thumbImage}
-            alt={this.props.title}
-          />
-          
+              className="effect-image"
+              src={this.props.thumbImage}
+              alt={this.props.title}
+            />
+          </span>
           <div className="project-title inline-block text-white">
             <span className="block mb-10 project-title-inline">
               {this.props.title}
@@ -36,7 +36,7 @@ export default class Thumbnail extends Component {
               Discover
             </a>
           </div>
-          
+
         </div>
       </div>
     )

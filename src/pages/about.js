@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import SEO from "../components/seo"
-import { Parallax } from 'react-scroll-parallax';
+import Accordion from "../components/accordian"
+import { LiquidSvg } from "../assets/js/helper"
 
 export default class About extends Component {
 
@@ -10,68 +11,53 @@ export default class About extends Component {
     };
   }
 
+  componentDidMount() {
+    LiquidSvg(2);
+  }
+
   render() {
+    const panels = [
+      {
+        label: 'Experience',
+        content: 'Icons are everywhere. These "little miracle workers" (as John Hicks described them) help us reinforce meaning in the interfaces we design and build. Their popularity in web design has never been greater; the conciseness and versatility of pictograms in particular make them a lovely fit for displays large and small. But icons on the web have had their fair share of challenges.',
+      },
+      {
+        label: 'Technologies',
+        content: 'Most assistive devices will read aloud text inserted via CSS, and many of the Unicode characters icon fonts depend on are no exception. Best-case scenario, your "favorite" icon gets read aloud as "black favorite star." Worse-case scenario, it\'s read as "unpronounceable" or skipped entirely.',
+      },
+      {
+        label: 'Hobby',
+        content: 'When your icon font fails, the browser treats it like any other font and replaces it with a fallback. Best-case scenario, you\'ve chosen your fallback characters carefully and something weird-looking but communicative still loads. Worse-case scenario (and far more often), the user sees something completely incongruous, usually the dreaded "missing character" glyph.',
+      }
+
+    ];
     return (
       <>
         <div>
+        <div className="morph-wrap1">
+          <svg className="morph1" width="1400" height="770" viewBox="0 0 1400 770">
+            <polygon points="700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6" />
+          </svg>
+        </div>
           <SEO title="about" />
-          <div className="component-wrap" data-bg-text="About">
-            <div className="content-wrapper scrollable">
+          <div className="component-wrap" >
+            <div className="content-wrapper scrollable-mobile">
               <div className="about-wrap">
-                <h1 className="inline-block mb-30 fs110" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">About</h1>
-                <div className="about-content-main">
-                  <div className="heading fw-100 text-grey" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">
-                    Hi, I'm Harsh J. Shah basd on Vadodara, India, a software engineer who loves working and building with all things relate to web.
-                I build morden web apps with pixel perfect and clean UI.
-                </div>
-                  <div className="align-items-top flex-equal mt-60" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">
-                    <div className="about-column">
-                      <h2 className="heading text-grey mb-8"><Parallax y={[0, -20]} ParallaxCache>Work Experience</Parallax></h2>
-                      <ul>
-                        <li><strong>2018 - Present</strong> <a className="underlined thin" rel="noopener noreferrer" href="https://www.odysseussolutions.com/" target="_blank">Odysseus Solutions</a>, Vadodara</li>
-                        <li><strong>2016 - 2018</strong> <a className="underlined thin" rel="noopener noreferrer" href="https://www.investisdigital.com/" target="_blank">Investis Digital</a>, Vadodara</li>
-                      </ul> 
-                    </div>
-                    <div className="about-column">
-                      <h2 className="heading text-grey mb-8"><Parallax y={[0, -20]} ParallaxCache>Personal Skill</Parallax></h2>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis quis rutrum purus. Nullam a ante vitae velit facilisis vulputate. Morbi dui urna.</p>
-                    </div>
-                  </div>
-                  <div className="align-items-top flex-equal mt-50" data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease">
-                    <div className="about-column">
-                      <h2 className="heading text-grey mb-8"><Parallax y={[0, -20]} ParallaxCache>Education</Parallax></h2>
-                      <ul>
-                        <li><strong>2012-2016</strong> Bechlor in Engineering, S.V.I.T., Vasad</li>
-                        <li><strong>2012</strong> HSC, Dayaram Highschool, Dabhoi</li>
-                        <li><strong>2010</strong> SSC, Dayaram School, Dabhoi</li>
-                      </ul>
-                    </div>
-                    <div className="flex-equal">
-                      <div className="about-column">
-                        <h2 className="heading text-grey mb-8"><Parallax y={[0, -20]} ParallaxCache>Skills</Parallax></h2>
-                        <ul>
-                          <li>HTML5 & (S)CSS</li>
-                          <li>Javascript (ES6+)</li>
-                          <li>Angular</li>
-                          <li>React</li>
-                          <li>Node js</li>
-                        </ul>
-                      </div>
-                      <div className="about-column">
-                        <h2 className="heading text-grey mb-8"><Parallax y={[0, -20]} ParallaxCache>Pasion</Parallax></h2>
-                        <ul>
-                          <li>Programming</li>
-                          <li>Sketching</li>
-                        </ul>
-                      </div>
+                <div className="about-content">
+                  <h1 className="inline-block fs50 title">About me</h1>
+                  <div className="mb-40">
+                    <p data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum
+                    ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum
+                  </p>
+                    <div className="mt-30">
+                      <Accordion panels={panels} />
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div className="profile-seciton" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
-              <div>
-
+                <div className="image-wrapper">       
+                    <img className="block-reveal" src="https://i.picsum.photos/id/866/800/1000.jpg" />          
+                </div>
               </div>
             </div>
           </div>

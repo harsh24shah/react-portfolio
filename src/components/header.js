@@ -41,7 +41,8 @@ export default class Header extends Component {
               <div className="logo">
                 <Link to="/" className="hover-this">
                   {/* <Img fixed={data.file.childImageSharp.fixed} alt="Harsh logo" /> */}
-                  <img src={testSvg} alt="test"/>
+                  {/* <img src={testSvg} alt="test"/> */}
+                    <div className="logo-custom">Harsh</div>
                 </Link>
               </div>
               <div className={'overlay ' + this.toggleMenu} onClick={this.toggleSidenav}></div>
@@ -76,9 +77,6 @@ export default class Header extends Component {
                   </span>
                   <span className="mr-20">
                     <a href="https://www.facebook.com/24hjs" target="_blank" className="hover-this"><IoLogoFacebook size="30px" /> </a>
-                  </span>
-                  <span className="mr-20">
-                    <a href="https://www.behance.net/024hrshe832" target="_blank" className="hover-this"><FaBehance size="30px" /></a>
                   </span>
                   <span className="mr-20">
                     <a href="https://www.instagram.com/24harsh" target="_blank" className="hover-this"><IoLogoInstagram size="30px" /></a>
