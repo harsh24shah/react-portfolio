@@ -10,7 +10,8 @@ export default class IndexPage extends Component {
   }
 
   componentDidMount() {
-    LiquidSvg(1);
+    LiquidSvg(1,'morph1');
+    LiquidSvg(3,'morph2');
   }
 
   render() {
@@ -18,7 +19,12 @@ export default class IndexPage extends Component {
       <div>
         <div className="morph-wrap1">
           <svg className="morph1" width="1400" height="770" viewBox="0 0 1400 770">
-            <polygon points="700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6" />
+            <polygon points="" />
+          </svg>
+        </div>
+        <div className="morph-wrap2">
+          <svg className="morph2" width="1400" height="770" viewBox="0 0 1400 770">
+            <polygon points="" />
           </svg>
         </div>
         <SEO title="Home" />

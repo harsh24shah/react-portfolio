@@ -96,10 +96,10 @@ export function SmoothScroll(target, speed, smooth) {
     }()
 }
 
-export function LiquidSvg(pos) {
-
+export function LiquidSvg(pos, svgElement) {
+    svgElement = '.' + svgElement;
     const DOM = {};
-    DOM.svg = document.querySelector('.morph1');
+    DOM.svg = document.querySelector(svgElement);
     DOM.shapeEl = DOM.svg.querySelector('polygon');
 
     const shapes = [
@@ -130,8 +130,8 @@ export function LiquidSvg(pos) {
             points: '983.4,101.6 983.4,668.4 416.6,668.4 416.6,101.9 416.6,101.9 416.6,101.9',
             scaleX: .7,
             scaleY: .7,
-            rotate: 80,
-            tx: -100,
+            rotate: 60,
+            tx: 100,
             ty: 100,
             fill: {
                 color: 'none',
@@ -173,7 +173,7 @@ export function LiquidSvg(pos) {
             }
         },
         {
-            points: '983.4,101.6 779,385 983.4,668.4 416.6,668.4 611,388 416.6,101.9',
+            points: '700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6',
             scaleX: .5,
             scaleY: .5,
             rotate: 145,

@@ -40,9 +40,10 @@ body {
 
 .morph-wrap1 {
   position: fixed;
-  top: -300px;
-  right: -300px;
+  top: -30%;
+  right: -34%;
   bottom: auto;
+  left: auto;
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -53,11 +54,28 @@ body {
   z-index: -5;
 }
 
-.morph1 {
+.morph-wrap2 {
+  position: fixed;
+  top: auto;
+  right: auto;
+  left: -36%;
+  bottom: -27%;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: block;
+  pointer-events: none;
+  animation: rotateTransition 150s linear infinite normal;
+  transform-origin: center center;
+  z-index: -5;
+}
+
+.morph1,
+.morph2 {
   position: relative;
   fill: none;
   stroke-width: 90px;
-  stroke: #1d1d1d;
+  stroke: #3c3c3c;
   width: 100%;
   height: 100%;
 } 
@@ -884,6 +902,9 @@ button,
     flex: 0 0 38%;
     position: relative;
     overflow: hidden;
+    align-self: center;
+    height: 600px;
+    max-height: 600px;
 
     @media (max-width: 1200px) {
       flex: 0 0 60%;
@@ -957,7 +978,7 @@ button,
   width: 100%;
 }
 .panel {
-  background-color: $secondary;
+  background-color: transparent;
   &:not(:last-child) {
     margin-bottom: 3px;
   }

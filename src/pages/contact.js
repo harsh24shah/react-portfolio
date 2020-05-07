@@ -6,7 +6,8 @@ import { LiquidSvg } from "../assets/js/helper"
 export default class Contact extends Component {
 
   componentDidMount() {
-    LiquidSvg(4);
+    LiquidSvg(3,'morph1');
+    LiquidSvg(4,'morph2');
   }
   
   render() {
@@ -17,6 +18,11 @@ export default class Contact extends Component {
             <polygon points="700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6" />
           </svg>
         </div>
+        <div className="morph-wrap2">
+          <svg className="morph2" width="1400" height="770" viewBox="0 0 1400 770">
+            <polygon points="" />
+          </svg>
+        </div>
         <SEO title="contact" />
         <div className="component-wrap" data-bg-text="Contacts">
           <div className="content-wrapper">
@@ -24,7 +30,7 @@ export default class Contact extends Component {
               <h1 className="fs50 inline-block title">Say hi.</h1>
               <div className="box-wrapper" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">
                 <div className="padding-box">
-                  <p className="text-white">I love implement UI design and make things. I work at Odysseus Solutions as UI developer. <a href="mailto:test@test.com" className="underlined">Say hi!</a></p>
+                  <p className="text-white">I love implement UI design and make things. I would like to work or talk everything about web with you. <a href="mailto:test@test.com" className="underlined">Say hi!</a></p>
                   <div className="heading"><a href="mailto:024hrsh@gmail.com" className="underlined hover-this">024hrsh@gmail.com</a></div>
                   <div className="separator white-separator"></div>
                   <div className="inline-block my-12">
