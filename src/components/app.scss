@@ -75,10 +75,10 @@ body {
   position: relative;
   fill: none;
   stroke-width: 90px;
-  stroke: #3c3c3c;
+  stroke: #1f1f1f;
   width: 100%;
   height: 100%;
-} 
+}
 
 .bg-acent {
   background-color: $grey-color;
@@ -306,6 +306,9 @@ a {
 }
 
 /*-- Cursor style and hover Ends--*/
+.component-wrap {
+  margin: 200px 0;
+}
 
 .routed {
   position: relative;
@@ -343,12 +346,7 @@ a {
 
     &.scrollable {
       height: inherit;
-      margin: 100px auto;
       flex-direction: column;
-
-      @media (max-width: 991px) {
-        margin: 200px auto;
-      }
 
       @media (max-width: 991px) {
         margin: 114px auto;
@@ -576,12 +574,8 @@ a {
   width: 100%;
 
   .project {
-    margin-bottom: 200px;
     display: block;
-
-    @media (max-width: 1400px) {
-      margin-bottom: 100px;
-    }
+    margin-bottom: 100px;
 
     @media (max-width: 991px) {
       margin-bottom: 70px;
@@ -624,8 +618,8 @@ a {
     }
 
     .project-title-inline {
-      font-size: 50px;
-      margin-bottom: 26px;
+      font-size: 40px;
+      margin-bottom: 20px;
 
       @media (max-width: 1200px) {
         font-size: 40px;
@@ -633,12 +627,20 @@ a {
       }
 
       span {
-        letter-spacing: 2px;
-        margin: 15px 0;
+        ul {
+          display: flex;
+          margin-bottom: 0;
+          margin-top: 13px;
+
+          li {
+            margin-right: 26px;
+            font-size: 14px;
+          }
+        }
       }
     }
 
-    &:nth-child(odd) {
+    &:nth-child(even) {
       .project-image {
         flex-direction: row-reverse;
 
@@ -867,6 +869,20 @@ button,
   color: $primary;
   background: transparent;
 
+  svg {
+    display: none;
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: $primary;
+    stroke-width: 1;
+    transform: translateX(-5px);
+    transition: all 0.85s ease;
+  }
+
   &:hover,
   &:focus,
   &:active {
@@ -876,6 +892,10 @@ button,
   &.invert {
     border: 1px solid $secondary;
     color: $secondary;
+
+    svg {
+      stroke: $secondary;
+    }
 
     &:hover,
     &:focus,
@@ -907,7 +927,7 @@ button,
     max-height: 600px;
 
     @media (max-width: 1200px) {
-      flex: 0 0 60%;
+      flex: 0 0 50%;
     }
 
     @media (max-width: 991px) {
@@ -939,8 +959,8 @@ button,
     overflow: auto;
 
     @media (max-width: 1200px) {
-      flex: 0 0 40%;
-      padding: 30px;
+      flex: 0 0 50%;
+      padding: 15px;
     }
 
     @media (max-width: 991px) {
@@ -977,12 +997,17 @@ button,
 .accordion {
   width: 100%;
 }
+
 .panel {
   background-color: transparent;
+
   &:not(:last-child) {
     margin-bottom: 3px;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #252525;
   }
 }
+
 .panel-label {
   position: relative;
   display: block;
@@ -990,7 +1015,7 @@ button,
   background: none;
   border: none;
   text-align: left;
-  padding: 12px 60px 12px 0;
+  padding: 20px 60px 20px 0;
   font-weight: 500;
   font-size: 17px;
   font-family: inherit;
@@ -1024,26 +1049,65 @@ button,
       -webkit-transform 0.35s cubic-bezier(0.65, 0.05, 0.36, 1);
   }
 }
+
 .panel[aria-expanded="true"] {
   .panel-content {
     opacity: 1;
   }
+
   .panel-label {
     color: $primary;
+
     &:before {
       transform: rotate(0deg);
     }
   }
 }
+
 .panel-inner {
   overflow: hidden;
   will-change: height;
   transition: height 0.4s cubic-bezier(0.65, 0.05, 0.36, 1);
 }
+
 .panel-content {
   margin: 10px 0px 25px;
   font-size: 14px;
   color: $primary;
   opacity: 0;
   transition: opacity 0.3s linear 0.18s;
+
+  p,
+  ul {
+    font-size: 14px;
+  }
+}
+
+.inverse-section { 
+  padding: 100px 0;
+  background: #151515;
+}
+
+table {
+  margin: 0 -20px;
+
+  td,
+  th {
+    vertical-align: middle;
+    padding: 10px 20px;
+  }
+
+  thead {
+    th {
+      padding-bottom: 30px;
+    }
+  }
+
+  tbody {
+    tr {
+      &:hover {
+        background: rgba($primary, 0.1);
+      }
+    }
+  }
 }

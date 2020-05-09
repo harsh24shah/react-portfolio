@@ -1,6 +1,6 @@
 $aligns: left, center, right;
 $displays: flex, block, inline-block, none;
-$spacings: 4, 8, 12, 16, 20, 30, 40, 50, 60, 100, 150;
+$spacings: 0, 4, 8, 12, 16, 20, 30, 40, 50, 60, 100, 150;
 $fonts: 8, 12, 16, 18, 22, 24, 30, 40, 50, 60, 80;
 $colors: white, black;
 $index: 0, 1, 2, 3, 4;
@@ -14,7 +14,7 @@ $index: 0, 1, 2, 3, 4;
     z-index: -#{$i};
   }
 }
- 
+
 @each $align in $aligns {
   .text-#{$align} {
     text-align: #{$align};
@@ -54,7 +54,7 @@ $index: 0, 1, 2, 3, 4;
   }
 
   .mb-#{$margin} {
-    margin-bottom: #{$margin}px;
+    margin-bottom: #{$margin}px !important;
   }
 
   .mx-#{$margin} {
@@ -160,14 +160,16 @@ $index: 0, 1, 2, 3, 4;
 }
 
 .flex-auto {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
 
   > * {
     flex: auto;
+    margin-right: 45px;
 
     @media (max-width: 767px) {
       flex: 0 0 100%;
+      margin-right: 0;
     }
   }
 }
@@ -192,9 +194,8 @@ $index: 0, 1, 2, 3, 4;
   justify-content: center;
 }
 
-p,
-ul {
-  font-size: 18px;
+p {
+  font-size: 16px;
   margin-bottom: 16px;
   line-height: 26px;
   font-weight: 100;
@@ -206,8 +207,18 @@ ul {
   }
 }
 
-ul{
-  li{
+ul {
+  font-size: 16px;
+  margin-bottom: 16px;
+  line-height: 26px;
+  letter-spacing: 1px;
+
+  @media (max-width: 767px) {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  li {
     margin-bottom: 4px;
   }
 }

@@ -40,9 +40,8 @@ import ReactDOM from 'react-dom';
 				<div className='panel-inner'
 					style={ innerStyle }
 					aria-hidden={ !isActive }>
-					<p className='panel-content'>
-						{ content }
-					</p>
+					<div className='panel-content' dangerouslySetInnerHTML={{__html: content}}>
+					</div>
 				</div>
 			</div>
 		);

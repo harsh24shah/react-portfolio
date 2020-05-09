@@ -2,44 +2,71 @@ import React, { Component } from "react"
 import SEO from "../components/seo"
 import Thumbnail from "../components/thumbnail" // Import the Thumbnail component
 import { LiquidSvg } from "../assets/js/helper"
+import { FiExternalLink } from "react-icons/fi";
 
 export default class Projects extends Component {
   projects = [
     {
-      title: "project1",
-      subtitle: "subtitle goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      title: "Wallperex",
+      subtitle: "The Image Gallery with High quality Images where you can search and get thousands of image category, share any image on social media, edit any image with filters like instagram and download as well.",
       link: "https://google.co.in",
       thumbImage: "https://i.picsum.photos/id/866/700/400.jpg",
-      technology: "Angular, HTML, SCSS",
+      technology: "<ul><li>Unshplash API</li><li>Angular</li><li>HTML</li><li>SCSS</li></ul>",
     },
     {
-      title: "project-title2",
-      subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit",
+      title: "News Cards",
+      subtitle: "A Daily News applications having updated News of multiple News channels, where you can select News channels and get the news of perticular date of category or search any topic which is recently in trending",
       link: "https://google.co.in",
       thumbImage: "https://i.picsum.photos/id/866/600/400.jpg",
-      technology: "JQuery, HTML5, CSS3",
+      technology: "<ul><li>News API</li><li>Angular</li><li>HTML</li><li>SCSS</li></ul>",
     },
     {
-      title: "project3",
-      subtitle: "subtitle goes here Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      title: "Portfolio Design",
+      subtitle: "A design mockup created for full page portfolio website idea for a person having technical proffesion background like web developer or a software developer.",
       link: "https://google.co.in",
       thumbImage: "https://i.picsum.photos/id/866/650/500.jpg",
-      technology: "Photoshop",
+      technology: "<ul><li>Photoshop</li></ul>",
     },
     {
-      title: "project-long-title",
-      subtitle: "Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      title: "Image Gallery",
+      subtitle: "A prototype of mobile application of gallery app having prototypes of image preview, edit, notification, image share.",
       link: "https://google.co.in",
       thumbImage: "https://i.picsum.photos/id/866/600/400.jpg",
-      technology: "Angular, Javascript, SCSS",
+      technology: "<ul><li>Photoshop</li><li>Figma</li></ul>",
+    }
+  ]
+
+  otherProjects = [
+    {
+      year: "2020",
+      title: "Cruise Director UI",
+      madeAt: "Odysseus Solutions",
+      link: "https://google.co.in"
     },
     {
-      title: "project5",
-      subtitle: "subtitle goes here",
-      link: "https://google.co.in",
-      thumbImage: "https://i.picsum.photos/id/866/700/200.jpg",
-      technology: "JQuery, HTML5, CSS3",
+      year: "2019",
+      title: "Cruisehub UI",
+      madeAt: "Odysseus Solutions",
+      link: "https://google.co.in"
     },
+    {
+      year: "2018",
+      title: "Rolls-Royce Careers",
+      madeAt: "Investis Digital",
+      link: "https://google.co.in"
+    },
+    {
+      year: "2018",
+      title: "ArcelorMittal Staligence",
+      madeAt: "Investis Digital",
+      link: "https://google.co.in"
+    },
+    {
+      year: "2017",
+      title: "Ferratum Investor Relation",
+      madeAt: "Investis Digital",
+      link: "https://google.co.in"
+    }
   ]
 
   projectRender = this.projects.map(function (project, index) {
@@ -55,14 +82,25 @@ export default class Projects extends Component {
     )
   })
 
+  otherProjectsRenderer = this.otherProjects.map(function (item, index) {
+    return (
+      <tr key={index}>
+        <td className="fw-600">{item.year}</td>
+        <td className="fw-600">{item.title}</td>
+        <td className="text-grey fw-600">{item.madeAt}</td>
+        <td><a href={item.link}><FiExternalLink size="24px" className="text-grey" /></a></td>
+      </tr>
+    )
+  })
+
   constructor(props) {
     super(props)
     this.state = {}
   }
 
   componentDidMount() {
-    LiquidSvg(1,'morph1');
-    LiquidSvg(0,'morph2');
+    LiquidSvg(1, 'morph1');
+    LiquidSvg(0, 'morph2');
   }
 
   render() {
@@ -78,14 +116,38 @@ export default class Projects extends Component {
             <polygon points="" />
           </svg>
         </div>
-        <SEO title="projects" />
-        <div className="component-wrap" >
+        <SEO title="Projects" />
+        <div className="component-wrap mb-0">
           <div className="content-wrapper scrollable">
             <div className="project-wrap">
               <h1 className="inline-block fs50 title">
-                Projects
+                Some Things I've Built
               </h1>
               {this.projectRender}
+            </div>
+          </div>
+          <div className="inverse-section">
+            <div className="content-wrapper scrollable">
+              <div className="w-100">
+                <h1 className="inline-block fs50 title">
+                  Projects I've worked on
+              </h1>
+                <div className="project-list">
+                  <table className="w-100">
+                    <thead>
+                      <tr>
+                        <th className="text-grey fw-600 text-left">Year</th>
+                        <th className="text-grey fw-600 text-left">Title</th>
+                        <th className="text-grey fw-600 text-left">Made at</th>
+                        <th className="text-grey fw-600 text-left">Link</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      {this.otherProjectsRenderer}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
         </div>

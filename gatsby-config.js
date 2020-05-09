@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Harsh Portfolio`,
-    description: `Harsh Shah, UI designer(developer sometimes), works with every thing in front end`,
-    author: `@Harsh`,
+    title: `Harsh`,
+    description: `Harsh Shah, UI developer(sometimes designer), works with every thing in front end`,
+    author: `@Harsh J. Shah`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -21,7 +21,7 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Harsh Shah`,
-        short_name: `starter`,
+        short_name: `Harsh`,
         start_url: `/`,
         background_color: `black`,
         theme_color: `black`,
@@ -46,7 +46,7 @@ module.exports = {
           selector: '[data-sal]', // Selector of the elements to be animated
           animateClassName: 'sal-animate', // Class name which triggers animation
           disabledClassName: 'sal-disabled', // Class name which defines the disabled state
-          rootMargin: '10% 10%', // Corresponds to root's bounding box margin
+          rootMargin: '80% 80%', // Corresponds to root's bounding box margin
       }
     },
     `animejs`
@@ -55,3 +55,4 @@ module.exports = {
     // `gatsby-plugin-offline`,
   ],
 } 
+ 

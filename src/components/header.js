@@ -5,7 +5,6 @@ import testSvg from '../images/harsh-logo.svg';
 import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io";
-import { FaBehance } from "react-icons/fa";
 
 export default class Header extends Component {
   constructor(props) {
@@ -42,7 +41,7 @@ export default class Header extends Component {
                 <Link to="/" className="hover-this">
                   {/* <Img fixed={data.file.childImageSharp.fixed} alt="Harsh logo" /> */}
                   {/* <img src={testSvg} alt="test"/> */}
-                    <div className="logo-custom">Harsh</div>
+                  <div className="logo-custom">Harsh</div>
                 </Link>
               </div>
               <div className={'overlay ' + this.toggleMenu} onClick={this.toggleSidenav}></div>
@@ -60,7 +59,13 @@ export default class Header extends Component {
                   <Link to="/contact" className="hover-this" activeClassName="current" onClick={this.toggleSidenav}>
                     <span className="underlined">Contact</span>
                   </Link>
-                  <a href="https://drive.google.com/file/d/17Bnsc5N94yIAEUlUUrabf4OQZtD47bE2/view?usp=sharing" rel="noopener noreferrer" target="_blank" className="button invert my-20"><span>Resume</span></a>
+                  <a href="https://drive.google.com/file/d/17Bnsc5N94yIAEUlUUrabf4OQZtD47bE2/view?usp=sharing" rel="noopener noreferrer" target="_blank" className="button invert my-20">
+                    <span>Resume</span>
+                    <svg width="13px" height="10px" viewBox="0 0 13 10">
+                      <path d="M1,5 L11,5"></path>
+                      <polyline points="8 1 12 5 8 9"></polyline>
+                    </svg>
+                  </a>
                 </nav>
               </div>
               <a onClick={this.toggleSidenav} className={'hover-this menu-burger ' + this.toggleMenu} role="button" onKeyDown={this.toggleSidenav} tabIndex="0">

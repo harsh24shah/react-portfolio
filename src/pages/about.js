@@ -12,58 +12,58 @@ export default class About extends Component {
   }
 
   componentDidMount() {
-    LiquidSvg(2,'morph1');
-    LiquidSvg(5,'morph2');
+    LiquidSvg(2, 'morph1');
+    LiquidSvg(5, 'morph2');
   }
 
   render() {
     const panels = [
       {
-        label: 'Experience',
-        content: 'Icons are everywhere. These "little miracle workers" (as John Hicks described them) help us reinforce meaning in the interfaces we design and build. Their popularity in web design has never been greater; the conciseness and versatility of pictograms in particular make them a lovely fit for displays large and small. But icons on the web have had their fair share of challenges.',
+        label: "Few technologies or tools I've been working with",
+        content: '<div class="flex-auto"><ul><li>Javascript</li><li>HTML & S(CSS)</li><li>Angular</li><li>Gulp</li></ul><ul><li>Figma</li><li>Photoshop</li><li>Git & Github</li></ul></div>',
       },
       {
-        label: 'Technologies',
-        content: 'Most assistive devices will read aloud text inserted via CSS, and many of the Unicode characters icon fonts depend on are no exception. Best-case scenario, your "favorite" icon gets read aloud as "black favorite star." Worse-case scenario, it\'s read as "unpronounceable" or skipped entirely.',
+        label: "Where I've worked",
+        content: "<p>I'm currently working as a Front-end Designer in <a href=''>Odysseus Solutions</a> from Dec, 2018. earlier, I was working as a Web Producer with <a href=''>Investis Digital</a> at India location for two and half years where I have started my career in 2016.</p>",
       },
       {
-        label: 'Hobby',
-        content: 'When your icon font fails, the browser treats it like any other font and replaces it with a fallback. Best-case scenario, you\'ve chosen your fallback characters carefully and something weird-looking but communicative still loads. Worse-case scenario (and far more often), the user sees something completely incongruous, usually the dreaded "missing character" glyph.',
+        label: "Things I do when I'm not coding",
+        content: '<p>I like traveling, clicking random things and making sketches. Heavy metal and Acoustic rock are my tastes of music.</p>',
       }
 
     ];
     return (
       <>
         <div>
-        <div className="morph-wrap1">
-          <svg className="morph1" width="1400" height="770" viewBox="0 0 1400 770">
-            <polygon points="" />
-          </svg>
-        </div>
-        <div className="morph-wrap2">
-          <svg className="morph2" width="1400" height="770" viewBox="0 0 1400 770">
-            <polygon points="" />
-          </svg>
-        </div>
-          <SEO title="about" />
-          <div className="component-wrap" >
-            <div className="content-wrapper scrollable-mobile">
-              <div className="about-wrap">
-                <div className="about-content">
-                  <h1 className="inline-block fs50 title">About me</h1>
-                  <div className="mb-40">
-                    <p data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">Lorem ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum dolor sit amet,
-                    consectetur adipiscing elit Lorem ipsum dolor sit amet, consectetur adipiscing elitLorem ipsum
-                    ipsum dolor sit amet, consectetur adipiscing elit Lorem ipsum
+          <div className="morph-wrap1">
+            <svg className="morph1" width="1400" height="770" viewBox="0 0 1400 770">
+              <polygon points="" />
+            </svg>
+          </div>
+          <div className="morph-wrap2">
+            <svg className="morph2" width="1400" height="770" viewBox="0 0 1400 770">
+              <polygon points="" />
+            </svg>
+          </div>
+          <SEO title="About" />
+          <div className="content-wrapper scrollable-mobile">
+            <div className="about-wrap">
+              <div className="about-content">
+                <h1 className="inline-block fs50 title">About me</h1>
+                <div className="mb-40">
+                  <p>I'm Harsh Shah from Vadodara, India; a software developer with four years of experience who loves Building & Designing stuff that live on internet,
+                  whether that will be web application, plugin, websites or in between. I enjoy solving complex problems with simple way.
                   </p>
-                    <div className="mt-30">
-                      <Accordion panels={panels} />
-                    </div>
+                  <p>
+                    I've completed Bachelors of Engineering in Information Technology from <a href="">SVIT (Sardar Vallabbhai patel Insitute of Technologies)</a> located in Gujarat, India.
+                  </p>
+                  <div className="mt-30">
+                    <Accordion panels={panels} />
                   </div>
                 </div>
-                <div className="image-wrapper">       
-                    <img className="block-reveal" src="https://i.picsum.photos/id/866/800/1000.jpg" />          
-                </div>
+              </div>
+              <div className="image-wrapper">
+                <img className="block-reveal" src="https://i.picsum.photos/id/866/800/1000.jpg" />
               </div>
             </div>
           </div>
