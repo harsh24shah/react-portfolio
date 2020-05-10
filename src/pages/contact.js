@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import SEO from "../components/seo"
-import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
+import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io";
 import { LiquidSvg } from "../assets/js/helper"
 
 export default class Contact extends Component {
@@ -26,15 +26,17 @@ export default class Contact extends Component {
         <SEO title="Contact" />
         <div className="content-wrapper">
           <div className="box-outer">
-            <h1 className="fs50 inline-block title">Get in Touch</h1>
+            <h1 className="inline-block title mb-0">Get in Touch</h1>
             <div className="box-wrapper" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">
               <div className="padding-box">
-                <p className="text-white w-80">Though I'm not looking for any opportunities, My inbox is always open for you and I would like to work or talk everything about web with you. <a href="mailto:test@test.com" className="underlined">Say hi!</a></p>
-                <div className="heading"><a href="mailto:024hrsh@gmail.com" className="button">Say Hi</a></div>
+                <p className="text-white intro-para">Though I'm not looking for any opportunities, My inbox is always open for you and I would like to answer in case you have any questions or you can just say hi, I will try to get back to you.</p>
+                <div><a href="mailto:024hrsh@gmail.com" className="button">Say Hi</a></div>
                 <div className="separator white-separator"></div>
                 <div className="inline-block my-12">
                   <span className="mr-20"><a href="github.com" className="hover-this"><IoLogoGithub size="30px" /></a></span>
                   <span className="mr-20"><a href="linkedin.com" className="hover-this"><IoLogoLinkedin size="30px" /></a></span>
+                  <span className="mr-20"><a href="https://www.facebook.com/24hjs" className="hover-this"><IoLogoFacebook size="30px" /></a></span>
+                  <span className="mr-20"><a href="https://www.instagram.com/24harsh" className="hover-this"><IoLogoInstagram size="30px" /></a></span>
                 </div>
               </div>
             </div>
@@ -43,4 +45,4 @@ export default class Contact extends Component {
       </div>
     )
   }
-}
+} 

@@ -20,7 +20,7 @@ export default class About extends Component {
     const panels = [
       {
         label: "Few technologies or tools I've been working with",
-        content: '<div class="flex-auto"><ul><li>Javascript</li><li>HTML & S(CSS)</li><li>Angular</li><li>Gulp</li></ul><ul><li>Figma</li><li>Photoshop</li><li>Git & Github</li></ul></div>',
+        content: '<div class="flex-auto"><ul class="bullets"><li>Javascript</li><li>HTML & S(CSS)</li><li>Angular</li><li>Gulp</li></ul><ul class="bullets"><li>Figma</li><li>Photoshop</li><li>Git & Github</li></ul></div>',
       },
       {
         label: "Where I've worked",
@@ -49,7 +49,7 @@ export default class About extends Component {
           <div className="content-wrapper scrollable-mobile">
             <div className="about-wrap">
               <div className="about-content">
-                <h1 className="inline-block fs50 title">About me</h1>
+                <h1 className="inline-block title">About me</h1>
                 <div className="mb-40">
                   <p>I'm Harsh Shah from Vadodara, India; a software developer with four years of experience who loves Building & Designing stuff that live on internet,
                   whether that will be web application, plugin, websites or in between. I enjoy solving complex problems with simple way.

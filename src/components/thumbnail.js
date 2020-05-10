@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import Image from "./image" // Import the Thumbnail component
+import { FiExternalLink } from "react-icons/fi";
+import { FaBehance, FaGithub } from "react-icons/fa";
 
 export default class Thumbnail extends Component {
   constructor(props) {
@@ -11,6 +13,16 @@ export default class Thumbnail extends Component {
   }
 
   render() {
+    var projectGitLink, projectBehanceLink, projectExternalLink;
+    if (this.props.gitLink !== '') {
+      projectGitLink = <a className="mr-16" href={this.props.gitLink}><FaGithub size="24px" /></a>;
+    }
+    if (this.props.behanceLink !== '') {
+      projectBehanceLink = <a className="mr-16" href={this.props.behanceLink}><FaBehance size="24px" /></a>;
+    }
+    if (this.props.externalLink !== '') {
+      projectExternalLink = <a className="mr-16" href={this.props.externalLink}><FiExternalLink size="24px" /></a>;
+    }
     return (
       <div className="project">
         <div className="project-image">
@@ -26,14 +38,12 @@ export default class Thumbnail extends Component {
               {this.props.title}
               <span className="block fw-600 text-grey" dangerouslySetInnerHTML={{ __html: this.props.technology }}></span>
             </span>
-            <div className="project-description mb-40" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease"><p>{this.props.subtitle}</p></div>
-            <a className="button" href={this.props.link} data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">
-              <span>Discover</span>
-              <svg width="13px" height="10px" viewBox="0 0 13 10">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
-            </a>
+            <div className="project-description mb-30" data-sal="slide-up" data-sal-delay="200" data-sal-easing="ease"><p>{this.props.subtitle}</p></div>
+            <div data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease" className="flex align-items-center">
+              {projectGitLink}
+              {projectBehanceLink}
+              {projectExternalLink}
+            </div>
           </div>
         </div>
       </div>

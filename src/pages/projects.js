@@ -9,28 +9,36 @@ export default class Projects extends Component {
     {
       title: "Wallperex",
       subtitle: "The Image Gallery with High quality Images where you can search and get thousands of image category, share any image on social media, edit any image with filters like instagram and download as well.",
-      link: "https://google.co.in",
+      gitLink: "https://google.co.in",
+      behanceLink: "",
+      externalLink: "https://google.co.in",
       thumbImage: "https://i.picsum.photos/id/866/700/400.jpg",
       technology: "<ul><li>Unshplash API</li><li>Angular</li><li>HTML</li><li>SCSS</li></ul>",
     },
     {
       title: "News Cards",
       subtitle: "A Daily News applications having updated News of multiple News channels, where you can select News channels and get the news of perticular date of category or search any topic which is recently in trending",
-      link: "https://google.co.in",
+      gitLink: "https://google.co.in",
+      behanceLink: "",
+      externalLink: "https://google.co.in",
       thumbImage: "https://i.picsum.photos/id/866/600/400.jpg",
       technology: "<ul><li>News API</li><li>Angular</li><li>HTML</li><li>SCSS</li></ul>",
     },
     {
       title: "Portfolio Design",
       subtitle: "A design mockup created for full page portfolio website idea for a person having technical proffesion background like web developer or a software developer.",
-      link: "https://google.co.in",
+      gitLink: "",
+      behanceLink: "https://google.co.in",
+      externalLink: "",
       thumbImage: "https://i.picsum.photos/id/866/650/500.jpg",
       technology: "<ul><li>Photoshop</li></ul>",
     },
     {
       title: "Image Gallery",
       subtitle: "A prototype of mobile application of gallery app having prototypes of image preview, edit, notification, image share.",
-      link: "https://google.co.in",
+      gitLink: "",
+      behanceLink: "https://google.co.in",
+      externalLink: "",
       thumbImage: "https://i.picsum.photos/id/866/600/400.jpg",
       technology: "<ul><li>Photoshop</li><li>Figma</li></ul>",
     }
@@ -73,7 +81,9 @@ export default class Projects extends Component {
     return (
       <Thumbnail
         key={index}
-        link={project.link}
+        gitLink={project.gitLink}
+        behanceLink={project.behanceLink}
+        externalLink={project.externalLink}
         thumbImage={project.thumbImage}
         title={project.title}
         subtitle={project.subtitle}
@@ -120,7 +130,7 @@ export default class Projects extends Component {
         <div className="component-wrap mb-0">
           <div className="content-wrapper scrollable">
             <div className="project-wrap">
-              <h1 className="inline-block fs50 title">
+              <h1 className="inline-block title">
                 Some Things I've Built
               </h1>
               {this.projectRender}
@@ -129,7 +139,7 @@ export default class Projects extends Component {
           <div className="inverse-section">
             <div className="content-wrapper scrollable">
               <div className="w-100">
-                <h1 className="inline-block fs50 title">
+                <h1 className="inline-block title">
                   Projects I've worked on
               </h1>
                 <div className="project-list">
