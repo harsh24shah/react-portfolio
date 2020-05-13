@@ -1,30 +1,40 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { withController } from 'react-scroll-parallax';
+import React from 'react';
+import { StaticQuery, graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
-class Image extends Component {
-    static propTypes = {
-        parallaxController: PropTypes.object.isRequired,
-        src: PropTypes.string.isRequired,
-    };
+// Note: You can change "images" to whatever you'd like.
 
-    constructor(props) {
-        super(props);
-        this.state = {
-        };
-    }
+const Image = props => (
+    <StaticQuery
+        query={graphql`
+      query {
+        images: allFile {
+          edges {
+            node {
+              relativePath
+              name
+              childImageSharp {
+                fluid(maxWidth: 600) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    `}
+        render={data => {
+            const image = data.images.edges.find(n => {
+                return n.node.relativePath.includes(props.filename);
+            });
+            if (!image) {
+                return null;
+            }
 
-    handleLoad = () => {
-        // updates cached values after image dimensions have loaded
-        this.props.parallaxController.update();
+            //const imageSizes = image.node.childImageSharp.sizes; sizes={imageSizes}
+            return <Img className="effect-image w-100" alt={props.alt} fluid={image.node.childImageSharp.fluid} />;
+        }}
+    />
+);
 
-    };
-
-    render() {
-        return (
-            <img src={this.props.src} onLoad={this.handleLoad} alt={this.props.alt} className={this.props.class} role="presentation" />
-        );
-    }
-} 
-
-export default withController(Image);
+export default Image;

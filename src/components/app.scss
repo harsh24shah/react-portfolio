@@ -138,7 +138,7 @@ body {
     top: -25%;
     right: -25%;
   }
-} 
+}
 
 .morph-wrap2 {
   top: auto;
@@ -157,7 +157,7 @@ body {
   position: relative;
   fill: none;
   stroke-width: 90px;
-  stroke: #1f1f1f;
+  stroke: lighten($black-color, 12.16);
   width: 100%;
   height: 100%;
 }
@@ -610,9 +610,12 @@ a {
 
       .project-title {
         max-width: 40%;
+        margin-right: 0;
+        margin-left: 100px;
 
         @media (max-width: 1024px) {
           max-width: 100%;
+          margin-left: 0;
         }
       }
     }
@@ -650,12 +653,12 @@ a {
       .project-image {
         flex-direction: row-reverse;
 
-        img {
-          margin-right: 0;
-          margin-left: 100px;
+        .project-title {
+          margin-left: 0;
+          margin-right: 100px;
 
           @media (max-width: 1024px) {
-            margin-left: 0;
+            margin-right: 0;
           }
         }
       }
@@ -949,7 +952,7 @@ button,
     &:not(:last-child) {
       margin-bottom: 3px;
       padding-bottom: 3px;
-      border-bottom: 1px solid #252525;
+      border-bottom: 1px solid lighten($black-color, 14.51);
     }
 
     &[aria-expanded="true"] {
@@ -1032,7 +1035,7 @@ button,
 
 .inverse-section {
   padding: 100px 0;
-  background: #151515;
+  background: lighten($black-color, 8.24);
 
   @media (max-width: 767px) {
     padding: 1px 0;

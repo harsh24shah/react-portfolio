@@ -12,16 +12,16 @@ export default class Projects extends Component {
       gitLink: "https://google.co.in",
       behanceLink: "",
       externalLink: "https://google.co.in",
-      thumbImage: "https://i.picsum.photos/id/866/700/400.jpg",
+      thumbImage: "dummy-image.png",
       technology: "<ul><li>Unshplash API</li><li>Angular</li><li>HTML</li><li>SCSS</li></ul>",
     },
     {
       title: "News Cards",
       subtitle: "A Daily News applications having updated News of multiple News channels, where you can select News channels and get the news of perticular date of category or search any topic which is recently in trending",
       gitLink: "https://google.co.in",
-      behanceLink: "",
+      behanceLink: "", 
       externalLink: "https://google.co.in",
-      thumbImage: "https://i.picsum.photos/id/866/600/400.jpg",
+      thumbImage: "dummy-image.png",
       technology: "<ul><li>News API</li><li>Angular</li><li>HTML</li><li>SCSS</li></ul>",
     },
     {
@@ -30,7 +30,7 @@ export default class Projects extends Component {
       gitLink: "",
       behanceLink: "https://google.co.in",
       externalLink: "",
-      thumbImage: "https://i.picsum.photos/id/866/650/500.jpg",
+      thumbImage: "dummy-image.png", 
       technology: "<ul><li>Photoshop</li></ul>",
     },
     {
@@ -39,24 +39,24 @@ export default class Projects extends Component {
       gitLink: "",
       behanceLink: "https://google.co.in",
       externalLink: "",
-      thumbImage: "https://i.picsum.photos/id/866/600/400.jpg",
+      thumbImage: "dummy-image.png",
       technology: "<ul><li>Photoshop</li><li>Figma</li></ul>",
     }
   ]
 
   otherProjects = [
-    {
-      year: "2020",
-      title: "Cruise Director UI",
-      madeAt: "Odysseus Solutions",
-      link: "https://google.co.in"
-    },
-    {
-      year: "2019",
-      title: "Cruisehub UI",
-      madeAt: "Odysseus Solutions",
-      link: "https://google.co.in"
-    },
+    // {
+    //   year: "2020",
+    //   title: "Cruise Director UI",
+    //   madeAt: "Odysseus Solutions",
+    //   link: "https://google.co.in"
+    // },
+    // {
+    //   year: "2019",
+    //   title: "Cruisehub UI",
+    //   madeAt: "Odysseus Solutions",
+    //   link: "https://google.co.in"
+    // },
     {
       year: "2018",
       title: "Rolls-Royce Careers",

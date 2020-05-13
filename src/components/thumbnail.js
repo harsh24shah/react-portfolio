@@ -4,6 +4,7 @@ import { FiExternalLink } from "react-icons/fi";
 import { FaBehance, FaGithub } from "react-icons/fa";
 
 export default class Thumbnail extends Component {
+
   constructor(props) {
     super(props)
     this.state = {}
@@ -13,6 +14,7 @@ export default class Thumbnail extends Component {
   }
 
   render() {
+    var thumb = this.props.thumbImage.toString();
     var projectGitLink, projectBehanceLink, projectExternalLink;
     if (this.props.gitLink !== '') {
       projectGitLink = <a className="mr-16" href={this.props.gitLink}><FaGithub size="24px" /></a>;
@@ -26,13 +28,12 @@ export default class Thumbnail extends Component {
     return (
       <div className="project">
         <div className="project-image">
-          <span className="image-wrap" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease">
+          
             <Image
-              className="effect-image"
-              src={this.props.thumbImage}
+              filename={thumb}
               alt={this.props.title}
             />
-          </span>
+        
           <div className="project-title inline-block text-white" data-sal="slide-up" data-sal-delay="100" data-sal-easing="ease">
             <span className="block mb-10 project-title-inline fw-100">
               {this.props.title}
