@@ -9,7 +9,7 @@ $colors: white, black;
     text-align: #{$align};
   }
 }
-
+ 
 @each $color in $colors {
   .text-#{$color} {
     color: #{$color};
@@ -187,7 +187,6 @@ p {
   font-size: 16px;
   margin-bottom: 16px;
   line-height: 26px;
-  font-weight: 100;
   letter-spacing: 1px;
 
   @media (max-width: 767px) {

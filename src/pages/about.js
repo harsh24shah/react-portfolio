@@ -2,6 +2,7 @@ import React, { Component } from "react"
 import SEO from "../components/seo"
 import Accordion from "../components/accordian"
 import { LiquidSvg } from "../assets/js/helper"
+import Image from "../components/image"
 
 export default class About extends Component {
 
@@ -55,7 +56,7 @@ export default class About extends Component {
                   whether that will be web application, plugin, websites or in between. I enjoy solving complex problems with simple way.
                   </p>
                   <p>
-                    I've completed Bachelors of Engineering in Information Technology from <a href="">SVIT (Sardar Vallabbhai patel Insitute of Technologies)</a> located in Gujarat, India.
+                    I've completed Bachelors of Engineering in Information Technology from <a rel="noopener noreferrer" target="_blank" href="https://svitvasad.ac.in/svit/">SVIT (Sardar Vallabbhai patel Insitute of Technologies)</a> located in Gujarat, India.
                   </p>
                   <div className="mt-30">
                     <Accordion panels={panels} />
@@ -63,7 +64,10 @@ export default class About extends Component {
                 </div>
               </div>
               <div className="image-wrapper">
-                <img className="block-reveal" src="https://i.picsum.photos/id/866/800/1000.jpg" />
+                <Image
+                  filename="profile-dummy.png" 
+                  alt="profile image"
+                />
               </div>
             </div>
           </div>

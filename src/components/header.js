@@ -1,8 +1,8 @@
 import React, { Component } from "react"
 import { Link } from 'gatsby'
 import { StaticQuery, graphql } from "gatsby"
-import testSvg from '../images/harsh-logo.svg';
-import Img from "gatsby-image"
+// import testSvg from '../images/harsh-logo.svg';
+// import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io";
 
@@ -77,16 +77,16 @@ export default class Header extends Component {
               <div className={'social-media-logos ' + this.toggleMenu}>
                 <div className="inline-block my-12">
                   <span className="mr-20">
-                    <a href="http://github.com/harsh24shah" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoGithub size="30px" /></a>
+                    <a href="https://github.com/harsh24shah" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoGithub size="30px" /></a>
                   </span>
                   <span className="mr-20">
-                    <a href="https://www.linkedin.com/in/24hjs" target="_blank" className="hover-this"><IoLogoLinkedin size="30px" /></a>
+                    <a href="https://www.linkedin.com/in/24hjs" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoLinkedin size="30px" /></a>
                   </span>
                   <span className="mr-20">
-                    <a href="https://www.facebook.com/24hjs" target="_blank" className="hover-this"><IoLogoFacebook size="30px" /> </a>
+                    <a href="https://www.facebook.com/24hjs" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoFacebook size="30px" /> </a>
                   </span>
                   <span className="mr-20">
-                    <a href="https://www.instagram.com/24harsh" target="_blank" className="hover-this"><IoLogoInstagram size="30px" /></a>
+                    <a href="https://www.instagram.com/24harsh" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoInstagram size="30px" /></a>
                   </span>
                 </div>
               </div>

@@ -36,7 +36,7 @@ export default class Layout extends Component {
           render={data => (
             <ParallaxProvider>
               <React.Fragment>
-                <div className="main">      
+                <div className="main">
                   <main className='routed'>
                     <Header siteTitle={data.site.siteMetadata.title} />
                     <div className="cursor"></div>
