@@ -10,13 +10,13 @@ import { StaticQuery, graphql } from "gatsby";
 import { ParallaxProvider } from 'react-scroll-parallax';
 import Header from "./header";
 import Footer from "./footer";
-import { creatCursor } from '../assets/js/helper';
+
 import "./app.scss";
 
 export default class Layout extends Component {
 
   componentDidMount() {
-    creatCursor();
+
   }
 
   render() {
@@ -39,7 +39,6 @@ export default class Layout extends Component {
                 <div className="main">
                   <main className='routed'>
                     <Header siteTitle={data.site.siteMetadata.title} />
-                    <div className="cursor"></div>
                     <div className="main-content">{children}</div>
                     <Footer />
                   </main>

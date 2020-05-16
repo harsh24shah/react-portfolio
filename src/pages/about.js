@@ -3,6 +3,9 @@ import SEO from "../components/seo"
 import Accordion from "../components/accordian"
 import { LiquidSvg } from "../assets/js/helper"
 import Image from "../components/image"
+import content from "../components/content.json";
+
+const Content = content.about;
 
 export default class About extends Component {
 
@@ -18,21 +21,8 @@ export default class About extends Component {
   }
 
   render() {
-    const panels = [
-      {
-        label: "Few technologies or tools I've been working with",
-        content: '<div class="flex-auto"><ul class="bullets"><li>Javascript</li><li>HTML & S(CSS)</li><li>Angular</li><li>Gulp</li></ul><ul class="bullets"><li>Figma</li><li>Photoshop</li><li>Git & Github</li></ul></div>',
-      },
-      {
-        label: "Where I've worked",
-        content: "<p>I'm currently working as a Front-end Designer in <a href=''>Odysseus Solutions</a> from Dec, 2018. earlier, I was working as a Web Producer with <a href=''>Investis Digital</a> at India location for two and half years where I have started my career in 2016.</p>",
-      },
-      {
-        label: "Things I do when I'm not coding",
-        content: '<p>I like traveling, clicking random things and making sketches. Heavy metal and Acoustic rock are my tastes of music.</p>',
-      }
+    const panels = Content.panels;
 
-    ];
     return (
       <>
         <div>
@@ -46,18 +36,14 @@ export default class About extends Component {
               <polygon points="" />
             </svg>
           </div>
-          <SEO title="About" />
+          <SEO title="About Harsh" description="a software developer with four years of experience who loves building & designing stuff like web application, extentions or websites"/>
           <div className="content-wrapper scrollable-mobile">
             <div className="about-wrap">
               <div className="about-content">
-                <h1 className="inline-block title">About me</h1>
+                <h1 className="inline-block title">{Content.title}</h1>
                 <div className="mb-40">
-                  <p>I'm Harsh Shah from Vadodara, India; a software developer with four years of experience who loves Building & Designing stuff that live on internet,
-                  whether that will be web application, plugin, websites or in between. I enjoy solving complex problems with simple way.
-                  </p>
-                  <p>
-                    I've completed Bachelors of Engineering in Information Technology from <a rel="noopener noreferrer" target="_blank" href="https://svitvasad.ac.in/svit/">SVIT (Sardar Vallabbhai patel Insitute of Technologies)</a> located in Gujarat, India.
-                  </p>
+                  <p>{Content.mainContent}</p>
+                  <p>{Content.subContent}</p>
                   <div className="mt-30">
                     <Accordion panels={panels} />
                   </div>
@@ -65,7 +51,7 @@ export default class About extends Component {
               </div>
               <div className="image-wrapper">
                 <Image
-                  filename="profile-dummy.png" 
+                  filename="profile-dummy.png"
                   alt="profile image"
                 />
               </div>

@@ -1,13 +1,17 @@
 import React, { Component } from "react"
 import SEO from "../components/seo"
-import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io";
+import { IoLogoFacebook, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io";
 import { LiquidSvg } from "../assets/js/helper"
+import content from "../components/content.json";
+
+const Content = content.contact;
 
 export default class Contact extends Component {
 
   componentDidMount() {
     LiquidSvg(3, 'morph1');
     LiquidSvg(4, 'morph2');
+    console.log(Content);
   }
 
   render() {
@@ -26,14 +30,13 @@ export default class Contact extends Component {
         <SEO title="Contact" />
         <div className="content-wrapper">
           <div className="box-outer">
-            <h1 className="inline-block title mb-0">Get in Touch</h1>
+            <h1 className="inline-block title mb-0">{Content.title}</h1>
             <div className="box-wrapper" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">
               <div className="padding-box">
-                <p className="intro-para">Though I'm not looking for any opportunities, My inbox is always open for you and I would like to answer in case you have any questions or you can just say hi, I will try to get back to you.</p>
-                <div><a href="mailto:024hrsh@gmail.com" className="button">Say Hi</a></div>
+                <p className="intro-para">{Content.mainContent}</p>
+                <div><a href="mailto:024hrsh@gmail.com" className="button">{Content.ctaTitle}</a></div>
                 <div className="separator"></div>
                 <div className="inline-block my-12">
-                  <span className="mr-20"><a href="https://github.com/harsh24shah" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoGithub size="30px" /></a></span>
                   <span className="mr-20"><a href="https://www.linkedin.com/in/24hjs" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoLinkedin size="30px" /></a></span>
                   <span className="mr-20"><a href="https://www.facebook.com/24hjs" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoFacebook size="30px" /></a></span>
                   <span className="mr-20"><a href="https://www.instagram.com/24harsh" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoInstagram size="30px" /></a></span>

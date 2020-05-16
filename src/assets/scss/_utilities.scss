@@ -1,23 +1,5 @@
-$aligns: left, center, right;
 $displays: flex, block, inline-block, none;
 $spacings: 0, 4, 8, 12, 16, 20, 30, 40, 50, 60, 100, 150;
-$fonts: 8, 12, 16, 18, 22, 24, 30, 40, 50, 60, 80;
-$colors: white, black;
-
-@each $align in $aligns {
-  .text-#{$align} {
-    text-align: #{$align};
-  }
-}
- 
-@each $color in $colors {
-  .text-#{$color} {
-    color: #{$color};
-  }
-  .bg-#{$color} {
-    background-color: #{$color};
-  }
-}
 
 @each $diaplay in $displays {
   .#{$diaplay} {
@@ -114,12 +96,6 @@ $colors: white, black;
   .px-#{$margin} {
     padding-right: #{$margin}px;
     padding-left: #{$margin}px;
-  }
-}
-
-@each $font in $fonts {
-  .fs#{$font} {
-    font-size: #{$font}px;
   }
 }
 

@@ -249,31 +249,6 @@ h1 {
     }
 }
 
-/*-- Cursor style and hover Starts--*/
-.hover-this {
-    transition: all 0.3s ease;
-}
-
-.cursor {
-    pointer-events: none;
-    position: fixed;
-    padding: 0.8rem;
-    border-radius: 50%;
-    transform: translate(-15px, -10px);
-    transition: transform 0.1s ease;
-    z-index: 99;
-
-    @media (max-width: 991px) {
-        display: none;
-    }
-}
-
-.hover-this:hover .cursor,
-.cursor.active {
-    transform: translate3d(-50%, -50%, 0) scale(1.7);
-    transform-origin: center center;
-}
-
 /*-- Cursor style and hover Ends--*/
 
 .component-wrap {
@@ -555,33 +530,15 @@ h1 {
                 display: block;
             }
 
-            .image-wrap {
-                margin-right: 100px;
-                margin-left: 0;
-                max-width: 60%;
-
-                @media (max-width: 1200px) {
-                    margin-right: 60px;
-                }
-
-                img {
-                    width: 100%;
-                }
-
-                @media (max-width: 1024px) {
-                    max-width: 100%;
-                    margin-right: 0;
-                }
-            }
-
             .project-title {
                 max-width: 40%;
-                margin-right: 0;
-                margin-left: 100px;
+                padding: 30px;
+                background: #212121;
+                transform: translateX(-50px);
 
                 @media (max-width: 1024px) {
                     max-width: 100%;
-                    margin-left: 0;
+                    transform: translateX(0);
                 }
             }
         }
@@ -615,16 +572,15 @@ h1 {
             }
         }
 
-        &:nth-child(even) {
+        &:nth-child(odd) {
             .project-image {
                 flex-direction: row-reverse;
 
                 .project-title {
-                    margin-left: 0;
-                    margin-right: 100px;
+                    transform: translateX(50px);
 
                     @media (max-width: 1024px) {
-                        margin-right: 0;
+                        transform: translateX(0);
                     }
                 }
             }
@@ -704,6 +660,7 @@ button,
     font-size: 16px;
     font-weight: 600;
     background: transparent;
+    text-decoration: none;
 
     @media (max-width: 767px) {
         font-size: 14px;
@@ -842,6 +799,7 @@ button,
         font-size: 17px;
         font-family: inherit;
         transition: color 0.2s linear;
+        cursor: pointer;
 
         &:focus {
             outline: none;
@@ -919,6 +877,7 @@ table {
     thead {
         th {
             padding-bottom: 30px;
+            text-align: left;
         }
     }
 }

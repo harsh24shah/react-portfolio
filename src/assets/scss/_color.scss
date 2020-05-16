@@ -62,21 +62,6 @@ h1 {
     }
 }
 
-/*-- Cursor style and hover Starts--*/
-.cursor {
-    border: 1px solid $primary;
-    background-color: transparent;
-    mix-blend-mode: difference;
-}
-
-.hover-this:hover .cursor,
-.cursor.active {
-    background: transparent;
-    border: 1px solid $primary;
-    mix-blend-mode: difference;
-}
-
-/*-- Cursor style and hover Ends--*/
 .routed {
     &:after {
         background: rgba($black-color, 0.8);

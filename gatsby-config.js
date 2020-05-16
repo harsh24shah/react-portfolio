@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Harsh`,
-    description: `Harsh Shah, UI developer(sometimes designer), works with every thing in front end`,
-    author: `@Harsh J. Shah`,
+    title: `UI Developer`,
+    description: `Harsh Shah, UI developer(sometimes designer), works with every thing lives on internet`,
+    author: `@Harsh Shah`,
   },
   plugins: [
     `gatsby-plugin-sass`,
