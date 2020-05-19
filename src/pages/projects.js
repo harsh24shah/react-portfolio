@@ -32,6 +32,7 @@ export default class Projects extends Component {
         <td className="fw-600">{item.year}</td>
         <td className="fw-600">{item.title}</td>
         <td className="text-grey fw-600">{item.madeAt}</td>
+        <td className="text-grey fw-600">{item.role}</td> 
         <td><a href={item.link}><FiExternalLink size="24px" className="text-grey" /></a></td>
       </tr>
     )
@@ -43,8 +44,10 @@ export default class Projects extends Component {
   }
 
   componentDidMount() {
-    LiquidSvg(1, 'morph1');
-    LiquidSvg(0, 'morph2');
+    setTimeout(() => {
+      LiquidSvg(1, 'morph1');
+      LiquidSvg(0, 'morph2');
+    }, 200)
   }
 
   render() {
@@ -64,7 +67,7 @@ export default class Projects extends Component {
         <div className="component-wrap mb-0">
           <div className="content-wrapper scrollable">
             <div className="project-wrap">
-              <h1 className="inline-block title">{Content.title}</h1>
+              <h1 className="inline-block title" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">{Content.title}</h1>
               {this.projectRender}
             </div>
           </div>
@@ -79,6 +82,7 @@ export default class Projects extends Component {
                         <th className="text-grey fw-600">Year</th>
                         <th className="text-grey fw-600">Title</th>
                         <th className="text-grey fw-600">Made at</th>
+                        <th className="text-grey fw-600">Role</th>
                         <th className="text-grey fw-600">Link</th>
                       </tr>
                     </thead>

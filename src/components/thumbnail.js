@@ -17,16 +17,16 @@ export default class Thumbnail extends Component {
     var thumb = this.props.thumbImage.toString();
     var projectGitLink, projectBehanceLink, projectExternalLink;
     if (this.props.gitLink !== '') {
-      projectGitLink = <a className="mr-16" href={this.props.gitLink}><FaGithub size="24px" /></a>;
+      projectGitLink = <a className="mr-16" rel="noopener noreferrer" target="_blank" href={this.props.gitLink}><FaGithub size="24px" /></a>;
     }
     if (this.props.behanceLink !== '') {
-      projectBehanceLink = <a className="mr-16" href={this.props.behanceLink}><FaBehance size="24px" /></a>;
+      projectBehanceLink = <a className="mr-16" rel="noopener noreferrer" target="_blank" href={this.props.behanceLink}><FaBehance size="24px" /></a>;
     }
     if (this.props.externalLink !== '') {
-      projectExternalLink = <a className="mr-16" href={this.props.externalLink}><FiExternalLink size="24px" /></a>;
+      projectExternalLink = <a className="mr-16" rel="noopener noreferrer" target="_blank" href={this.props.externalLink}><FiExternalLink size="24px" /></a>;
     }
     return (
-      <div className="project" data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease" >
+      <div className="project" data-sal="slide-up" data-sal-delay="600" data-sal-easing="ease" >
         <div className="project-image">
           <Image
             filename={thumb}

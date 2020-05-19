@@ -13,8 +13,10 @@ export default class IndexPage extends Component {
   }
 
   componentDidMount() {
-    LiquidSvg(1, 'morph1');
-    LiquidSvg(3, 'morph2');
+    setTimeout(() => {
+      LiquidSvg(1, 'morph1');
+      LiquidSvg(3, 'morph2');
+    }, 200)
   }
 
   render() {
@@ -30,15 +32,15 @@ export default class IndexPage extends Component {
             <polygon points="" />
           </svg>
         </div>
-        <SEO title="Harsh Shah" keyword="Harsh Shah, Harsh, Shah, UX, UI developer, Web development, Web designer, UI development"/>
+        <SEO title="Harsh Shah" keyword="Harsh Shah, Harsh, Shah, UX, UI developer, Web development, Web designer, UI development" />
         <div className="content-wrapper">
           <div className="home-wrap">
-            <span className="highlighted-text" data-sal="slide-up" data-sal-delay="300" data-sal-easing="ease">{Content.prevText}</span>
-            <h1 className="mt-20 fs110" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">{Content.mainText}<br /><span>{Content.subText}</span></h1>
+            <span className="highlighted-text" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">{Content.prevText}</span>
+            <h1 className="mt-20 fs110" data-sal="slide-up" data-sal-delay="700" data-sal-easing="ease">{Content.mainText}<br /><span>{Content.subText}</span></h1>
             <div className="intro-para" data-sal="slide-up" data-sal-delay="800" data-sal-easing="ease">
               <p>{Content.introText}</p>
             </div>
-            <a className="button" href="mailto:024hrsh@gmail.com" data-sal="slide-up" data-sal-delay="900" data-sal-easing="ease">
+            <a className="button" href="mailto:024hrsh@gmail.com" data-sal="slide-up" data-sal-delay="1000" data-sal-easing="ease">
               <span>{Content.ctaText}</span>
               <svg width="13px" height="10px" viewBox="0 0 13 10">
                 <path d="M1,5 L11,5"></path>

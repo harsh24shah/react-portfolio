@@ -6,7 +6,7 @@
 
 $primary: white;
 $secondary: black;
-$black-color: black; 
+$black-color: black;
 
 body {
     background: $secondary;
@@ -40,6 +40,10 @@ a {
 .morph1,
 .morph2 {
     stroke: lighten($secondary, 12.16);
+}
+
+.morph3 {
+    stroke: #f3f3f3;
 }
 
 h1 {
@@ -92,6 +96,18 @@ h1 {
 
 .navigation {
     background: $primary;
+
+    &.active {
+        @media (max-width: 767px) {
+            ~ .header-inner {
+                background: rgba($black-color, 0);
+
+                .logo-custom {
+                    color: $secondary;
+                }
+            }
+        }
+    }
 
     .menu-items {
         a:not(.button) {

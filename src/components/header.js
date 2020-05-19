@@ -4,6 +4,7 @@ import { StaticQuery, graphql } from "gatsby"
 // import testSvg from '../images/harsh-logo.svg';
 // import Img from "gatsby-image"
 import PropTypes from "prop-types"
+import { LiquidSvg } from "../assets/js/helper";
 import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io";
 
 export default class Header extends Component {
@@ -15,8 +16,28 @@ export default class Header extends Component {
   }
 
   toggleSidenav = () => {
+    if (this.state.navVisible) {
+      LiquidSvg(Math.floor(Math.random() * 12), 'morph3');
+    }
     this.setState({ navVisible: !this.state.navVisible });
     this.toggleMenu = this.state.navVisible ? 'active' : '';
+  }
+
+  headerHide = (param) => {
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function () {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById(param).classList.remove('hide');
+      } else {
+        document.getElementById(param).classList.add('hide');
+      }
+      prevScrollpos = currentScrollPos;
+    }
+  }
+
+  componentDidMount() {
+    this.headerHide('header-inner');
   }
 
   render() {
@@ -36,7 +57,7 @@ export default class Header extends Component {
           }  
         `}
           render={data => (
-            <header data-sal="fade" data-sal-delay="1000" data-sal-easing="ease">
+            <header data-sal="fade" data-sal-delay="200" data-sal-easing="ease">
               <div className={'navigation ' + this.toggleMenu}>
                 <nav className="menu-items">
                   <Link to="/" className="hover-this" activeClassName="current" onClick={this.toggleSidenav}>
@@ -59,8 +80,13 @@ export default class Header extends Component {
                     </svg>
                   </a>
                 </nav>
+                <div className="morph-wrap3">
+                  <svg className="morph3" width="1400" height="770" viewBox="0 0 1400 770">
+                    <polygon points="" />
+                  </svg>
+                </div>
               </div>
-              <div className="header-inner">
+              <div className="header-inner" id="header-inner">
                 <div className="logo">
                   <Link to="/" className="hover-this">
                     {/* <Img fixed={data.file.childImageSharp.fixed} alt="Harsh logo" /> */}

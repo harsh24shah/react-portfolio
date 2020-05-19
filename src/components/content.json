@@ -8,7 +8,7 @@
     },
     "about": {
         "title": "About me",
-        "mainContent": "I'm Harsh Shah from Vadodara, India; a software developer with four years of experience who loves building & designing stuff that lives on the internet, whether that will be a web application, extensions, websites, or in between. I enjoy solving complex problems in simple ways.",
+        "mainContent": "Hi, I'm Harsh Shah from Vadodara, India; a software developer with four years of experience who loves building & designing stuff that lives on the internet, whether that will be a web application, extensions, websites, or in between. I enjoy solving complex problems in simple ways.",
         "subContent": "I've completed a Bachelor of Engineering in Information Technology from SVIT (Sardar Vallabhbhai Patel Institute of Technology) located in Gujarat, India.",
         "panels": [
             {
@@ -17,7 +17,7 @@
             },
             {
                 "label": "Where I've worked",
-                "content": "<p>I'm currently working as a Front-end Designer in Odysseus Solutions from Dec 2018. Earlier, I was working as a Web Producer with Investis Digital at India location for two and a half years where I have started my career in 2016.</p>"
+                "content": "<p>I'm currently working as a Front-end Designer in Odysseus Solutions from Dec 2018. Earlier, I was working as a Web Producer with Investis Digital for two and a half years where I have started my career in 2016.</p>"
             },
             {
                 "label": "Things I do when I'm not coding",
@@ -31,35 +31,44 @@
             {
                 "title": "Wallperex",
                 "subtitle": "An image gallery with high-quality images where you can search and get thousands of image categories, share any image on social media, edit any image with filters like Instagram, and download as well.",
-                "gitLink": "https://google.co.in",
+                "gitLink": "https://github.com/harsh24shah/unsplash-image-gallery",
                 "behanceLink": "",
-                "externalLink": "https://google.co.in",
+                "externalLink": "https://wallperex.web.app",
                 "thumbImage": "dummy-image.png",
-                "technology": "<ul><li>Unshplash API</li><li>Angular</li><li>HTML</li><li>SCSS</li></ul>"
+                "technology": "<ul><li>Unshplash API</li><li>Angular</li><li>HTML5</li><li>SCSS</li></ul>"
             },
             {
-                "title": "News Cards",
+                "title": "News on Cards",
                 "subtitle": "A daily news application having updated News of multiple News channels, where you can select News channels and get the news of the particular date of the category or search any topic which is recently in trending.",
                 "gitLink": "https://google.co.in",
                 "behanceLink": "",
                 "externalLink": "https://google.co.in",
                 "thumbImage": "dummy-image.png",
-                "technology": "<ul><li>News API</li><li>Angular</li><li>HTML</li><li>SCSS</li></ul>"
+                "technology": "<ul><li>News API</li><li>Angular</li><li>HTML5</li><li>SCSS</li></ul>"
             },
             {
-                "title": "Portfolio Design",
+                "title": "Dashboard Template",
+                "subtitle": "A dashboard with multiple components and attractive look and feel having support for all the devices, broswers and easy theming management",
+                "gitLink": "https://google.co.in",
+                "behanceLink": "",
+                "externalLink": "https://google.co.in",
+                "thumbImage": "dummy-image.png",
+                "technology": "<ul><li>Angular</li><li>HTML5</li><li>SCSS</li></ul>"
+            },
+            {
+                "title": "Portfolio Concept",
                 "subtitle": "A design mockup created for a full-page portfolio website idea for a person having a technical professional background like a web developer or a software developer.",
                 "gitLink": "",
-                "behanceLink": "https://google.co.in",
+                "behanceLink": "https://www.behance.net/gallery/90045583/Portfolio-Design",
                 "externalLink": "",
                 "thumbImage": "dummy-image.png",
                 "technology": "<ul><li>Photoshop</li></ul>"
             },
             {
-                "title": "Image Gallery",
+                "title": "Photos Gallery",
                 "subtitle": "A prototype of a mobile application of gallery app having prototypes of the image preview, edit, notification, image share.",
                 "gitLink": "",
-                "behanceLink": "https://google.co.in",
+                "behanceLink": "https://www.behance.net/gallery/90046711/Image-Gallery",
                 "externalLink": "",
                 "thumbImage": "dummy-image.png",
                 "technology": "<ul><li>Photoshop</li><li>Figma</li></ul>"
@@ -71,18 +80,21 @@
                 "year": "2018",
                 "title": "Rolls-Royce Careers",
                 "madeAt": "Investis Digital",
+                "role": "UI work in HTML, Css, JQuery",
                 "link": "https://google.co.in"
-            },
+            }, 
             {
                 "year": "2018",
                 "title": "ArcelorMittal Staligence",
                 "madeAt": "Investis Digital",
+                "role": "UI work in HTML, Css, JQuery",
                 "link": "https://google.co.in"
             },
             {
                 "year": "2017",
                 "title": "Ferratum Investor Relation",
                 "madeAt": "Investis Digital",
+                "role": "UI work in HTML, Css, JQuery",
                 "link": "https://google.co.in"
             }
         ]
@@ -90,6 +102,7 @@
     "contact": {
         "title": "Get in Touch",
         "mainContent": "Though I'm not looking for any opportunities, my inbox is always open for you and I would like to answer in case you have any questions or you can just say hi, I will try to get back to you.",
-        "ctaTitle": "Say Hi"
+        "ctaTitle": "Say Hi",
+        "copyRightText": "Designed & Build by Harsh Shah"
     }
 }

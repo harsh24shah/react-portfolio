@@ -1,5 +1,6 @@
 import React from "react"
 import SEO from "../components/seo"
+import { IoLogoFacebook, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io";
 import { Link } from 'gatsby'
 
 const NotFoundPage = () => (
@@ -10,8 +11,7 @@ const NotFoundPage = () => (
         <h1 className="inline-block title mb-0">404</h1>
         <div className="box-wrapper" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">
           <div className="padding-box">
-            <p className="intro-para">Opps! This kind of link does not exist in this world. please help yourself and open menu or click on below button to get redirected on Home</p>
-            <div><a href="mailto:024hrsh@gmail.com" className="button">{Content.ctaTitle}</a></div>
+            <p className="intro-para">Opps! This kind of link does not exist in this world. please help yourself and open menu or click on below button to get redirected on Home</p>         
             <Link to="/" className="button" >Home</Link>
             <div className="separator"></div>
             <div className="inline-block my-12">
