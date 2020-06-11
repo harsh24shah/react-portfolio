@@ -35,7 +35,7 @@ export default class Thumbnail extends Component {
           <div className="project-title inline-block">
             <span className="block mb-10 project-title-inline fw-100">
               {this.props.title}
-              <span className="block fw-600 text-grey" dangerouslySetInnerHTML={{ __html: this.props.technology }}></span>
+              <span className="block fw-600 text-acent" dangerouslySetInnerHTML={{ __html: this.props.technology }}></span>
             </span>
             <div className="project-description mb-30" ><p>{this.props.subtitle}</p></div>
             <div className="flex align-items-center">

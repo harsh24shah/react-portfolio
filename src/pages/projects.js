@@ -32,7 +32,7 @@ export default class Projects extends Component {
         <td className="fw-600">{item.year}</td>
         <td className="fw-600">{item.title}</td>
         <td className="text-grey fw-600">{item.madeAt}</td>
-        <td className="text-grey fw-600">{item.role}</td> 
+        <td className="text-grey fw-600 hide-in-mobile">{item.role}</td> 
         <td><a href={item.link}><FiExternalLink size="24px" className="text-grey" /></a></td>
       </tr>
     )
@@ -82,7 +82,7 @@ export default class Projects extends Component {
                         <th className="text-grey fw-600">Year</th>
                         <th className="text-grey fw-600">Title</th>
                         <th className="text-grey fw-600">Made at</th>
-                        <th className="text-grey fw-600">Role</th>
+                        <th className="text-grey fw-600 hide-in-mobile">Role</th>
                         <th className="text-grey fw-600">Link</th>
                       </tr>
                     </thead>

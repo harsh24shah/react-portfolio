@@ -1,6 +1,6 @@
 {
     "home": {
-        "prevText": "Hi, My name is",
+        "prevText": "Hi, my name is",
         "mainText": "Harsh Shah",
         "subText": "I build things for the web",
         "introText": "I'm a software engineer based in Vadodara, India specializing in the building and sometimes designing pixel-perfect, high-quality websites and applications.",
@@ -9,7 +9,7 @@
     "about": {
         "title": "About me",
         "mainContent": "Hi, I'm Harsh Shah from Vadodara, India; a software developer with four years of experience who loves building & designing stuff that lives on the internet, whether that will be a web application, extensions, websites, or in between. I enjoy solving complex problems in simple ways.",
-        "subContent": "I've completed a Bachelor of Engineering in Information Technology from SVIT (Sardar Vallabhbhai Patel Institute of Technology) located in Gujarat, India.",
+        "subContent": "I've completed a Bachelor of Engineering in Information Technology from <a target='_blank' href='https://svitvasad.ac.in/svit/'>SVIT</a> (Sardar Vallabhbhai Patel Institute of Technology) located in Gujarat, India.",
         "panels": [
             {
                 "label": "Few technologies and tools I've been working with",
@@ -17,7 +17,7 @@
             },
             {
                 "label": "Where I've worked",
-                "content": "<p>I'm currently working as a Front-end Designer in Odysseus Solutions from Dec 2018. Earlier, I was working as a Web Producer with Investis Digital for two and a half years where I have started my career in 2016.</p>"
+                "content": "<p>I'm currently working as a Front-end Designer in <a target='_blank' href='https://www.odysseussolutions.com/'>Odysseus Solutions</a> from Dec 2018. Earlier, I was working as a Web Producer with <a target='_blank' href='https://www.investisdigital.com/'>Investis Digital</a> for two and a half years where I have started my career in 2016.</p>"
             },
             {
                 "label": "Things I do when I'm not coding",
@@ -40,15 +40,15 @@
             {
                 "title": "News on Cards",
                 "subtitle": "A daily news application having updated News of multiple News channels, where you can select News channels and get the news of the particular date of the category or search any topic which is recently in trending.",
-                "gitLink": "https://google.co.in",
+                "gitLink": "https://github.com/harsh24shah/firstProject",
                 "behanceLink": "",
-                "externalLink": "https://google.co.in",
+                "externalLink": "",
                 "thumbImage": "dummy-image.png",
                 "technology": "<ul><li>News API</li><li>Angular</li><li>HTML5</li><li>SCSS</li></ul>"
             },
             {
                 "title": "Dashboard Template",
-                "subtitle": "A dashboard with multiple components and attractive look and feel having support for all the devices, broswers and easy theming management",
+                "subtitle": "A dashboard with multiple components and attractive look and feel having support for all the devices, broswers and easy theming management.",
                 "gitLink": "https://google.co.in",
                 "behanceLink": "",
                 "externalLink": "https://google.co.in",
@@ -66,7 +66,7 @@
             },
             {
                 "title": "Photos Gallery",
-                "subtitle": "A prototype of a mobile application of gallery app having prototypes of the image preview, edit, notification, image share.",
+                "subtitle": "A prototype of a mobile application of gallery app having prototypes of the image preview, edit, notification and image share.",
                 "gitLink": "",
                 "behanceLink": "https://www.behance.net/gallery/90046711/Image-Gallery",
                 "externalLink": "",
@@ -80,29 +80,36 @@
                 "year": "2018",
                 "title": "Rolls-Royce Careers",
                 "madeAt": "Investis Digital",
-                "role": "UI work in HTML, Css, JQuery",
-                "link": "https://google.co.in"
+                "role": "UI work in HTML, Css, Javascript",
+                "link": "https://careers.rolls-royce.com"
             }, 
             {
                 "year": "2018",
                 "title": "ArcelorMittal Staligence",
                 "madeAt": "Investis Digital",
                 "role": "UI work in HTML, Css, JQuery",
-                "link": "https://google.co.in"
+                "link": "https://steligence.arcelormittal.com/"
             },
             {
                 "year": "2017",
                 "title": "Ferratum Investor Relation",
                 "madeAt": "Investis Digital",
                 "role": "UI work in HTML, Css, JQuery",
-                "link": "https://google.co.in"
+                "link": "https://ferratumgroup.com"
+            },
+            {
+                "year": "2016",
+                "title": "Christie Group plc",
+                "madeAt": "Investis Digital",
+                "role": "UI work in HTML, Css, Javascript",
+                "link": "https://www.christiegroup.com"
             }
         ]
     },
     "contact": {
         "title": "Get in Touch",
         "mainContent": "Though I'm not looking for any opportunities, my inbox is always open for you and I would like to answer in case you have any questions or you can just say hi, I will try to get back to you.",
-        "ctaTitle": "Say Hi",
+        "ctaTitle": "Say Hello",
         "copyRightText": "Designed & Build by Harsh Shah"
     }
 }

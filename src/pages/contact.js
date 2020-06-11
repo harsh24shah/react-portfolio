@@ -1,6 +1,7 @@
 import React, { Component } from "react"
 import SEO from "../components/seo"
-import { IoLogoFacebook, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io";
+import { IoLogoFacebook, IoLogoLinkedin } from "react-icons/io";
+import { AiFillInstagram } from "react-icons/ai";
 import { LiquidSvg } from "../assets/js/helper"
 import content from "../components/content.json";
 
@@ -35,10 +36,10 @@ export default class Contact extends Component {
                 <p className="intro-para" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">{Content.mainContent}</p>
                 <div><a href="mailto:024hrsh@gmail.com" className="button" data-sal="slide-up" data-sal-delay="600" data-sal-easing="ease">{Content.ctaTitle}</a></div>
                 <div className="separator" data-sal="slide-up" data-sal-delay="800" data-sal-easing="ease"></div>
-                <div className="inline-block my-12" data-sal="slide-up" data-sal-delay="900" data-sal-easing="ease">
+                <div className="inline-block my-12 contacts-logo" data-sal="slide-up" data-sal-delay="900" data-sal-easing="ease">
                   <span className="mr-20"><a href="https://www.linkedin.com/in/24hjs" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoLinkedin size="30px" /></a></span>
                   <span className="mr-20"><a href="https://www.facebook.com/24hjs" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoFacebook size="30px" /></a></span>
-                  <span className="mr-20"><a href="https://www.instagram.com/24harsh" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoInstagram size="30px" /></a></span>
+                  <span className="mr-20"><a href="https://www.instagram.com/24harsh" rel="noopener noreferrer" target="_blank" className="hover-this"><AiFillInstagram size="30px" /></a></span>
                 </div>
                 <div className="mt-50"  data-sal="slide-up" data-sal-delay="1000" data-sal-easing="ease"><small>{Content.copyRightText}</small></div>
               </div>

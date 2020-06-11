@@ -42,11 +42,11 @@ export default class About extends Component {
           <div className="content-wrapper scrollable-mobile">
             <div className="about-wrap">
               <div className="about-content">
-                <h1 className="inline-block title" data-sal="slide-up" data-sal-delay="400" data-sal-easing="ease">{Content.title}</h1>
+                <h1 className="inline-block title">{Content.title}</h1>
                 <div className="mb-40">
-                  <p data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">{Content.mainContent}</p>
-                  <p data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">{Content.subContent}</p>
-                  <div className="mt-30">
+                  <p dangerouslySetInnerHTML={{__html: Content.mainContent}}></p>
+                  <p dangerouslySetInnerHTML={{__html: Content.subContent}}></p>
+                  <div className="mt-30"> 
                     <Accordion panels={panels} />
                   </div>
                 </div>
@@ -58,7 +58,7 @@ export default class About extends Component {
                 />
               </div>
             </div>
-          </div>
+          </div> 
         </div>
       </>
     )

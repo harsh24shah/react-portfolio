@@ -5,7 +5,8 @@ import { StaticQuery, graphql } from "gatsby"
 // import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import { LiquidSvg } from "../assets/js/helper";
-import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin, IoLogoInstagram } from "react-icons/io";
+import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
+import { AiFillInstagram } from "react-icons/ai";
 
 export default class Header extends Component {
   constructor(props) {
@@ -112,7 +113,7 @@ export default class Header extends Component {
                     <a href="https://www.facebook.com/24hjs" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoFacebook size="30px" /> </a>
                   </span>
                   <span className="mr-20">
-                    <a href="https://www.instagram.com/24harsh" rel="noopener noreferrer" target="_blank" className="hover-this"><IoLogoInstagram size="30px" /></a>
+                    <a href="https://www.instagram.com/24harsh" rel="noopener noreferrer" target="_blank" className="hover-this"><AiFillInstagram size="30px" /></a>
                   </span>
                 </div>
               </div>

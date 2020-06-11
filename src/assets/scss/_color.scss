@@ -1,228 +1,259 @@
-// orange: #f96c63/#f87f64, #ef6817
+// orange: #f96c63/#f87f64, #ef6817, #fa5f1a
 // grey: #282c34/#1c2329;
 // green: #05858d;
 // dark-green:#1f4954;
 // light-white: #f7f7f8;
 
-$primary: white;
-$secondary: black;
-$black-color: black;
+@mixin theme($primary, $secondary, $morph-bgcolor, $morph-navcolor, $para-font-weight, $acent) {
+    $primary: $primary;
+    $secondary: $secondary;
+    $morph-bgcolor: $morph-bg;
+    $morph-navcolor: $morp-nav;
+    $para-font-weight: $para-font-weight;
+    $acent: $acent;
+    $black-color: black;
+    $white-color: white;
 
-body {
-    background: $secondary;
-    color: $primary;
-}
+    body {
+        background: $secondary;
+        color: $primary;
+    }
 
-p {
-    font-weight: 100;
-}
+    p {
+        font-weight: $para-font-weight;
+    }
 
-a {
-    color: $primary;
-}
-
-.text-grey {
-    color: lighten($black-color, 47.06);
-}
-
-.social-media-logos {
     a {
         color: $primary;
     }
 
-    &.active {
+    .mail-fixed {
         a {
-            color: $secondary;
+            &:hover {
+                color: $acent;
+            }
         }
     }
-}
 
-.morph1,
-.morph2 {
-    stroke: lighten($secondary, 12.16);
-}
-
-.morph3 {
-    stroke: #f3f3f3;
-}
-
-h1 {
-    span {
-        color: lighten($black-color, 36.86);
-    }
-}
-
-.highlighted-text {
-    color: $primary;
-}
-
-.underlined {
-    &.thin {
-        color: $primary;
+    .text-grey {
+        color: lighten($black-color, 47.06);
     }
 
-    &:after {
+    .text-acent {
+        color: $acent;
+    }
+
+    .social-media-logos {
+        a {
+            color: $primary;
+        }
+
+        &.active {
+            a {
+                color: $secondary;
+            }
+        }
+    }
+
+    .contacts-logo,
+    .social-media-logos {
+        a {
+            &:hover {
+                color: $acent;
+            }
+        }
+    }
+
+    p {
+        a {
+            color: $acent;
+        }
+    }
+
+    .morph1,
+    .morph2 {
+        stroke: $morph-bgcolor;
+    }
+
+    .morph3 {
+        stroke: $morph-navcolor;
+    }
+
+    h1 {
+        span {
+            color: lighten($black-color, 36.86);
+        }
+    }
+
+    .highlighted-text {
+        color: $acent;
+    }
+
+    .underlined {
+        &.thin {
+            color: $primary;
+        }
+
+        &:after {
+            background: $acent;
+        }
+    }
+
+    .routed {
+        &:after {
+            background: rgba($acent, 0.8);
+        }
+    }
+
+    .overlay {
         background: rgba($primary, 0.5);
     }
-}
 
-.routed {
-    &:after {
-        background: rgba($black-color, 0.8);
-    }
-}
-.overlay {
-    background: rgba($primary, 0.5);
-}
-
-.main-content {
-    a {
-        color: $primary;
-    }
-}
-
-/*---menu and navigation style starts---*/
-.menu-burger {
-    &.active {
-        > span {
-            background: $secondary;
-        }
-    }
-
-    > span {
-        background: $primary;
-    }
-}
-
-.navigation {
-    background: $primary;
-
-    &.active {
-        @media (max-width: 767px) {
-            ~ .header-inner {
-                background: rgba($black-color, 0);
-
-                .logo-custom {
-                    color: $secondary;
-                }
-            }
-        }
-    }
-
-    .menu-items {
-        a:not(.button) {
-            color: $secondary;
-
+    /*---menu and navigation style starts---*/
+    .menu-burger {
+        &.active {
             > span {
-                &:after {
-                    background: rgba($secondary, 0.5);
+                background: $secondary;
+            }
+        }
+
+        > span {
+            background: $primary;
+        }
+    }
+
+    .header-inner {
+        @media (max-width: 767px) {
+            background: rgba($secondary, 0.5);
+        }
+    }
+
+    .logo-custom {
+        color: $acent;
+    }
+
+    .navigation {
+        background: $primary;
+
+        &.active {
+            @media (max-width: 767px) {
+                ~ .header-inner {
+                    background: rgba($black-color, 0);
+
+                    .logo-custom {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+
+        .menu-items {
+            a:not(.button) {
+                color: $secondary;
+
+                > span {
+                    &:after {
+                        background: rgba($acent, 0.5);
+                    }
                 }
             }
         }
     }
-}
-/*---menu and navigation style ends---*/
-.block-reveal {
-    &::after {
-        background: $primary;
+    /*---menu and navigation style ends---*/
+    .block-reveal {
+        &::after {
+            background: $primary;
+        }
     }
-}
 
-.separator {
-    border-top: 3px solid $primary;
-}
+    .separator {
+        border-top: 3px solid $primary;
+    }
 
-ul {
-    &.bullets {
-        li {
-            &:before {
-                background-color: $primary;
+    ul {
+        &.bullets {
+            li {
+                &:before {
+                    background-color: $acent;
+                }
             }
         }
     }
-}
 
-button,
-.button {
-    border: 1px solid $primary;
-
-    svg {
-        fill: none;
-        stroke: $primary;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-        background: rgba($primary, 0.1);
-    }
-
-    &.invert {
-        border: 1px solid $secondary;
-        color: $secondary;
-
-        svg {
-            stroke: $secondary;
-        }
+    button,
+    .button {
+        border: 1px solid $acent;
+        background: $acent;
+        color: $white-color;
+        transition-delay: 0s;
+        transition: all 0.85s ease;
 
         &:hover,
         &:focus,
         &:active {
-            background: rgba($secondary, 0.1);
+            background: transparent;
+            color: $acent;
+            transition-delay: 0s;
+            transition: all 0.85s ease;
         }
     }
-}
 
-.project-wrap {
-    .project-title {
-        color: $primary;
-    }
-}
+    .project-wrap {
+        .project-title {
+            color: $white-color;
 
-// accordian style
-.accordion {
-    .panel {
-        background-color: transparent;
-
-        &:not(:last-child) {
-            border-bottom: 1px solid lighten($black-color, 14.51);
-        }
-
-        &[aria-expanded="true"] {
-            .panel-label {
-                color: $primary;
+            a {
+                color: $white-color;
             }
         }
     }
 
-    .panel-label {
-        color: $primary;
+    // accordian style
+    .accordion {
+        .panel {
+            background-color: transparent;
 
-        &:hover,
-        &:focus {
-            background: transparent;
+            &:not(:last-child) {
+                border-bottom: 1px solid lighten($black-color, 14.51);
+            }
+
+            &[aria-expanded="true"] {
+                .panel-label {
+                    color: $primary;
+                }
+            }
         }
 
-        &:after,
-        &:before {
-            background-color: $primary;
+        .panel-label {
+            color: $primary;
+
+            &:hover,
+            &:focus {
+                background: transparent;
+            }
+
+            &:after,
+            &:before {
+                background-color: $acent;
+            }
+        }
+
+        .panel-content {
+            color: $primary;
         }
     }
 
-    .panel-content {
-        color: $primary;
+    .inverse-section {
+        background: lighten($black-color, 8.24);
+        color: $white-color;
     }
-}
 
-.inverse-section {
-    background: lighten($black-color, 8.24);
-}
-
-table {
-    tbody {
-        tr {
-            &:hover {
-                background: rgba($primary, 0.1);
+    table {
+        tbody {
+            tr {
+                &:hover {
+                    background: rgba($primary, 0.1);
+                }
             }
         }
     }
