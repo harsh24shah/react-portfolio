@@ -4,15 +4,17 @@ import { StaticQuery, graphql } from "gatsby"
 // import testSvg from '../images/harsh-logo.svg';
 // import Img from "gatsby-image"
 import PropTypes from "prop-types"
+
 import { LiquidSvg } from "../assets/js/helper";
 import { IoLogoFacebook, IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import { AiFillInstagram } from "react-icons/ai";
+
 
 export default class Header extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      navVisible: true,
+      navVisible: true
     };
   }
 
@@ -42,9 +44,9 @@ export default class Header extends Component {
   }
 
   render() {
-
+   // const { isDark, setIsDark } = this.props;
     return (
-      <>
+      <> 
         <StaticQuery
           query={graphql`
           query {
@@ -58,7 +60,10 @@ export default class Header extends Component {
           }  
         `}
           render={data => (
+
             <header data-sal="fade" data-sal-delay="200" data-sal-easing="ease">
+           
+         
               <div className={'navigation ' + this.toggleMenu}>
                 <nav className="menu-items">
                   <Link to="/" className="hover-this" activeClassName="current" onClick={this.toggleSidenav}>
@@ -95,6 +100,7 @@ export default class Header extends Component {
                     <div className="logo-custom">Harsh</div>
                   </Link>
                 </div>
+
                 <a onClick={this.toggleSidenav} className={'hover-this menu-burger ' + this.toggleMenu} role="button" onKeyDown={this.toggleSidenav} tabIndex="0">
                   <span></span>
                   <span></span>
@@ -117,9 +123,11 @@ export default class Header extends Component {
                   </span>
                 </div>
               </div>
+             
             </header>
           )}
         />
+         
       </>
     )
   }

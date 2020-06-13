@@ -3,18 +3,25 @@
 @import "../assets/scss/structure";
 @import "../assets/scss/color";
 
-$primary: white;
-$secondary: #252525;
-$morph-bg: #1f1f1f;
-$morp-nav: #eaeaea;
-$para-font-weight: 400;
-$acent: #f87f64;
-
-// $primary: black; 
-// $secondary: white;
-// $morph-bg: #eaeaea; 
-// $morp-nav: lighten(black, 12.16);
+// ---- Dark theme ----
+// $primary: white;
+// $secondary: #252525;
+// //$morph-bg: #1f1f1f;
+// //$morp-nav: #eaeaea;
+// $morph-bg: rgba(248, 127, 100, 0.16);
+// $morp-nav: rgba(248, 127, 100, 0.16);
 // $para-font-weight: 400;
-// $acent: #fa5f1a;
+// $acent: #f87f64;
+
+
+// ---- Light theme ----
+$primary: #252525;
+$secondary: white;
+// $morph-bg: #eaeaea;
+// $morp-nav: lighten(black, 12.16);
+$morph-bg: rgba(248, 127, 100, 0.16);
+$morp-nav: rgba(248, 127, 100, 0.16);
+$para-font-weight: 400;
+$acent: #fa5f1a;
 
 @include theme($primary, $secondary, $morph-bg, $morp-nav, $para-font-weight, $acent);

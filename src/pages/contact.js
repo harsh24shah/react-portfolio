@@ -34,6 +34,7 @@ export default class Contact extends Component {
             <div className="box-wrapper">
               <div className="padding-box">
                 <p className="intro-para" data-sal="slide-up" data-sal-delay="500" data-sal-easing="ease">{Content.mainContent}</p>
+                <p className="intro-para" data-sal="slide-up" data-sal-delay="600" data-sal-easing="ease">{Content.address}</p>
                 <div><a href="mailto:024hrsh@gmail.com" className="button" data-sal="slide-up" data-sal-delay="600" data-sal-easing="ease">{Content.ctaTitle}</a></div>
                 <div className="separator" data-sal="slide-up" data-sal-delay="800" data-sal-easing="ease"></div>
                 <div className="inline-block my-12 contacts-logo" data-sal="slide-up" data-sal-delay="900" data-sal-easing="ease">

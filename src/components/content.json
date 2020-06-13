@@ -3,7 +3,7 @@
         "prevText": "Hi, my name is",
         "mainText": "Harsh Shah",
         "subText": "I build things for the web",
-        "introText": "I'm a software engineer based in Vadodara, India specializing in the building and sometimes designing pixel-perfect, high-quality websites and applications.",
+        "introText": "I'm a software engineer based in Vadodara, India specializing in the building and sometimes designing pixel-perfect and high-quality websites and applications.",
         "ctaText": "Get In Touch"
     },
     "about": {
@@ -82,7 +82,7 @@
                 "madeAt": "Investis Digital",
                 "role": "UI work in HTML, Css, Javascript",
                 "link": "https://careers.rolls-royce.com"
-            }, 
+            },
             {
                 "year": "2018",
                 "title": "ArcelorMittal Staligence",
@@ -109,6 +109,7 @@
     "contact": {
         "title": "Get in Touch",
         "mainContent": "Though I'm not looking for any opportunities, my inbox is always open for you and I would like to answer in case you have any questions or you can just say hi, I will try to get back to you.",
+        "address": "Parivar, Vadodara, India - 390025",
         "ctaTitle": "Say Hello",
         "copyRightText": "Designed & Build by Harsh Shah"
     }

@@ -208,7 +208,6 @@ h1 {
 
     &.fs110 {
         font-size: 110px;
-        font-weight: 100;
         line-height: 1;
         margin-left: -10px;
 
@@ -573,7 +572,7 @@ h1 {
             .project-title {
                 max-width: 40%;
                 padding: 30px;
-                background: #212121;
+                background: #353535;
                 box-shadow: 0 0 22px 3px rgba(0,0,0,.2);
                 transform: translateX(-50px);
 
@@ -637,7 +636,7 @@ h1 {
 }
 
 .intro-para {
-    margin: 50px 0;
+    margin: 40px 0;
     width: 80%;
 
     @media (max-width: 767px) {
