@@ -61,9 +61,7 @@ export default class Header extends Component {
         `}
           render={data => (
 
-            <header data-sal="fade" data-sal-delay="200" data-sal-easing="ease">
-           
-         
+            <header data-sal="fade" data-sal-delay="200" data-sal-easing="ease">         
               <div className={'navigation ' + this.toggleMenu}>
                 <nav className="menu-items">
                   <Link to="/" className="hover-this" activeClassName="current" onClick={this.toggleSidenav}>
@@ -79,11 +77,7 @@ export default class Header extends Component {
                     <span className="underlined">Contact</span>
                   </Link>
                   <a href="https://drive.google.com/file/d/17Bnsc5N94yIAEUlUUrabf4OQZtD47bE2/view?usp=sharing" rel="noopener noreferrer" target="_blank" className="button invert my-20">
-                    <span>Resume</span>
-                    <svg width="13px" height="10px" viewBox="0 0 13 10">
-                      <path d="M1,5 L11,5"></path>
-                      <polyline points="8 1 12 5 8 9"></polyline>
-                    </svg>
+                    <span>Resume</span>           
                   </a>
                 </nav>
                 <div className="morph-wrap3">
@@ -126,8 +120,7 @@ export default class Header extends Component {
              
             </header>
           )}
-        />
-         
+        />        
       </>
     )
   }

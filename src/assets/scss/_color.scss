@@ -39,6 +39,14 @@
         color: lighten($black-color, 47.06);
     }
 
+    .toggle-button {
+        &,
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+
     .text-acent {
         color: $acent;
     }
@@ -106,7 +114,7 @@
     }
 
     .overlay {
-        background: rgba($primary, 0.5);
+        background: rgba($black-color, 0.5);
     }
 
     /*---menu and navigation style starts---*/
@@ -153,7 +161,7 @@
 
                 > span {
                     &:after {
-                        background: rgba($acent, 0.5);
+                        background: $acent;
                     }
                 }
             }
@@ -192,7 +200,7 @@
         &:focus,
         &:active {
             background: $acent;
-            color: $white-color;        
+            color: $white-color;
             transition-delay: 0s;
             transition: all 0.85s ease;
         }
@@ -201,6 +209,7 @@
     .project-wrap {
         .project-title {
             color: $white-color;
+            background: #353535;
 
             a {
                 color: $white-color;
@@ -244,7 +253,7 @@
     }
 
     .inverse-section {
-        background: lighten($black-color, 8.24);
+        background: #353535;
         color: $white-color;
     }
 

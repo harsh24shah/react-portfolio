@@ -42,10 +42,6 @@ export default class IndexPage extends Component {
             </div>
             <a className="button" href="mailto:024hrsh@gmail.com" data-sal="slide-up" data-sal-delay="1000" data-sal-easing="ease">
               <span>{Content.ctaText}</span>
-              <svg width="13px" height="10px" viewBox="0 0 13 10">
-                <path d="M1,5 L11,5"></path>
-                <polyline points="8 1 12 5 8 9"></polyline>
-              </svg>
             </a>
           </div>
         </div>

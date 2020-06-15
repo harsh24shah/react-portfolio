@@ -44,6 +44,20 @@ a {
     }
 }
 
+.toggle-button {
+    position: fixed;
+    left: 50%;
+    bottom: 10px;
+    border: 0;
+    z-index: 3;
+    transform: translateX(-50%);
+
+    &:hover,
+    &:focus {
+        background: transparent;
+    }
+}
+
 .header-inner {
     position: fixed;
     display: flex;
@@ -235,7 +249,7 @@ h1 {
 }
 
 .highlighted-text {
-    letter-spacing: .5px;
+    letter-spacing: 0.5px;
     font-weight: 500;
 
     @media (max-width: 991px) {
@@ -572,8 +586,7 @@ h1 {
             .project-title {
                 max-width: 40%;
                 padding: 30px;
-                background: #353535;
-                box-shadow: 0 0 22px 3px rgba(0,0,0,.2);
+                box-shadow: 0 0 22px 3px rgba(black, 0.2);
                 transform: translateX(-50px);
 
                 @media (max-width: 1024px) {
@@ -703,21 +716,10 @@ button,
     text-decoration: none;
     transition-delay: 0s;
     transition: all 0.85s ease;
+    cursor: pointer;
 
     @media (max-width: 767px) {
         font-size: 14px;
-    }
-
-    svg {
-        display: none;
-        position: relative;
-        top: 0;
-        margin-left: 10px;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 1;
-        transform: translateX(-5px);
-        transition: all 0.85s ease;
     }
 
     &.btn-small {
