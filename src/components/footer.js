@@ -1,5 +1,5 @@
-import React, { Component } from "react"
-import ToggleTheme from "./toggleTheme"
+import React, { Component } from 'react'
+import ToggleTheme from './toggleTheme'
 
 export default class Header extends Component {
     constructor(props) {
@@ -8,12 +8,11 @@ export default class Header extends Component {
         };
     }
     render() {
-        // const { isDark, setIsDark } = this.props;
         return (
             <>
-                <footer data-sal="fade" data-sal-delay="1000" data-sal-easing="ease">
-                    <div className="mail-fixed">
-                        <a href="mailto:024hrsh@gmail.com">024hrsh@gmail.com</a>
+                <footer data-sal='fade' data-sal-delay='1000' data-sal-easing='ease'>
+                    <div className='mail-fixed'>
+                        <a title='Opens in an app' className="acentfont" href='mailto:024hrsh@gmail.com'>024hrsh@gmail.com</a>
                     </div>
                 </footer>
                 <ToggleTheme

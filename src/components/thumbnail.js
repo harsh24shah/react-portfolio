@@ -1,7 +1,7 @@
-import React, { Component } from "react"
-import Image from "./image"
-import { FiExternalLink } from "react-icons/fi";
-import { FaBehance, FaGithub } from "react-icons/fa";
+import React, { Component } from 'react'
+import Image from './image'
+import { FiExternalLink } from 'react-icons/fi'
+import { FaBehance, FaGithub } from 'react-icons/fa'
 
 export default class Thumbnail extends Component {
 
@@ -10,35 +10,34 @@ export default class Thumbnail extends Component {
     this.state = {}
   }
 
-  componentDidMount() {
-  }
-
   render() {
     var thumb = this.props.thumbImage.toString();
     var projectGitLink, projectBehanceLink, projectExternalLink;
+
     if (this.props.gitLink !== '') {
-      projectGitLink = <a className="mr-16" rel="noopener noreferrer" target="_blank" href={this.props.gitLink}><FaGithub size="24px" /></a>;
+      projectGitLink = <a className='mr-16' rel='noopener noreferrer' target='_blank' title='Opens in a new tab' href={this.props.gitLink}><FaGithub size='24px' /></a>;
     }
     if (this.props.behanceLink !== '') {
-      projectBehanceLink = <a className="mr-16" rel="noopener noreferrer" target="_blank" href={this.props.behanceLink}><FaBehance size="24px" /></a>;
+      projectBehanceLink = <a className='mr-16' rel='noopener noreferrer' target='_blank' title='Opens in a new tab' href={this.props.behanceLink}><FaBehance size='24px' /></a>;
     }
     if (this.props.externalLink !== '') {
-      projectExternalLink = <a className="mr-16" rel="noopener noreferrer" target="_blank" href={this.props.externalLink}><FiExternalLink size="24px" /></a>;
+      projectExternalLink = <a className='mr-16' rel='noopener noreferrer' target='_blank' title='Opens in a new tab' href={this.props.externalLink}><FiExternalLink size='24px' /></a>;
     }
+
     return (
-      <div className="project" data-sal="slide-up" data-sal-delay="600" data-sal-easing="ease" >
-        <div className="project-image">
+      <div className='project' data-sal='slide-up' data-sal-delay='600' data-sal-easing='ease' >
+        <div className='project-image'>
           <Image
             filename={thumb}
             alt={this.props.title}
           />
-          <div className="project-title inline-block">
-            <span className="block mb-10 project-title-inline fw-100">
+          <div className='project-title inline-block'>
+            <span className='block mb-10 project-title-inline fw-100'>
               {this.props.title}
-              <span className="block fw-600 text-acent" dangerouslySetInnerHTML={{ __html: this.props.technology }}></span>
+              <span className='block fw-600 text-grey acentfont' dangerouslySetInnerHTML={{ __html: this.props.technology }}></span>
             </span>
-            <div className="project-description mb-30" ><p>{this.props.subtitle}</p></div>
-            <div className="flex align-items-center">
+            <div className='project-description mb-30' ><p>{this.props.subtitle}</p></div>
+            <div className='flex align-items-center'>
               {projectGitLink}
               {projectBehanceLink}
               {projectExternalLink}

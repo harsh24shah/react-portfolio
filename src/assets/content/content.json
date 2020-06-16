@@ -2,14 +2,14 @@
     "home": {
         "prevText": "Hi, my name is",
         "mainText": "Harsh Shah",
-        "subText": "I build things for the web",
-        "introText": "I'm a software engineer based in Vadodara, India specializing in the building and sometimes designing pixel-perfect and high-quality websites and applications.",
-        "ctaText": "Get In Touch"
+        "subText": "I develop things for the web",
+        "introText": "I'm a software engineer based in Vadodara, India specializing in the building and sometimes designing pixel-perfect and high quality websites and web applications.",
+        "ctaText": "Get in Touch"
     },
     "about": {
         "title": "About me",
         "mainContent": "Hi, I'm Harsh Shah from Vadodara, India; a software developer with four years of experience who loves building & designing stuff that lives on the internet, whether that will be a web application, extensions, websites, or in between. I enjoy solving complex problems in simple ways.",
-        "subContent": "I've completed a Bachelor of Engineering in Information Technology from <a target='_blank' href='https://svitvasad.ac.in/svit/'>SVIT</a> (Sardar Vallabhbhai Patel Institute of Technology) located in Gujarat, India.",
+        "subContent": "I've completed a Bachelor of Engineering in Information Technology from <a title='Opens in a new tab' target='_blank' href='https://svitvasad.ac.in/svit/'>SVIT</a> (Sardar Vallabhbhai Patel Institute of Technology) located in Gujarat, India.",
         "panels": [
             {
                 "label": "Few technologies and tools I've been working with",
@@ -17,7 +17,7 @@
             },
             {
                 "label": "Where I've worked",
-                "content": "<p>I'm currently working as a Front-end Designer in <a target='_blank' href='https://www.odysseussolutions.com/'>Odysseus Solutions</a> from Dec 2018. Earlier, I was working as a Web Producer with <a target='_blank' href='https://www.investisdigital.com/'>Investis Digital</a> for two and a half years where I have started my career in 2016.</p>"
+                "content": "<p>I'm currently working as a Front-end Designer in <a title='Opens in a new tab' target='_blank' href='https://www.odysseussolutions.com/'>Odysseus Solutions</a> from Dec 2018. Earlier, I was working as a Web Producer with <a title='Opens in a new tab' target='_blank' href='https://www.investisdigital.com/'>Investis Digital</a> for two and a half years where I have started my career in 2016.</p>"
             },
             {
                 "label": "Things I do when I'm not coding",
@@ -47,15 +47,6 @@
                 "technology": "<ul><li>News API</li><li>Angular</li><li>HTML5</li><li>SCSS</li></ul>"
             },
             {
-                "title": "Dashboard Template",
-                "subtitle": "A dashboard with multiple components and attractive look and feel having support for all the devices, broswers and easy theming management.",
-                "gitLink": "https://google.co.in",
-                "behanceLink": "",
-                "externalLink": "https://google.co.in",
-                "thumbImage": "dummy-image.png",
-                "technology": "<ul><li>Angular</li><li>HTML5</li><li>SCSS</li></ul>"
-            },
-            {
                 "title": "Portfolio Concept",
                 "subtitle": "A design mockup created for a full-page portfolio website idea for a person having a technical professional background like a web developer or a software developer.",
                 "gitLink": "",
@@ -72,6 +63,15 @@
                 "externalLink": "",
                 "thumbImage": "dummy-image.png",
                 "technology": "<ul><li>Photoshop</li><li>Figma</li></ul>"
+            },
+            {
+                "title": "Dashboard Template",
+                "subtitle": "A dashboard with multiple components and attractive look and feel having support for all the devices, broswers and easy theming management.",
+                "gitLink": "https://google.co.in",
+                "behanceLink": "",
+                "externalLink": "https://google.co.in",
+                "thumbImage": "dummy-image.png",
+                "technology": "<ul><li>Angular</li><li>HTML5</li><li>SCSS</li></ul>"
             }
         ],
         "pastProjectsTitle": "Projects I've worked on",
@@ -109,8 +109,8 @@
     "contact": {
         "title": "Get in Touch",
         "mainContent": "Though I'm not looking for any opportunities, my inbox is always open for you and I would like to answer in case you have any questions or you can just say hi, I will try to get back to you.",
-        "address": "Parivar, Vadodara, India - 390025",
-        "ctaTitle": "Say Hello",
+        "address": "<a title='Opens map in a new tab' href='https://goo.gl/maps/9Uhe89Qs7sAGGgL78' target='_blank'>Parivar, Vadodara, India - 390025</a>",
+        "ctaTitle": "Say Hello", 
         "copyRightText": "Designed & Build by Harsh Shah"
     }
 }

@@ -5,31 +5,29 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React, { Component } from "react";
-import { StaticQuery, graphql } from "gatsby";
-import { ParallaxProvider } from 'react-scroll-parallax';
-import { ThemeProvider } from "styled-components"
-import Header from "./header";
-import Footer from "./footer";
-
-import "./app.scss";
+import React, { Component } from 'react'
+import { StaticQuery, graphql } from 'gatsby'
+import { ThemeProvider } from 'styled-components'
+import Header from './header'
+import Footer from './footer'
+import '../assets/scss/app.scss'
 
 const dark = {
-  "--primary": "white",
-  "--secondary": "black",
-  "--morphBg": "rgba(248, 127, 100, 0.16)",
-  "--morphNav": "rgba(248, 127, 100, 0.16)",
-  "--fontWeight": '400',
-  "--acent": "#f87f64",
+  '--primary': 'white',
+  '--secondary': 'black',
+  '--morphBg': 'rgba(248, 127, 100, 0.16)',
+  '--morphNav': 'rgba(248, 127, 100, 0.16)',
+  '--fontWeight': '200',
+  '--acent': '#f87f64',
 }
 
 const light = {
-  "--primary": "black",
-  "--secondary": "white",
-  "--morphBg": "rgba(248, 127, 100, 0.16)",
-  "--morphNav": "rgba(248, 127, 100, 0.16)",
-  "--fontWeight": '400',
-  "--acent": "#fa5f1a",
+  '--primary': 'black',
+  '--secondary': 'white',
+  '--morphBg': 'rgba(248, 127, 100, 0.16)',
+  '--morphNav': 'rgba(248, 127, 100, 0.16)',
+  '--fontWeight': '400',
+  '--acent': '#fa5f1a',
 }
 
 const applyTheme = (nextTheme) => {
@@ -50,7 +48,7 @@ export default class Layout extends Component {
   }
 
   componentDidMount() {
-    const localStorageLayout = localStorage.getItem("lightTheme")
+    const localStorageLayout = localStorage.getItem('lightTheme')
     if (localStorageLayout) {
       this.setState({ lightTheme: JSON.parse(localStorageLayout) })
       applyTheme(localStorageLayout);
@@ -61,8 +59,8 @@ export default class Layout extends Component {
     this.setState({
       lightTheme: !this.state.lightTheme,
     })
-    localStorage.setItem("lightTheme", !this.state.lightTheme);
-    applyTheme(localStorage.getItem("lightTheme"));
+    localStorage.setItem('lightTheme', !this.state.lightTheme);
+    applyTheme(localStorage.getItem('lightTheme'));
   }
 
   render() {
@@ -81,17 +79,15 @@ export default class Layout extends Component {
                     `}
           render={data => (
             <ThemeProvider theme={this.state}>
-              <ParallaxProvider>
                 <React.Fragment>
-                  <div className="main">
+                  <div className='main'>
                     <main className='routed'>
                       <Header siteTitle={data.site.siteMetadata.title} />
-                      <div className="main-content">{children}</div>
+                      <div className='main-content'>{children}</div>
                       <Footer changeTheme={this.changeTheme} lightTheme={this.state.lightTheme} />
                     </main>
                   </div>
                 </React.Fragment>
-              </ParallaxProvider>
             </ThemeProvider>
           )}
         />

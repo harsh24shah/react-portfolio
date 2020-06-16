@@ -312,7 +312,7 @@ export function LiquidSvg(pos, svgElement) {
             translateY: shapes[pos].ty + 'px',
             rotate: shapes[pos].rotate + 'deg'
         });
-    };
+    }; 
 
     changeShape(pos);
 }

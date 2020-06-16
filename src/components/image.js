@@ -1,8 +1,6 @@
 import React from 'react';
-import { StaticQuery, graphql } from 'gatsby';
-import Img from 'gatsby-image';
-
-// Note: You can change "images" to whatever you'd like.
+import { StaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
 const Image = props => (
     <StaticQuery
@@ -32,7 +30,7 @@ const Image = props => (
             }
 
             //const imageSizes = image.node.childImageSharp.sizes; sizes={imageSizes}
-            return <Img className="effect-image w-100" alt={props.alt} fluid={image.node.childImageSharp.fluid} />;
+            return <Img className='effect-image w-100' alt={props.alt} fluid={image.node.childImageSharp.fluid} />;
         }}
     />
 );

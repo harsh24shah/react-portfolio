@@ -1,7 +1,13 @@
-@import "../assets/scss/reset";
-@import "../assets/scss/utilities";
-@import "../assets/scss/structure";
-@import "../assets/scss/color";
+@import 'reset';
+@import 'utilities';
+@import 'structure';
+@import 'color';
+
+// orange: #f96c63/#f87f64, #ef6817, #fa5f1a
+// grey: #282c34/#1c2329;
+// green: #05858d;
+// dark-green:#1f4954;
+// light-white: #f7f7f8; 
 
 // ---- Dark theme ----
 // $primary: white;
@@ -14,14 +20,14 @@
 // $acent: #f87f64;
 
 // ---- Light theme ----
-$primary: #252525;
-$secondary: white;
-// $morph-bg: #eaeaea;
-// $morp-nav: lighten(black, 12.16);
-$morph-bg: rgba(248, 127, 100, 0.16);
-$morp-nav: rgba(248, 127, 100, 0.16);
-$para-font-weight: 400;
-$acent: #fa5f1a;
+// $primary: #252525;
+// $secondary: white;
+// // $morph-bg: #eaeaea;
+// // $morp-nav: lighten(black, 12.16);
+// $morph-bg: rgba(248, 127, 100, 0.16);
+// $morp-nav: rgba(248, 127, 100, 0.16);
+// $para-font-weight: 400;
+// $acent: #fa5f1a;
 
 :root {
     /* Set the deafult values */
@@ -29,16 +35,15 @@ $acent: #fa5f1a;
     --secondary: white;
     --morphBg: rgba(248, 127, 100, 0.16);
     --morphNav: rgba(248, 127, 100, 0.16);
-    --parafontWeight: 400;
+    --fontWeight: 400;
     --acent: #fa5f1a;
 }
 
 $primary: var(--primary);
 $secondary: var(--secondary);
-
 $morph-bg: var(--morphBg);
 $morp-nav: var(--morphNav);
-$para-font-weight: var(--parafontWeight);
+$para-font-weight: var(--fontWeight);
 $acent: var(--acent);
 
 @include theme($primary, $secondary, $morph-bg, $morp-nav, $para-font-weight, $acent);
