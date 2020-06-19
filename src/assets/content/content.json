@@ -34,7 +34,23 @@
                 "gitLink": "https://github.com/harsh24shah/unsplash-image-gallery",
                 "behanceLink": "",
                 "externalLink": "https://wallperex.web.app",
-                "thumbImage": "dummy-image.png",
+                "thumbImages": [
+                    {
+                        "altname": "wallperex/wallperex-home.jpg"
+                    },
+                    {
+                        "altname": "wallperex/wallperex-detail.jpg"
+                    },
+                    {
+                        "altname": "wallperex/wallperex-detail-dark.jpg"
+                    },
+                    {
+                        "altname": "wallperex/wallperex-filters.jpg"
+                    },
+                    {
+                        "altname": "wallperex/wallperex-collections.jpg"
+                    }
+                ],
                 "technology": "<ul><li>Unshplash API</li><li>Angular</li><li>HTML5</li><li>SCSS</li></ul>"
             },
             {
@@ -43,7 +59,26 @@
                 "gitLink": "https://github.com/harsh24shah/firstProject",
                 "behanceLink": "",
                 "externalLink": "",
-                "thumbImage": "dummy-image.png",
+                "thumbImages": [
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    }
+                ],
                 "technology": "<ul><li>News API</li><li>Angular</li><li>HTML5</li><li>SCSS</li></ul>"
             },
             {
@@ -52,7 +87,26 @@
                 "gitLink": "",
                 "behanceLink": "https://www.behance.net/gallery/90045583/Portfolio-Design",
                 "externalLink": "",
-                "thumbImage": "dummy-image.png",
+                "thumbImages": [
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    }
+                ],
                 "technology": "<ul><li>Photoshop</li></ul>"
             },
             {
@@ -61,7 +115,26 @@
                 "gitLink": "",
                 "behanceLink": "https://www.behance.net/gallery/90046711/Image-Gallery",
                 "externalLink": "",
-                "thumbImage": "dummy-image.png",
+                "thumbImages": [
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    }
+                ],
                 "technology": "<ul><li>Photoshop</li><li>Figma</li></ul>"
             },
             {
@@ -70,7 +143,26 @@
                 "gitLink": "https://google.co.in",
                 "behanceLink": "",
                 "externalLink": "https://google.co.in",
-                "thumbImage": "dummy-image.png",
+                "thumbImages": [
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    },
+                    {
+                        "altname": "dummy-image.png"
+                    }
+                ],
                 "technology": "<ul><li>Angular</li><li>HTML5</li><li>SCSS</li></ul>"
             }
         ],
@@ -110,7 +202,7 @@
         "title": "Get in Touch",
         "mainContent": "Though I'm not looking for any opportunities, my inbox is always open for you and I would like to answer in case you have any questions or you can just say hi, I will try to get back to you.",
         "address": "<a title='Opens map in a new tab' href='https://goo.gl/maps/9Uhe89Qs7sAGGgL78' target='_blank'>Parivar, Vadodara, India - 390025</a>",
-        "ctaTitle": "Say Hello", 
+        "ctaTitle": "Say Hello",
         "copyRightText": "Designed & Build by Harsh Shah"
     }
 }

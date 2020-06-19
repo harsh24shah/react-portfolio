@@ -130,8 +130,10 @@
         }
     }
 
-    .logo-custom {
-        color: $acent;
+    .logo-link {
+        path {
+            fill: $acent;
+        }
     }
 
     .navigation {
@@ -201,9 +203,21 @@
     }
 
     .project-wrap {
+
+        .product-carousel {
+            .slick-arrow {
+                background: $acent;
+                color: $white-color;
+
+                &.slick-disabled {
+                    opacity: .7;
+                }
+            }
+        }
+
         .project-title {
             color: $white-color;
-            background: #353535;
+            background: #292929;
 
             a {
                 color: $white-color;
@@ -241,7 +255,7 @@
     }
 
     .inverse-section {
-        background: #353535;
+        background: #292929;
         color: $white-color;
     }
 

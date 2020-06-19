@@ -18,7 +18,7 @@ export default class Projects extends Component {
         gitLink={project.gitLink}
         behanceLink={project.behanceLink}
         externalLink={project.externalLink}
-        thumbImage={project.thumbImage}
+        thumbImages={project.thumbImages}
         title={project.title}
         subtitle={project.subtitle}
         technology={project.technology}
@@ -53,12 +53,12 @@ export default class Projects extends Component {
   render() {
     return (
       <div>
-        <div className='morph-wrap1'>
+        <div className='morph-wrap1 anticlock'>
           <svg className='morph1' width='1400' height='770' viewBox='0 0 1400 770'>
             <polygon points='700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6' />
           </svg>
         </div>
-        <div className='morph-wrap2 anticlock'>
+        <div className='morph-wrap2'>
           <svg className='morph2' width='1400' height='770' viewBox='0 0 1400 770'>
             <polygon points='' />
           </svg>

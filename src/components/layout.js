@@ -27,7 +27,7 @@ const light = {
   '--morphBg': 'rgba(248, 127, 100, 0.16)',
   '--morphNav': 'rgba(248, 127, 100, 0.16)',
   '--fontWeight': '400',
-  '--acent': '#fa5f1a',
+  '--acent': '#f87f64' ,
 }
 
 const applyTheme = (nextTheme) => {

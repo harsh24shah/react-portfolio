@@ -27,7 +27,7 @@ module.exports = {
         theme_color: `black`,
         display: `standalone`,
         icon: `src/images/harsh-logo-icon.svg`, // This path is relative to the root of the site.
-      }, 
+      },
     },
     {
       resolve: "gatsby-plugin-transition-link",
@@ -38,15 +38,15 @@ module.exports = {
     {
       resolve: `gatsby-plugin-scroll-reveal`,
       options: {
-          threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
-          once: true, // Defines if animation needs to be launched once
-          disable: false, // Flag for disabling animations
-          
-          // Advanced Options
-          selector: '[data-sal]', // Selector of the elements to be animated
-          animateClassName: 'sal-animate', // Class name which triggers animation
-          disabledClassName: 'sal-disabled', // Class name which defines the disabled state
-          rootMargin: '80% 80%', // Corresponds to root's bounding box margin
+        threshold: 1, // Percentage of an element's area that needs to be visible to launch animation
+        once: true, // Defines if animation needs to be launched once
+        disable: false, // Flag for disabling animations
+
+        // Advanced Options
+        selector: '[data-sal]', // Selector of the elements to be animated
+        animateClassName: 'sal-animate', // Class name which triggers animation
+        disabledClassName: 'sal-disabled', // Class name which defines the disabled state
+        rootMargin: '80% 80%', // Corresponds to root's bounding box margin
       }
     },
     `animejs`
@@ -54,5 +54,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-} 
- 
+}

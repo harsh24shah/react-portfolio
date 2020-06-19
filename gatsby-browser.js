@@ -5,3 +5,9 @@
  */
 
 // You can delete this file if you're not using it
+
+exports.onInitialClientRender = () => {
+    setTimeout(function () {
+        document.getElementById("loader").style.display = "none"
+    }, 300)
+}

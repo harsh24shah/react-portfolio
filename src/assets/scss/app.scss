@@ -1,13 +1,14 @@
-@import 'reset';
-@import 'utilities';
-@import 'structure';
-@import 'color';
+@import "reset";
+@import "utilities";
+@import "structure";
+@import "../../../node_modules/slick-carousel/slick/slick.scss";
+@import "color";
 
 // orange: #f96c63/#f87f64, #ef6817, #fa5f1a
 // grey: #282c34/#1c2329;
 // green: #05858d;
 // dark-green:#1f4954;
-// light-white: #f7f7f8; 
+// light-white: #f7f7f8;
 
 // ---- Dark theme ----
 // $primary: white;

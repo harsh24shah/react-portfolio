@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Image from './image'
+import Carousel from './carousel';
 import { FiExternalLink } from 'react-icons/fi'
 import { FaBehance, FaGithub } from 'react-icons/fa'
 
@@ -11,7 +12,6 @@ export default class Thumbnail extends Component {
   }
 
   render() {
-    var thumb = this.props.thumbImage.toString();
     var projectGitLink, projectBehanceLink, projectExternalLink;
 
     if (this.props.gitLink !== '') {
@@ -27,10 +27,7 @@ export default class Thumbnail extends Component {
     return (
       <div className='project' data-sal='slide-up' data-sal-delay='600' data-sal-easing='ease' >
         <div className='project-image'>
-          <Image
-            filename={thumb}
-            alt={this.props.title}
-          />
+          <Carousel images={this.props.thumbImages} />
           <div className='project-title inline-block'>
             <span className='block mb-10 project-title-inline fw-100'>
               {this.props.title}
@@ -42,6 +39,7 @@ export default class Thumbnail extends Component {
               {projectBehanceLink}
               {projectExternalLink}
             </div>
+
           </div>
         </div>
       </div>
