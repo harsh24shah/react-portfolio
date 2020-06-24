@@ -8,7 +8,7 @@ function NextArrow(props) {
     const { className, onClick } = props;
     return (
         <button className={className} onClick={onClick}>
-            <IoIosArrowForward size="35px"/>
+            <IoIosArrowForward size="35px" />
         </button>
 
     );
@@ -18,7 +18,7 @@ function PrevArrow(props) {
     const { className, onClick } = props;
     return (
         <button className={className} onClick={onClick}>
-            <IoIosArrowBack size="35px"/>
+            <IoIosArrowBack size="35px" />
         </button>
     );
 }
@@ -32,19 +32,23 @@ export default class Carousel extends React.Component {
 
     images = this.props.images.map(function (image, index) {
         console.log(image.altname);
-        let imageurl = image.altname.toString();
+        let imageurl = image.src.toString();
+        let imgAlt = image.alt;
         return (
-            <Image key={index} filename={imageurl} alt="test" />
+            <Image key={index} filename={imageurl} alt={imgAlt} />
         )
     })
 
     render() {
         var settings = {
-            dots: false,
+            dots: true,
             speed: 500,
             infinite: false,
             slidesToShow: 1,
             slidesToScroll: 1,
+            arrows: false,
+            autoplay: false,
+            cssEase: 'ease-in-out',
             nextArrow: <NextArrow />,
             prevArrow: <PrevArrow />
         };

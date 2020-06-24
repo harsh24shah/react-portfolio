@@ -36,50 +36,69 @@
                 "externalLink": "https://wallperex.web.app",
                 "thumbImages": [
                     {
-                        "altname": "wallperex/wallperex-home.jpg"
+                        "src": "wallperex/wallperex-home.jpg",
+                        "alt": "Wallperex app home page"
                     },
                     {
-                        "altname": "wallperex/wallperex-detail.jpg"
+                        "src": "wallperex/wallperex-detail.jpg",
+                        "alt": "Wallperex app image detail"
                     },
                     {
-                        "altname": "wallperex/wallperex-detail-dark.jpg"
+                        "src": "wallperex/wallperex-detail-dark.jpg",
+                        "alt": "Wallperex app image detail in dark theme"
                     },
                     {
-                        "altname": "wallperex/wallperex-filters.jpg"
+                        "src": "wallperex/wallperex-filters.jpg",
+                        "alt": "Wallperex app inatagram filters"
                     },
                     {
-                        "altname": "wallperex/wallperex-collections.jpg"
+                        "src": "wallperex/wallperex-collections.jpg",
+                        "alt": "Wallperex app collections page"
+                    },
+                    {
+                        "src": "wallperex/wallperex-desktop-home.jpg",
+                        "alt": "Wallperex app dektop home page"
+                    },
+                    {
+                        "src": "wallperex/wallperex-desktop-darkhome.jpg",
+                        "alt": "Wallperex app dektop home page in dark mode"
+                    },
+                    {
+                        "src": "wallperex/wallperex-desktop-collection.jpg",
+                        "alt": "Wallperex app dektop collections page"
+                    },
+                    {
+                        "src": "wallperex/wallperex-desktop-details.jpg",
+                        "alt": "Wallperex app dektop image details"
+                    },
+                    {
+                        "src": "wallperex/wallperex-desktop-edit.jpg",
+                        "alt": "Wallperex app dektop image edit popup"
                     }
                 ],
-                "technology": "<ul><li>Unshplash API</li><li>Angular</li><li>HTML5</li><li>SCSS</li></ul>"
+                "technology": "<ul><li>Unshplash API</li><li>Angular</li><li>HTML5</li><li>Typescript</li><li>SCSS</li></ul>"
             },
             {
                 "title": "News on Cards",
                 "subtitle": "A daily news application having updated News of multiple News channels, where you can select News channels and get the news of the particular date of the category or search any topic which is recently in trending.",
                 "gitLink": "https://github.com/harsh24shah/firstProject",
                 "behanceLink": "",
-                "externalLink": "",
+                "externalLink": "https://harshapps-1a31e.web.app/",
                 "thumbImages": [
                     {
-                        "altname": "dummy-image.png"
+                        "src": "news-on-cards/news-on-cards-home.jpg",
+                        "alt": "News cards home"
                     },
                     {
-                        "altname": "dummy-image.png"
+                        "src": "news-on-cards/news-on-cards-menu.jpg",
+                        "alt": "News cards open state of sidebar"
                     },
                     {
-                        "altname": "dummy-image.png"
-                    },
-                    {
-                        "altname": "dummy-image.png"
-                    },
-                    {
-                        "altname": "dummy-image.png"
-                    },
-                    {
-                        "altname": "dummy-image.png"
+                        "src": "news-on-cards/news-on-cards-popular.jpg",
+                        "alt": "News cards popular news tab"
                     }
                 ],
-                "technology": "<ul><li>News API</li><li>Angular</li><li>HTML5</li><li>SCSS</li></ul>"
+                "technology": "<ul><li>NYTimes API</li><li>Angular</li><li>HTML5</li><li>Typescript</li><li>SCSS</li></ul>"
             },
             {
                 "title": "Portfolio Concept",
@@ -89,22 +108,24 @@
                 "externalLink": "",
                 "thumbImages": [
                     {
-                        "altname": "dummy-image.png"
+                        "src": "portfolio-design/portfolio-mockup-about.jpg",
+                        "alt": "Harsh portfolio about page"
                     },
                     {
-                        "altname": "dummy-image.png"
+                        "src": "portfolio-design/portfolio-mockup-home.jpg",
+                        "alt": "Harsh portfolio home page"
                     },
                     {
-                        "altname": "dummy-image.png"
+                        "src": "portfolio-design/portfolio-mockup-gallery.jpg",
+                        "alt": "Harsh portfolio about page"
                     },
                     {
-                        "altname": "dummy-image.png"
+                        "src": "portfolio-design/portfolio-mockup-menu.jpg",
+                        "alt": "Harsh portfolio mockup menu"
                     },
                     {
-                        "altname": "dummy-image.png"
-                    },
-                    {
-                        "altname": "dummy-image.png"
+                        "src": "portfolio-design/portfolio-mockup-contacts.jpg",
+                        "alt": "Harsh portfolio mockup contact page"
                     }
                 ],
                 "technology": "<ul><li>Photoshop</li></ul>"
@@ -117,53 +138,53 @@
                 "externalLink": "",
                 "thumbImages": [
                     {
-                        "altname": "dummy-image.png"
+                        "src": "gallery-design/gallery-explore.jpg",
+                        "alt": "Gallery design - explore"
                     },
                     {
-                        "altname": "dummy-image.png"
+                        "src": "gallery-design/gallery-profile.jpg",
+                        "alt": "Gallery design - profile"
                     },
                     {
-                        "altname": "dummy-image.png"
+                        "src": "gallery-design/gallery-after-scroll.jpg",
+                        "alt": "Gallery design - after scroll"
                     },
                     {
-                        "altname": "dummy-image.png"
+                        "src": "gallery-design/gallery-open-menu.jpg",
+                        "alt": "Gallery design - menu"
                     },
                     {
-                        "altname": "dummy-image.png"
+                        "src": "gallery-design/gallery-image-details.jpg",
+                        "alt": "Gallery design - image details"
                     },
                     {
-                        "altname": "dummy-image.png"
+                        "src": "gallery-design/gallery-edit-image.jpg",
+                        "alt": "Gallery design - edit image"
+                    },
+                    {
+                        "src": "gallery-design/gallery-edit-profile.jpg",
+                        "alt": "Gallery design - edit profile"
+                    },
+                    {
+                        "src": "gallery-design/gallery-notifcations.jpg",
+                        "alt": "Gallery design - notification"
                     }
                 ],
-                "technology": "<ul><li>Photoshop</li><li>Figma</li></ul>"
+                "technology": "<ul><li>Photoshop</li></ul>"
             },
             {
                 "title": "Dashboard Template",
                 "subtitle": "A dashboard with multiple components and attractive look and feel having support for all the devices, broswers and easy theming management.",
-                "gitLink": "https://google.co.in",
+                "gitLink": "",
                 "behanceLink": "",
-                "externalLink": "https://google.co.in",
+                "externalLink": "",
                 "thumbImages": [
                     {
-                        "altname": "dummy-image.png"
-                    },
-                    {
-                        "altname": "dummy-image.png"
-                    },
-                    {
-                        "altname": "dummy-image.png"
-                    },
-                    {
-                        "altname": "dummy-image.png"
-                    },
-                    {
-                        "altname": "dummy-image.png"
-                    },
-                    {
-                        "altname": "dummy-image.png"
+                        "src": "work-underway.png",
+                        "alt": "work underway"
                     }
                 ],
-                "technology": "<ul><li>Angular</li><li>HTML5</li><li>SCSS</li></ul>"
+                "technology": "<ul><li>Angular</li><li>HTML5</li><li>SCSS</li><li>Typescript</li></ul>"
             }
         ],
         "pastProjectsTitle": "Projects I've worked on",

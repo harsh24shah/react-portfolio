@@ -79,8 +79,8 @@ p {
     padding: 40px;
     height: auto;
     background: transparent;
-    z-index: 1;
     transition: all 0.2s linear;
+    z-index: 1;
 
     @media (max-width: 767px) {
         padding: 20px;
@@ -624,6 +624,38 @@ h1 {
                     border: 0;
                 }
 
+                .slick-dots {
+                    position: absolute;
+                    bottom: 0;
+                    left: 50%;
+                    margin-bottom: 0;
+                    transform: translateX(-50%);
+
+                    li {
+                        display: inline-block;
+                        margin-bottom: 0;
+                        height: 8px;
+
+                        &.slick-active {
+                            button {
+                                height: 12px;
+                                width: 12px;
+                                vertical-align: super;
+                            }
+                        }
+
+                        button {
+                            padding: 0;
+                            margin: 0 7px;
+                            border-radius: 50%;
+                            text-indent: -99999999px;
+                            width: 8px;
+                            height: 8px;
+                            overflow: hidden;
+                        }
+                    }
+                }
+
                 .slick-arrow {
                     position: absolute;
                     right: -20px;
@@ -631,6 +663,10 @@ h1 {
                     z-index: 4;
                     padding: 0;
                     cursor: pointer;
+
+                    @media (max-width: 1024px) {
+                        right: -8px;
+                    }
 
                     &.slick-prev {
                         right: 38px;
@@ -651,10 +687,10 @@ h1 {
                 transform: translateX(-50px);
 
                 @media (max-width: 1024px) {
-                    max-width: calc(100% - 20px);
-                    width: calc(100% - 20px);
+                    max-width: 100%;
+                    width: 100%;
                     padding: 16px;
-                    transform: translate(10px, -25px);
+                    transform: translate(0, -1px);
                 }
             }
         }
@@ -696,7 +732,7 @@ h1 {
                     transform: translateX(50px);
 
                     @media (max-width: 1024px) {
-                        transform: translate(10px, -25px);
+                        transform: translate(0, -1px);
                     }
                 }
             }

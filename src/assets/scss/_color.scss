@@ -203,14 +203,23 @@
     }
 
     .project-wrap {
-
         .product-carousel {
             .slick-arrow {
                 background: $acent;
                 color: $white-color;
 
                 &.slick-disabled {
-                    opacity: .7;
+                    opacity: 0.7;
+                }
+            }
+
+            .slick-dots {
+                li {
+                    &.slick-active {
+                        button {
+                            background-color: var(--acent);
+                        }
+                    }
                 }
             }
         }
