@@ -52,7 +52,7 @@ export default class About extends Component {
               </div>
               <div className='image-wrapper' data-sal='fade' data-sal-delay='400' data-sal-easing='ease'>
                 <Image
-                  filename='profile.jpg'
+                  filename='harsh-profile-image.jpg'
                   alt='profile image' 
                 />
               </div>

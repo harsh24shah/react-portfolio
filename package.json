@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "harsh-portfolio",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
+  "description": "Portfolio website to showcase my work and about me",
   "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Harsh Shah <024hrsh@gmail.com>",
   "dependencies": {
     "animejs": "^3.1.0",
     "gatsby": "^2.20.7",

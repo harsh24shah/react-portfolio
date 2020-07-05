@@ -117,7 +117,7 @@
             > span {
                 background: $secondary;
             }
-        }
+        } 
 
         > span {
             background: $primary;
@@ -126,7 +126,10 @@
 
     .header-inner {
         @media (max-width: 767px) {
-            background: rgba($secondary, 0.5);
+            transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
+            background-color: rgba($primary, 0.4);
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
         }
     }
 

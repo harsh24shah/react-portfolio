@@ -83,7 +83,7 @@ p {
     z-index: 1;
 
     @media (max-width: 767px) {
-        padding: 20px;
+        padding: 14px 20px;
 
         &.hide {
             transition: all 0.2s linear;
@@ -238,7 +238,6 @@ h1 {
 
     &.fs110 {
         font-size: 110px;
-        font-weight: 100;
         line-height: 1;
         margin-left: -10px;
 
@@ -658,19 +657,15 @@ h1 {
 
                 .slick-arrow {
                     position: absolute;
-                    right: -20px;
-                    top: -23px;
+                    right: 6px;
+                    top: 6px;
                     z-index: 4;
                     padding: 0;
                     cursor: pointer;
 
-                    @media (max-width: 1024px) {
-                        right: -8px;
-                    }
-
                     &.slick-prev {
-                        right: 38px;
-                    }
+                        right: 32px;
+                    } 
                 }
 
                 @media (max-width: 1024px) {

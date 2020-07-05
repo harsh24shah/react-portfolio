@@ -37,50 +37,50 @@
                 "thumbImages": [
                     {
                         "src": "wallperex/wallperex-home.jpg",
-                        "alt": "Wallperex app home page"
+                        "alt": "Wallperex - home page"
                     },
                     {
                         "src": "wallperex/wallperex-detail.jpg",
-                        "alt": "Wallperex app image detail"
+                        "alt": "Wallperex - image detail"
                     },
                     {
                         "src": "wallperex/wallperex-detail-dark.jpg",
-                        "alt": "Wallperex app image detail in dark theme"
+                        "alt": "Wallperex - image detail in dark theme"
                     },
                     {
                         "src": "wallperex/wallperex-filters.jpg",
-                        "alt": "Wallperex app inatagram filters"
+                        "alt": "Wallperex - inatagram filters"
                     },
                     {
                         "src": "wallperex/wallperex-collections.jpg",
-                        "alt": "Wallperex app collections page"
+                        "alt": "Wallperex - collections page"
                     },
                     {
                         "src": "wallperex/wallperex-desktop-home.jpg",
-                        "alt": "Wallperex app dektop home page"
+                        "alt": "Wallperex - dektop home page"
                     },
                     {
                         "src": "wallperex/wallperex-desktop-darkhome.jpg",
-                        "alt": "Wallperex app dektop home page in dark mode"
+                        "alt": "Wallperex - dektop home page in dark mode"
                     },
                     {
                         "src": "wallperex/wallperex-desktop-collection.jpg",
-                        "alt": "Wallperex app dektop collections page"
+                        "alt": "Wallperex - dektop collections page"
                     },
                     {
                         "src": "wallperex/wallperex-desktop-details.jpg",
-                        "alt": "Wallperex app dektop image details"
+                        "alt": "Wallperex - dektop image details"
                     },
                     {
                         "src": "wallperex/wallperex-desktop-edit.jpg",
-                        "alt": "Wallperex app dektop image edit popup"
+                        "alt": "Wallperex - dektop image edit popup"
                     }
                 ],
                 "technology": "<ul><li>Unshplash API</li><li>Angular</li><li>HTML5</li><li>Typescript</li><li>SCSS</li></ul>"
             },
             {
                 "title": "News on Cards",
-                "subtitle": "A daily news application having updated News of multiple News channels, where you can select News channels and get the news of the particular date of the category or search any topic which is recently in trending.",
+                "subtitle": "A daily news application having updated News of multiple News channels, where you can select News channels and get the news of the particular date of the category or search any topic which is recently in trending. New features are under development.",
                 "gitLink": "https://github.com/harsh24shah/firstProject",
                 "behanceLink": "",
                 "externalLink": "https://harshapps-1a31e.web.app/",

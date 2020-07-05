@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import Image from './image'
 import Carousel from './carousel';
+import { LiquidSvg } from '../assets/js/helper'
 import { FiExternalLink } from 'react-icons/fi'
 import { FaBehance, FaGithub } from 'react-icons/fa'
 
@@ -9,6 +9,12 @@ export default class Thumbnail extends Component {
   constructor(props) {
     super(props)
     this.state = {}
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      LiquidSvg(1, 'morph1');
+    }, 200)
   }
 
   render() {
@@ -39,7 +45,6 @@ export default class Thumbnail extends Component {
               {projectBehanceLink}
               {projectExternalLink}
             </div>
-
           </div>
         </div>
       </div>

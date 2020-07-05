@@ -56,7 +56,7 @@ export default class Header extends Component {
               <Link to='/contact' className='hover-this' activeClassName='current' onClick={this.toggleSidenav}>
                 <span className='underlined'>Contact</span>
               </Link>
-              <a title='Opens in a new tab' href='https://drive.google.com/file/d/17Bnsc5N94yIAEUlUUrabf4OQZtD47bE2/view?usp=sharing' rel='noopener noreferrer' target='_blank' className='button invert my-20'>
+              <a title='Opens in a new tab' href='https://drive.google.com/file/d/1z_PxurGL4re0Dk5QT07Kshj5P2F1ZYVH/view?usp=sharing' rel='noopener noreferrer' target='_blank' className='button invert my-20'>
                 <span>Resume</span>
               </a>
             </nav>

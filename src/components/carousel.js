@@ -8,7 +8,7 @@ function NextArrow(props) {
     const { className, onClick } = props;
     return (
         <button className={className} onClick={onClick}>
-            <IoIosArrowForward size="35px" />
+            <IoIosArrowForward size="20px" />
         </button>
 
     );
@@ -18,7 +18,7 @@ function PrevArrow(props) {
     const { className, onClick } = props;
     return (
         <button className={className} onClick={onClick}>
-            <IoIosArrowBack size="35px" />
+            <IoIosArrowBack size="20px" />
         </button>
     );
 }
@@ -41,12 +41,12 @@ export default class Carousel extends React.Component {
 
     render() {
         var settings = {
-            dots: true,
+            dots: false,
             speed: 500,
             infinite: false,
             slidesToShow: 1,
             slidesToScroll: 1,
-            arrows: false,
+            arrows: true,
             autoplay: false,
             cssEase: 'ease-in-out',
             nextArrow: <NextArrow />,
