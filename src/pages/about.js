@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SEO from '../components/seo'
+import Layout from '../components/layout';
 import Accordion from '../components/accordian'
 import { LiquidSvg } from '../assets/js/helper'
 import Image from '../components/image'
@@ -26,7 +27,7 @@ export default class About extends Component {
   render() {
     return (
       <>
-        <div>
+        <Layout>
           <div className='morph-wrap1'>
             <svg className='morph1' width='1400' height='770' viewBox='0 0 1400 770'>
               <polygon points='' />
@@ -37,15 +38,15 @@ export default class About extends Component {
               <polygon points='' />
             </svg>
           </div>
-          <SEO title='About Harsh' description='a software developer with four years of experience who loves building & designing stuff like web application, extentions or websites' />
+          <SEO title='About Harsh' description='A software developer with four years of experience who loves building & designing stuff like web application, extentions or websites' />
           <div className='content-wrapper scrollable-mobile'>
             <div className='about-wrap'>
               <div className='about-content'>
                 <h1 className='inline-block title'>{Content.title}</h1>
                 <div className='mb-40'>
-                  <p dangerouslySetInnerHTML={{__html: Content.mainContent}}></p>
-                  <p dangerouslySetInnerHTML={{__html: Content.subContent}}></p>
-                  <div className='mt-30'> 
+                  <p dangerouslySetInnerHTML={{ __html: Content.mainContent }}></p>
+                  <p dangerouslySetInnerHTML={{ __html: Content.subContent }}></p>
+                  <div className='mt-30'>
                     <Accordion panels={panels} />
                   </div>
                 </div>
@@ -53,12 +54,12 @@ export default class About extends Component {
               <div className='image-wrapper' data-sal='fade' data-sal-delay='400' data-sal-easing='ease'>
                 <Image
                   filename='harsh-profile-image.jpg'
-                  alt='profile image' 
+                  alt='profile image'
                 />
               </div>
             </div>
-          </div> 
-        </div>
+          </div>
+        </Layout>
       </>
     )
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SEO from '../components/seo'
+import Layout from '../components/layout';
 import { IoLogoFacebook, IoLogoLinkedin } from 'react-icons/io'
 import { AiFillInstagram } from 'react-icons/ai'
 import { LiquidSvg } from '../assets/js/helper'
@@ -18,7 +19,7 @@ export default class Contact extends Component {
 
   render() {
     return (
-      <div>
+      <Layout>
         <div className='morph-wrap1 anticlock'>
           <svg className='morph1' width='1400' height='770' viewBox='0 0 1400 770'>
             <polygon points='700,84.4 1047.1,685.6 352.9,685.6 352.9,685.6 352.9,685.6 352.9,685.6' />
@@ -36,7 +37,7 @@ export default class Contact extends Component {
             <div className='box-wrapper'>
               <div className='padding-box'>
                 <p className='intro-para' data-sal='slide-up' data-sal-delay='500' data-sal-easing='ease'>{Content.mainContent}</p>
-                <p className='intro-para' data-sal='slide-up' data-sal-delay='600' data-sal-easing='ease' dangerouslySetInnerHTML={{__html: Content.address}}></p>
+                <p className='intro-para' data-sal='slide-up' data-sal-delay='600' data-sal-easing='ease' dangerouslySetInnerHTML={{ __html: Content.address }}></p>
                 <div><a href='mailto:024hrsh@gmail.com' className='button' data-sal='slide-up' data-sal-delay='600' data-sal-easing='ease'>{Content.ctaTitle}</a></div>
                 <div className='separator' data-sal='slide-up' data-sal-delay='800' data-sal-easing='ease'></div>
                 <div className='inline-block my-12 contacts-logo' data-sal='slide-up' data-sal-delay='900' data-sal-easing='ease'>
@@ -49,7 +50,7 @@ export default class Contact extends Component {
             </div>
           </div>
         </div>
-      </div>
+      </Layout>
     )
   }
 } 

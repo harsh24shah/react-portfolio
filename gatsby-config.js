@@ -1,12 +1,30 @@
+const autoprefixer = require('autoprefixer');
+
 module.exports = {
   siteMetadata: {
     title: `UI Developer`,
-    description: `Harsh Shah, UI developer(sometimes designer), works with every thing lives on internet`,
+    description: `Harsh Shah, Frontend developer and sometimes designer, works with everything that lives on the internet`,
     author: `@Harsh Shah`,
+    siteUrl: `https://harshjshah.com/`,
   },
   plugins: [
-    `gatsby-plugin-sass`,
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        postCssPlugins: [
+          autoprefixer(),
+        ],
+      },
+    },
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-robots-txt`,
+      options: {
+        host: `https://harshjshah.com/`,
+        sitemap: `https://harshjshah.com/sitemap.xml`,
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     `react-scroll-parallax`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -28,12 +46,6 @@ module.exports = {
         display: `standalone`,
         icon: `src/images/harsh-logo-icon.svg`, // This path is relative to the root of the site.
       },
-    },
-    {
-      resolve: "gatsby-plugin-transition-link",
-      options: {
-        layout: require.resolve(`./src/components/Layout.js`)
-      }
     },
     {
       resolve: `gatsby-plugin-scroll-reveal`,

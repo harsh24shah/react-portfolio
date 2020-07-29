@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import SEO from '../components/seo'
+import Layout from '../components/layout';
 import { LiquidSvg } from '../assets/js/helper'
 import content from '../assets/content/content.json'
 
@@ -21,7 +22,7 @@ export default class IndexPage extends Component {
 
   render() {
     return (
-      <div>
+      <Layout>
         <div className='morph-wrap1 anticlock'>
           <svg className='morph1' width='1400' height='770' viewBox='0 0 1400 770'>
             <polygon points='' />
@@ -32,7 +33,7 @@ export default class IndexPage extends Component {
             <polygon points='' />
           </svg>
         </div>
-        <SEO title='Harsh Shah' keyword='Harsh Shah, Harsh, Shah, UX, UI developer, Web development, Web designer, UI development' />
+        <SEO title='Harsh Shah' keyword='Harsh Shah, Harsh, Shah, Fronend developer, front-end, User interface development, UX, UI developer, Web development, Web designer, UI development' />
         <div className='content-wrapper'>
           <div className='home-wrap'>
             <span className='highlighted-text' data-sal='slide-up' data-sal-delay='500' data-sal-easing='ease'>{Content.prevText}</span>
@@ -45,7 +46,7 @@ export default class IndexPage extends Component {
             </a>
           </div>
         </div>
-      </div>
+      </Layout>
     )
   }
 }

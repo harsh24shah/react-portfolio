@@ -1,10 +1,11 @@
 import React from 'react'
 import SEO from '../components/seo'
+import Layout from '../components/layout';
 import { IoLogoFacebook, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io';
 import { Link } from 'gatsby'
 
 const NotFoundPage = () => (
-  <div>
+  <Layout>
     <SEO title='404:Not Found' />
     <div className='content-wrapper'>
       <div className='box-outer'>
@@ -23,7 +24,7 @@ const NotFoundPage = () => (
         </div>
       </div>
     </div>
-  </div>
+    </Layout>
 )
 
 export default NotFoundPage
