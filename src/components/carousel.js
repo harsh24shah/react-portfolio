@@ -10,7 +10,6 @@ function NextArrow(props) {
         <button className={className} onClick={onClick}>
             <IoIosArrowForward size="20px" />
         </button>
-
     );
 }
 
@@ -31,7 +30,6 @@ export default class Carousel extends React.Component {
     }
 
     images = this.props.images.map(function (image, index) {
-        console.log(image.altname);
         let imageurl = image.src.toString();
         let imgAlt = image.alt;
         return (

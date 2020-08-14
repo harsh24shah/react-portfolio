@@ -1,20 +1,21 @@
-import React, { Component } from 'react'
-import SEO from '../components/seo'
+import React, { Component } from 'react';
+import SEO from '../components/seo';
 import Layout from '../components/layout';
-import { IoLogoFacebook, IoLogoLinkedin } from 'react-icons/io'
-import { AiFillInstagram } from 'react-icons/ai'
-import { LiquidSvg } from '../assets/js/helper'
-import content from '../assets/content/content.json'
+import { IoLogoFacebook, IoLogoLinkedin } from 'react-icons/io';
+import { AiFillInstagram } from 'react-icons/ai';
+import { LiquidSvg } from '../assets/js/helper';
+import content from '../assets/content/content.json';
 
 const Content = content.contact;
 
 export default class Contact extends Component {
+  copyrightYear = new Date().getFullYear(); 
 
   componentDidMount() {
     setTimeout(() => {
       LiquidSvg(3, 'morph1');
       LiquidSvg(4, 'morph2');
-    }, 200)
+    }, 200)  
   }
 
   render() {
@@ -45,7 +46,7 @@ export default class Contact extends Component {
                   <span className='mr-20'><a href='https://www.facebook.com/24hjs' title='Facebook - opens in a new tab' rel='noopener noreferrer' target='_blank' className='hover-this'><IoLogoFacebook size='30px' /></a></span>
                   <span className='mr-20'><a href='https://www.instagram.com/24harsh' title='Instagram - opens in a new tab' rel='noopener noreferrer' target='_blank' className='hover-this'><AiFillInstagram size='30px' /></a></span>
                 </div>
-                <div className='mt-50' data-sal='slide-up' data-sal-delay='1000' data-sal-easing='ease'><small>{Content.copyRightText}</small></div>
+                <div className='mt-50' data-sal='slide-up' data-sal-delay='1000' data-sal-easing='ease'><small>Copyright © {this.copyrightYear}, {Content.copyRightText}</small></div>
               </div>
             </div>
           </div>

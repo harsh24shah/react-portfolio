@@ -23,6 +23,97 @@
                 "label": "Things I do when I'm not coding",
                 "content": "<p>I like traveling, clicking random things, and making sketches. Heavy metal and acoustic rock are my tastes in music.</p>"
             }
+        ],
+        "galleryTitle": "Sketches & Clicks",
+        "sketchGallery": [
+            {
+                "src": "sketch-gallery/childhood.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/diwali.jpeg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-8.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/nature-1.jpg",
+                "alt": "Juhu Beach, Mumbai"
+            },
+            {
+                "src": "sketch-gallery/sketch-9.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/rangoli.jpg",
+                "alt": "Rangoli"
+            },
+            {
+                "src": "sketch-gallery/diwali-2.jpeg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-2.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-3.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/nature-2.jpg",
+                "alt": "Juhu Beach, Mumbai"
+            },
+            {
+                "src": "sketch-gallery/place-1.jpg",
+                "alt": "Street of Rajasthan, Nathdhwara"
+            },
+            {
+                "src": "sketch-gallery/sketch-10.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-11.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/place-2.jpg",
+                "alt": "Indian Railway, Lonavala"
+            },
+            {
+                "src": "sketch-gallery/portrait-1.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/portrait-2.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/portrait-3.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-1.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/nature-3.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-4.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-5.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-7.jpg",
+                "alt": ""
+            }
         ]
     },
     "works": {

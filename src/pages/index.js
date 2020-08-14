@@ -1,8 +1,8 @@
-import React, { Component } from 'react'
-import SEO from '../components/seo'
+import React, { Component } from 'react';
+import SEO from '../components/seo';
 import Layout from '../components/layout';
-import { LiquidSvg } from '../assets/js/helper'
-import content from '../assets/content/content.json'
+import { LiquidSvg } from '../assets/js/helper';
+import content from '../assets/content/content.json';
 
 const Content = content.home;
 

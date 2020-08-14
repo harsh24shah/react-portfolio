@@ -25,6 +25,12 @@ module.exports = {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-LYLZ65LHHZ",
+      },
+    },
     `react-scroll-parallax`,
     {
       resolve: `gatsby-source-filesystem`,

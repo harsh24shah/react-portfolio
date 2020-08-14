@@ -37,6 +37,7 @@
         &,
         &:hover,
         &:focus {
+            background: transparent;
             color: $primary;
         }
     }
@@ -117,7 +118,7 @@
             > span {
                 background: $secondary;
             }
-        } 
+        }
 
         > span {
             background: $primary;
@@ -190,16 +191,16 @@
     button,
     .button {
         border: 1px solid $acent;
-        background: transparent;
-        color: $acent;
+        background: $acent;
+        color: $white-color;
         transition-delay: 0s;
         transition: all 0.85s ease;
 
         &:hover,
         &:focus,
         &:active {
-            background: $acent;
-            color: $white-color;
+            background: transparent;
+            color: $acent;
             transition-delay: 0s;
             transition: all 0.85s ease;
         }

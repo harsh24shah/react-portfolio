@@ -1,16 +1,46 @@
-import React, { Component } from 'react'
-import SEO from '../components/seo'
+import React, { Component } from 'react';
+import SEO from '../components/seo';
 import Layout from '../components/layout';
-import Thumbnail from '../components/thumbnail'
-import { LiquidSvg } from '../assets/js/helper'
-import { FiExternalLink } from 'react-icons/fi'
-import content from '../assets/content/content.json'
+import Thumbnail from '../components/thumbnail';
+import { LiquidSvg } from '../assets/js/helper';
+import { FiExternalLink } from 'react-icons/fi';
+import content from '../assets/content/content.json';
+import { SRLWrapper } from 'simple-react-lightbox'
 
 const Content = content.works;
 const projects = Content.projects;
 const otherProjects = Content.pastProjects;
 
+const options = {
+  caption: {
+    captionFontSize: '22px',
+    captionColor: '#ffffff',
+    captionFontWeight: 300,
+    showCaption: true
+  },
+  settings: {
+    overlayColor: 'rgba(0, 0, 0, 0.8)',
+  },
+  progressBar: {
+    height: '3px',
+    fillColor: '#f87f64',
+    backgroundColor: 'rgba(43, 45, 66, 0.95)'
+  }
+}
+
 export default class Projects extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {}
+  }
+
+  componentDidMount() {
+    setTimeout(() => {
+      LiquidSvg(1, 'morph1');
+      LiquidSvg(0, 'morph2');
+    }, 200)
+  }
 
   projectRender = projects.map(function (project, index) {
     return (
@@ -39,18 +69,6 @@ export default class Projects extends Component {
     )
   })
 
-  constructor(props) {
-    super(props)
-    this.state = {}
-  }
-
-  componentDidMount() {
-    setTimeout(() => {
-      LiquidSvg(1, 'morph1');
-      LiquidSvg(0, 'morph2');
-    }, 200)
-  }
-
   render() {
     return (
       <Layout>
@@ -67,10 +85,12 @@ export default class Projects extends Component {
         <SEO title="Harsh's Projects" />
         <div className='component-wrap mb-0'>
           <div className='content-wrapper scrollable'>
-            <div className='project-wrap'>
-              <h1 className='inline-block title' data-sal='slide-up' data-sal-delay='300' data-sal-easing='ease'>{Content.title}</h1>
-              {this.projectRender}
-            </div>
+            <SRLWrapper options={options}>
+              <div className='project-wrap'>
+                <h1 className='inline-block title' data-sal='slide-up' data-sal-delay='300' data-sal-easing='ease'>{Content.title}</h1>
+                {this.projectRender}
+              </div>
+            </SRLWrapper>
           </div>
           <div className='inverse-section'>
             <div className='content-wrapper scrollable'>

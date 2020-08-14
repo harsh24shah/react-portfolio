@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300;400;500;700&display=swap');
 @import "reset";
 @import "utilities";
 @import "structure";
@@ -32,12 +33,12 @@
 
 :root {
     /* Set the deafult values */
-    --primary: #524f4f;
+    --primary: black;
     --secondary: white;
     --morphBg: rgba(248, 127, 100, 0.16);
     --morphNav: rgba(248, 127, 100, 0.16);
     --fontWeight: 400;
-    --acent: #fa5f1a;
+    --acent: #f87f64;
 }
 
 $primary: var(--primary);

@@ -11,6 +11,7 @@ import { ThemeProvider } from 'styled-components'
 import Header from './header'
 import Footer from './footer'
 import '../assets/scss/app.scss'
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 const dark = {
   '--primary': 'white',
@@ -27,7 +28,7 @@ const light = {
   '--morphBg': 'rgba(248, 127, 100, 0.16)',
   '--morphNav': 'rgba(248, 127, 100, 0.16)',
   '--fontWeight': '400',
-  '--acent': '#f87f64' ,
+  '--acent': '#f87f64',
 }
 
 const applyTheme = (nextTheme) => {
@@ -78,7 +79,8 @@ export default class Layout extends Component {
                   }
                     `}
           render={data => (
-            <ThemeProvider theme={this.state}>
+            <SimpleReactLightbox>
+              <ThemeProvider theme={this.state}>
                 <React.Fragment>
                   <div className='main'>
                     <main className='routed'>
@@ -88,7 +90,8 @@ export default class Layout extends Component {
                     </main>
                   </div>
                 </React.Fragment>
-            </ThemeProvider>
+              </ThemeProvider>
+            </SimpleReactLightbox>
           )}
         />
       </>

@@ -1,8 +1,8 @@
-import React from 'react'
-import SEO from '../components/seo'
+import React from 'react';
+import SEO from '../components/seo';
 import Layout from '../components/layout';
 import { IoLogoFacebook, IoLogoLinkedin, IoLogoInstagram } from 'react-icons/io';
-import { Link } from 'gatsby'
+import { Link } from 'gatsby';
 
 const NotFoundPage = () => (
   <Layout>
