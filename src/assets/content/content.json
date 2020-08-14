@@ -1,0 +1,320 @@
+{
+    "home": {
+        "prevText": "Hi, my name is",
+        "mainText": "Harsh Shah",
+        "subText": "I develop things for the web",
+        "introText": "I'm a software engineer based in Vadodara, India specializing in the building and sometimes designing pixel-perfect and high quality websites and web applications.",
+        "ctaText": "Get in Touch"
+    },
+    "about": {
+        "title": "About me",
+        "mainContent": "Hi, I'm Harsh Shah from Vadodara, India; a software developer with four years of experience who loves building & designing stuff that lives on the internet, whether that will be a web application, extensions, websites, or in between. I enjoy solving complex problems in simple ways.",
+        "subContent": "I've completed a Bachelor of Engineering in Information Technology from <a title='Opens in a new tab' target='_blank' href='https://svitvasad.ac.in/svit/'>SVIT</a> (Sardar Vallabhbhai Patel Institute of Technology) located in Gujarat, India.",
+        "panels": [
+            {
+                "label": "Few technologies and tools I've been working with",
+                "content": "<div class='flex-auto'><ul class='bullets'><li>Javascript</li><li>Typescript</li><li>HTML & S(CSS)</li><li>Angular</li><li>Gulp</li></ul><ul class='bullets'><li>Git & Github</li><li>Figma</li><li>Photoshop</li><li>Prototyping</li><li>Wireframing</li></ul></div>"
+            },
+            {
+                "label": "Where I've worked",
+                "content": "<p>I'm currently working as a Front-end Designer in <a title='Opens in a new tab' target='_blank' href='https://www.odysseussolutions.com/'>Odysseus Solutions</a> from Dec 2018. Earlier, I was working as a Web Producer with <a title='Opens in a new tab' target='_blank' href='https://www.investisdigital.com/'>Investis Digital</a> for two and a half years where I have started my career in 2016.</p>"
+            },
+            {
+                "label": "Things I do when I'm not coding",
+                "content": "<p>I like traveling, clicking random things, and making sketches. Heavy metal and acoustic rock are my tastes in music.</p>"
+            }
+        ],
+        "galleryTitle": "Sketches & Clicks",
+        "sketchGallery": [
+            {
+                "src": "sketch-gallery/childhood.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/diwali.jpeg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-8.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/nature-1.jpg",
+                "alt": "Juhu Beach, Mumbai"
+            },
+            {
+                "src": "sketch-gallery/sketch-9.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/rangoli.jpg",
+                "alt": "Rangoli"
+            },
+            {
+                "src": "sketch-gallery/diwali-2.jpeg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-2.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-3.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/nature-2.jpg",
+                "alt": "Juhu Beach, Mumbai"
+            },
+            {
+                "src": "sketch-gallery/place-1.jpg",
+                "alt": "Street of Rajasthan, Nathdhwara"
+            },
+            {
+                "src": "sketch-gallery/sketch-10.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-11.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/place-2.jpg",
+                "alt": "Indian Railway, Lonavala"
+            },
+            {
+                "src": "sketch-gallery/portrait-1.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/portrait-2.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/portrait-3.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-1.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/nature-3.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-4.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-5.jpg",
+                "alt": ""
+            },
+            {
+                "src": "sketch-gallery/sketch-7.jpg",
+                "alt": ""
+            }
+        ]
+    },
+    "works": {
+        "title": "Some Things I've Built",
+        "projects": [
+            {
+                "title": "Wallperex",
+                "subtitle": "An image gallery with high-quality images where you can search and get thousands of image categories, share any image on social media, edit any image with filters like Instagram, and download as well.",
+                "gitLink": "https://github.com/harsh24shah/unsplash-image-gallery",
+                "behanceLink": "",
+                "externalLink": "https://wallperex.web.app",
+                "thumbImages": [
+                    {
+                        "src": "wallperex/wallperex-home.jpg",
+                        "alt": "Wallperex - home page"
+                    },
+                    {
+                        "src": "wallperex/wallperex-detail.jpg",
+                        "alt": "Wallperex - image detail"
+                    },
+                    {
+                        "src": "wallperex/wallperex-detail-dark.jpg",
+                        "alt": "Wallperex - image detail in dark theme"
+                    },
+                    {
+                        "src": "wallperex/wallperex-filters.jpg",
+                        "alt": "Wallperex - inatagram filters"
+                    },
+                    {
+                        "src": "wallperex/wallperex-collections.jpg",
+                        "alt": "Wallperex - collections page"
+                    },
+                    {
+                        "src": "wallperex/wallperex-desktop-home.jpg",
+                        "alt": "Wallperex - dektop home page"
+                    },
+                    {
+                        "src": "wallperex/wallperex-desktop-darkhome.jpg",
+                        "alt": "Wallperex - dektop home page in dark mode"
+                    },
+                    {
+                        "src": "wallperex/wallperex-desktop-collection.jpg",
+                        "alt": "Wallperex - dektop collections page"
+                    },
+                    {
+                        "src": "wallperex/wallperex-desktop-details.jpg",
+                        "alt": "Wallperex - dektop image details"
+                    },
+                    {
+                        "src": "wallperex/wallperex-desktop-edit.jpg",
+                        "alt": "Wallperex - dektop image edit popup"
+                    }
+                ],
+                "technology": "<ul><li>Unshplash API</li><li>Angular</li><li>HTML5</li><li>Typescript</li><li>SCSS</li></ul>"
+            },
+            {
+                "title": "News on Cards",
+                "subtitle": "A daily news application having updated News of multiple News channels, where you can select News channels and get the news of the particular date of the category or search any topic which is recently in trending. New features are under development.",
+                "gitLink": "https://github.com/harsh24shah/firstProject",
+                "behanceLink": "",
+                "externalLink": "https://harshapps-1a31e.web.app/",
+                "thumbImages": [
+                    {
+                        "src": "news-on-cards/news-on-cards-home.jpg",
+                        "alt": "News cards home"
+                    },
+                    {
+                        "src": "news-on-cards/news-on-cards-menu.jpg",
+                        "alt": "News cards open state of sidebar"
+                    },
+                    {
+                        "src": "news-on-cards/news-on-cards-popular.jpg",
+                        "alt": "News cards popular news tab"
+                    }
+                ],
+                "technology": "<ul><li>NYTimes API</li><li>Angular</li><li>HTML5</li><li>Typescript</li><li>SCSS</li></ul>"
+            },
+            {
+                "title": "Portfolio Concept",
+                "subtitle": "A design mockup created for a full-page portfolio website idea for a person having a technical professional background like a web developer or a software developer.",
+                "gitLink": "",
+                "behanceLink": "https://www.behance.net/gallery/90045583/Portfolio-Design",
+                "externalLink": "",
+                "thumbImages": [
+                    {
+                        "src": "portfolio-design/portfolio-mockup-about.jpg",
+                        "alt": "Harsh portfolio about page"
+                    },
+                    {
+                        "src": "portfolio-design/portfolio-mockup-home.jpg",
+                        "alt": "Harsh portfolio home page"
+                    },
+                    {
+                        "src": "portfolio-design/portfolio-mockup-gallery.jpg",
+                        "alt": "Harsh portfolio about page"
+                    },
+                    {
+                        "src": "portfolio-design/portfolio-mockup-menu.jpg",
+                        "alt": "Harsh portfolio mockup menu"
+                    },
+                    {
+                        "src": "portfolio-design/portfolio-mockup-contacts.jpg",
+                        "alt": "Harsh portfolio mockup contact page"
+                    }
+                ],
+                "technology": "<ul><li>Photoshop</li></ul>"
+            },
+            {
+                "title": "Photos Gallery",
+                "subtitle": "A prototype of a mobile application of gallery app having prototypes of the image preview, edit, notification and image share.",
+                "gitLink": "",
+                "behanceLink": "https://www.behance.net/gallery/90046711/Image-Gallery",
+                "externalLink": "",
+                "thumbImages": [
+                    {
+                        "src": "gallery-design/gallery-explore.jpg",
+                        "alt": "Gallery design - explore"
+                    },
+                    {
+                        "src": "gallery-design/gallery-profile.jpg",
+                        "alt": "Gallery design - profile"
+                    },
+                    {
+                        "src": "gallery-design/gallery-after-scroll.jpg",
+                        "alt": "Gallery design - after scroll"
+                    },
+                    {
+                        "src": "gallery-design/gallery-open-menu.jpg",
+                        "alt": "Gallery design - menu"
+                    },
+                    {
+                        "src": "gallery-design/gallery-image-details.jpg",
+                        "alt": "Gallery design - image details"
+                    },
+                    {
+                        "src": "gallery-design/gallery-edit-image.jpg",
+                        "alt": "Gallery design - edit image"
+                    },
+                    {
+                        "src": "gallery-design/gallery-edit-profile.jpg",
+                        "alt": "Gallery design - edit profile"
+                    },
+                    {
+                        "src": "gallery-design/gallery-notifcations.jpg",
+                        "alt": "Gallery design - notification"
+                    }
+                ],
+                "technology": "<ul><li>Photoshop</li></ul>"
+            },
+            {
+                "title": "Dashboard Template",
+                "subtitle": "A dashboard with multiple components and attractive look and feel having support for all the devices, broswers and easy theming management.",
+                "gitLink": "",
+                "behanceLink": "",
+                "externalLink": "",
+                "thumbImages": [
+                    {
+                        "src": "work-underway.png",
+                        "alt": "work underway"
+                    }
+                ],
+                "technology": "<ul><li>Angular</li><li>HTML5</li><li>SCSS</li><li>Typescript</li></ul>"
+            }
+        ],
+        "pastProjectsTitle": "Projects I've worked on",
+        "pastProjects": [
+            {
+                "year": "2018",
+                "title": "Rolls-Royce Careers",
+                "madeAt": "Investis Digital",
+                "role": "UI work in HTML, Css, Javascript",
+                "link": "https://careers.rolls-royce.com"
+            },
+            {
+                "year": "2018",
+                "title": "ArcelorMittal Staligence",
+                "madeAt": "Investis Digital",
+                "role": "UI work in HTML, Css, JQuery",
+                "link": "https://steligence.arcelormittal.com/"
+            },
+            {
+                "year": "2017",
+                "title": "Ferratum Investor Relation",
+                "madeAt": "Investis Digital",
+                "role": "UI work in HTML, Css, JQuery",
+                "link": "https://ferratumgroup.com"
+            },
+            {
+                "year": "2016",
+                "title": "Christie Group plc",
+                "madeAt": "Investis Digital",
+                "role": "UI work in HTML, Css, Javascript",
+                "link": "https://www.christiegroup.com"
+            }
+        ]
+    },
+    "contact": {
+        "title": "Get in Touch",
+        "mainContent": "Though I'm not looking for any opportunities, my inbox is always open for you and I would like to answer in case you have any questions or you can just say hi, I will try to get back to you.",
+        "address": "<a title='Opens map in a new tab' href='https://goo.gl/maps/9Uhe89Qs7sAGGgL78' target='_blank'>Parivar, Vadodara, India - 390025</a>",
+        "ctaTitle": "Say Hello",
+        "copyRightText": "Designed & Build by Harsh Shah"
+    }
+}

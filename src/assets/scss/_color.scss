@@ -1,0 +1,284 @@
+@mixin theme($primary, $secondary, $morph-bgcolor, $morph-navcolor, $para-font-weight, $acent) {
+    $primary: $primary;
+    $secondary: $secondary;
+    $morph-bgcolor: $morph-bg;
+    $morph-navcolor: $morp-nav;
+    $para-font-weight: $para-font-weight;
+    $acent: $acent;
+    $black-color: black;
+    $white-color: white;
+
+    body {
+        background: $secondary;
+        color: $primary;
+    }
+
+    p {
+        font-weight: $para-font-weight;
+    }
+
+    a {
+        color: $primary;
+    }
+
+    .mail-fixed {
+        a {
+            &:hover {
+                color: $acent;
+            }
+        }
+    }
+
+    .text-grey {
+        color: lighten($black-color, 47.06);
+    }
+
+    .toggle-button {
+        &,
+        &:hover,
+        &:focus {
+            background: transparent;
+            color: $primary;
+        }
+    }
+
+    .text-acent {
+        color: $acent;
+    }
+
+    .social-media-logos {
+        a {
+            color: $primary;
+        }
+
+        &.active {
+            a {
+                color: $secondary;
+            }
+        }
+    }
+
+    .contacts-logo,
+    .social-media-logos {
+        a {
+            &:hover {
+                color: $acent;
+            }
+        }
+    }
+
+    p {
+        a {
+            color: $acent;
+        }
+    }
+
+    .morph1,
+    .morph2 {
+        stroke: $morph-bgcolor;
+    }
+
+    .morph3 {
+        stroke: $morph-navcolor;
+    }
+
+    h1 {
+        span {
+            color: lighten($black-color, 36.86);
+        }
+    }
+
+    .highlighted-text {
+        color: $acent;
+    }
+
+    .underlined {
+        &.thin {
+            color: $primary;
+        }
+
+        &:after {
+            background: $acent;
+        }
+    }
+
+    .routed {
+        &:after {
+            background: rgba($acent, 0.8);
+        }
+    }
+
+    .overlay {
+        background: rgba($black-color, 0.5);
+    }
+
+    /*---menu and navigation style starts---*/
+    .menu-burger {
+        &.active {
+            > span {
+                background: $secondary;
+            }
+        }
+
+        > span {
+            background: $primary;
+        }
+    }
+
+    .header-inner {
+        @media (max-width: 767px) {
+            transition-property: background-color, backdrop-filter, -webkit-backdrop-filter;
+            background-color: rgba($primary, 0.4);
+            -webkit-backdrop-filter: blur(4px);
+            backdrop-filter: blur(4px);
+        }
+    }
+
+    .logo-link {
+        path {
+            fill: $acent;
+        }
+    }
+
+    .navigation {
+        background: $primary;
+
+        &.active {
+            @media (max-width: 767px) {
+                ~ .header-inner {
+                    background: rgba($black-color, 0);
+
+                    .logo-custom {
+                        color: $secondary;
+                    }
+                }
+            }
+        }
+
+        .menu-items {
+            a:not(.button) {
+                color: $secondary;
+
+                > span {
+                    &:after {
+                        background: $acent;
+                    }
+                }
+            }
+        }
+    }
+    /*---menu and navigation style ends---*/
+    .block-reveal {
+        &::after {
+            background: $primary;
+        }
+    }
+
+    .separator {
+        border-top: 3px solid $primary;
+    }
+
+    ul {
+        &.bullets {
+            li {
+                &:before {
+                    background-color: $acent;
+                }
+            }
+        }
+    }
+
+    button,
+    .button {
+        border: 1px solid $acent;
+        background: $acent;
+        color: $white-color;
+        transition-delay: 0s;
+        transition: all 0.85s ease;
+
+        &:hover,
+        &:focus,
+        &:active {
+            background: transparent;
+            color: $acent;
+            transition-delay: 0s;
+            transition: all 0.85s ease;
+        }
+    }
+
+    .project-wrap {
+        .product-carousel {
+            .slick-arrow {
+                background: $acent;
+                color: $white-color;
+
+                &.slick-disabled {
+                    opacity: 0.7;
+                }
+            }
+
+            .slick-dots {
+                li {
+                    &.slick-active {
+                        button {
+                            background-color: var(--acent);
+                        }
+                    }
+                }
+            }
+        }
+
+        .project-title {
+            color: $white-color;
+            background: #292929;
+
+            a {
+                color: $white-color;
+            }
+        }
+    }
+
+    // accordian style
+    .accordion {
+        .panel {
+            background-color: transparent;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid lighten($black-color, 14.51);
+            }
+        }
+
+        .panel-label {
+            color: $primary;
+
+            &:hover,
+            &:focus {
+                background: transparent;
+            }
+
+            &:after,
+            &:before {
+                background-color: $acent;
+            }
+        }
+
+        .panel-content {
+            color: $primary;
+        }
+    }
+
+    .inverse-section {
+        background: #292929;
+        color: $white-color;
+    }
+
+    table {
+        tbody {
+            tr {
+                &:hover {
+                    background: rgba($primary, 0.1);
+                }
+            }
+        }
+    }
+}
