@@ -87,11 +87,11 @@ export default class About extends Component {
             <div className="w-100 about-gallery-outer">
               <h1 className='inline-block title'>{Content.galleryTitle}</h1>
               <div className='about-gallery-wrap'>
-                <SRLWrapper options={options}>
+                {/* <SRLWrapper options={options}> */}
                   {this.galleryImage}
-                </SRLWrapper>
+                {/* </SRLWrapper> */}
               </div>
-            </div>
+            </div> 
           </div>
         </div>
       </Layout>

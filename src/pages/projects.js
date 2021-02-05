@@ -85,12 +85,12 @@ export default class Projects extends Component {
         <SEO title="Harsh's Projects" />
         <div className='component-wrap mb-0'>
           <div className='content-wrapper scrollable'>
-            <SRLWrapper options={options}>
+            {/* <SRLWrapper options={options}> */}
               <div className='project-wrap'>
                 <h1 className='inline-block title' data-sal='slide-up' data-sal-delay='300' data-sal-easing='ease'>{Content.title}</h1>
                 {this.projectRender}
               </div>
-            </SRLWrapper>
+            {/* </SRLWrapper> */}
           </div>
           <div className='inverse-section'>
             <div className='content-wrapper scrollable'>

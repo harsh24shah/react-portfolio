@@ -16,9 +16,9 @@ const NotFoundPage = () => (
             <Link to='/' className='button' >Home</Link>
             <div className='separator'></div>
             <div className='inline-block my-12'>
-              <span className='mr-20'><a href='https://www.linkedin.com/in/24hjs' rel='noopener noreferrer' target='_blank' className='hover-this'><IoLogoLinkedin size='30px' /></a></span>
+              <span className='mr-20'><a href='https://www.linkedin.com/in/24harshjshah' rel='noopener noreferrer' target='_blank' className='hover-this'><IoLogoLinkedin size='30px' /></a></span>
               <span className='mr-20'><a href='https://www.facebook.com/24hjs' rel='noopener noreferrer' target='_blank' className='hover-this'><IoLogoFacebook size='30px' /></a></span>
-              <span className='mr-20'><a href='https://www.instagram.com/24harsh' rel='noopener noreferrer' target='_blank' className='hover-this'><IoLogoInstagram size='30px' /></a></span>
+              <span className='mr-20'><a href='https://www.instagram.com/24harshjshah' rel='noopener noreferrer' target='_blank' className='hover-this'><IoLogoInstagram size='30px' /></a></span>
             </div>
           </div>
         </div>

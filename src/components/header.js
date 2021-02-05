@@ -56,7 +56,7 @@ export default class Header extends Component {
               <Link to='/contact' className='hover-this' activeClassName='current' onClick={this.toggleSidenav}>
                 <span className='underlined'>Contact</span>
               </Link>
-              <a title='Opens in a new tab' href='https://drive.google.com/file/d/1z_PxurGL4re0Dk5QT07Kshj5P2F1ZYVH/view?format=pdf' rel='noopener noreferrer' target='_blank' className='button invert my-20'>
+              <a title='Opens in a new tab' href='https://drive.google.com/file/d/1ezL1nnoMRmy2i3yGCCTTriv64EKUAFP-/view?format=pdf' rel='noopener noreferrer' target='_blank' className='button invert my-20'>
                 <span>Resume</span>
               </a>
             </nav>
@@ -85,13 +85,13 @@ export default class Header extends Component {
                 <a title='GitHub - opens in a new tab' href='https://github.com/harsh24shah' rel='noopener noreferrer' target='_blank' className='hover-this'><IoLogoGithub size='30px' /></a>
               </span>
               <span className='mr-20'>
-                <a title='Codepen - opens in a new tab' href='https://codepen.io/24hjs' rel='noopener noreferrer' target='_blank' className='hover-this'><IoLogoCodepen size='30px' /></a>
+                <a title='Codepen - opens in a new tab' href='https://codepen.io/24harshjshah' rel='noopener noreferrer' target='_blank' className='hover-this'><IoLogoCodepen size='30px' /></a>
               </span>
               <span className='mr-20'>
-                <a title='Linkedin - opens in a new tab' href='https://www.linkedin.com/in/24hjs' rel='noopener noreferrer' target='_blank' className='hover-this'><IoLogoLinkedin size='30px' /></a>
+                <a title='Linkedin - opens in a new tab' href='https://www.linkedin.com/in/24harshjshah' rel='noopener noreferrer' target='_blank' className='hover-this'><IoLogoLinkedin size='30px' /></a>
               </span>
               <span className='mr-20'>
-                <a title='Instagram - opens in a new tab' href='https://www.instagram.com/24harsh' rel='noopener noreferrer' target='_blank' className='hover-this'><AiFillInstagram size='30px' /></a>
+                <a title='Instagram - opens in a new tab' href='https://www.instagram.com/24harshjshah' rel='noopener noreferrer' target='_blank' className='hover-this'><AiFillInstagram size='30px' /></a>
               </span>
             </div>
           </div>

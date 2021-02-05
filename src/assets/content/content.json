@@ -120,6 +120,50 @@
         "title": "Some Things I've Built",
         "projects": [
             {
+                "title": "Befit Pressery",
+                "subtitle": "An E-commerce responsive Web App of natural authentic cold pressed juice from India.",
+                "gitLink": "",
+                "behanceLink": "",
+                "externalLink": "https://befitpressery.com/",
+                "thumbImages": [
+                    {
+                        "src": "befit/befit-home.png",
+                        "alt": ""
+                    },
+                    {
+                        "src": "befit/befit-shop.png",
+                        "alt": ""
+                    },
+                    {
+                        "src": "befit/befit-cart.png",
+                        "alt": ""
+                    },
+                    {
+                        "src": "befit/befit-order.png",
+                        "alt": ""
+                    },
+                    {
+                        "src": "befit/befit-details.png",
+                        "alt": ""
+                    }    
+                ],
+                "technology": "<ul><li>Ionic v5</li><li>Angular</li><li>Razorpay</li><li>Firebase</li></ul>"
+            },
+            {
+                "title": "Laundry App Template",
+                "subtitle": "A Template of Laundry Web/Android app build in Ionic framework v4, Coming Soon!",
+                "gitLink": "https://github.com/harsh24shah/laundry-app",
+                "behanceLink": "",
+                "externalLink": "",
+                "thumbImages": [
+                    {
+                        "src": "work-underway.png",
+                        "alt": "work underway"
+                    }    
+                ],
+                "technology": "<ul><li>Ionic v4</li><li>Angular</li><li>HTML5</li><li>Angular Matrial</li></ul>"
+            },
+            {
                 "title": "Wallperex",
                 "subtitle": "An image gallery with high-quality images where you can search and get thousands of image categories, share any image on social media, edit any image with filters like Instagram, and download as well.",
                 "gitLink": "https://github.com/harsh24shah/unsplash-image-gallery",
@@ -262,20 +306,6 @@
                     }
                 ],
                 "technology": "<ul><li>Photoshop</li></ul>"
-            },
-            {
-                "title": "Dashboard Template",
-                "subtitle": "A dashboard with multiple components and attractive look and feel having support for all the devices, broswers and easy theming management.",
-                "gitLink": "",
-                "behanceLink": "",
-                "externalLink": "",
-                "thumbImages": [
-                    {
-                        "src": "work-underway.png",
-                        "alt": "work underway"
-                    }
-                ],
-                "technology": "<ul><li>Angular</li><li>HTML5</li><li>SCSS</li><li>Typescript</li></ul>"
             }
         ],
         "pastProjectsTitle": "Projects I've worked on",

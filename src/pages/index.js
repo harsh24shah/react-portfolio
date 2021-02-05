@@ -33,7 +33,7 @@ export default class IndexPage extends Component {
             <polygon points='' />
           </svg>
         </div>
-        <SEO title='Harsh Shah' keyword='Harsh Shah, Harsh, Shah, Fronend developer, front-end, User interface development, UX, UI developer, Web development, Web designer, UI development' />
+        <SEO title='Harsh Shah' keyword='Harsh Shah, Harsh, Shah, Fronend developer, front-end, User interface development, UX, UI developer, Web development, Web designer, UI development, Front-end dveeloper' />
         <div className='content-wrapper'>
           <div className='home-wrap'>
             <span className='highlighted-text' data-sal='slide-up' data-sal-delay='500' data-sal-easing='ease'>{Content.prevText}</span>

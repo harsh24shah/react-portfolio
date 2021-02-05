@@ -2,7 +2,7 @@ const autoprefixer = require('autoprefixer');
 
 module.exports = {
   siteMetadata: {
-    title: `UI Developer`,
+    title: `Front-end Developer`,
     description: `Harsh Shah, Frontend developer and sometimes designer, works with everything that lives on the internet`,
     author: `@Harsh Shah`,
     siteUrl: `https://harshjshah.com/`,
