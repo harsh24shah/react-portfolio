@@ -8,16 +8,16 @@
     },
     "about": {
         "title": "About me",
-        "mainContent": "Hi, I'm Harsh Shah from Vadodara, India; a software developer with four years of experience who loves building & designing stuff that lives on the internet, whether that will be a web application, extensions, websites, or in between. I enjoy solving complex problems in simple ways.",
+        "mainContent": "Hi, I'm Harsh Shah from Vadodara, India; a software developer above four years of experience who loves building & designing stuff that lives on the internet, whether that will be a web application, extensions, websites, or in between. I enjoy solving complex problems in simple ways.",
         "subContent": "I've completed a Bachelor of Engineering in Information Technology from <a title='Opens in a new tab' target='_blank' href='https://svitvasad.ac.in/svit/'>SVIT</a> (Sardar Vallabhbhai Patel Institute of Technology) located in Gujarat, India.",
         "panels": [
             {
                 "label": "Few technologies and tools I've been working with",
-                "content": "<div class='flex-auto'><ul class='bullets'><li>Javascript</li><li>Typescript</li><li>HTML & S(CSS)</li><li>Angular</li><li>Gulp</li></ul><ul class='bullets'><li>Git & Github</li><li>Figma</li><li>Photoshop</li><li>Prototyping</li><li>Wireframing</li></ul></div>"
+                "content": "<div class='flex-auto'><ul class='bullets'><li>Javascript</li><li>Typescript</li><li>Angular</li><li>React</li><li>HTML & S(CSS)</li><li>Gulp</li></ul><ul class='bullets'><li>Git & Github</li><li>Figma</li><li>Photoshop</li><li>Prototyping</li><li>Wireframing</li></ul></div>"
             },
             {
                 "label": "Where I've worked",
-                "content": "<p>I'm currently working as a Front-end Designer in <a title='Opens in a new tab' target='_blank' href='https://www.odysseussolutions.com/'>Odysseus Solutions</a> from Dec 2018. Earlier, I was working as a Web Producer with <a title='Opens in a new tab' target='_blank' href='https://www.investisdigital.com/'>Investis Digital</a> for two and a half years where I have started my career in 2016.</p>"
+                "content": "<p>I'm currently working as a Front-end Engineer in <a title='Opens in a new tab' target='_blank' href='https://www.tenupsoft.com/'>Tenup Software Services LLP</a>. Earlier, I was working as Front-end Designer in <a title='Opens in a new tab' target='_blank' href='https://www.odysseussolutions.com/'>Odysseus Solutions</a> from Dec 2018 and as a Web Producer with <a title='Opens in a new tab' target='_blank' href='https://www.investisdigital.com/'>Investis Digital</a> for two and a half years where I have started my career in 2016.</p>"
             },
             {
                 "label": "Things I do when I'm not coding",
@@ -145,7 +145,11 @@
                     {
                         "src": "befit/befit-details.png",
                         "alt": ""
-                    }    
+                    },
+                    {
+                        "src": "befit/befit-login.png",
+                        "alt": ""
+                    }      
                 ],
                 "technology": "<ul><li>Ionic v5</li><li>Angular</li><li>Razorpay</li><li>Firebase</li></ul>"
             },
@@ -311,31 +315,38 @@
         "pastProjectsTitle": "Projects I've worked on",
         "pastProjects": [
             {
+                "year": "2020",
+                "title": "Cruise Director",
+                "madeAt": "Odysseus Solutions",
+                "role": "Front-end in Angular and theming",
+                "link": "https://book.cruisedirector.com/swift/cruise/package/1177533--australia-short-break?siid=349708"
+            },
+            {
                 "year": "2018",
                 "title": "Rolls-Royce Careers",
                 "madeAt": "Investis Digital",
-                "role": "UI work in HTML, Css, Javascript",
+                "role": "UI work in HTML5, S(CSS), Javascript",
                 "link": "https://careers.rolls-royce.com"
             },
             {
                 "year": "2018",
                 "title": "ArcelorMittal Staligence",
                 "madeAt": "Investis Digital",
-                "role": "UI work in HTML, Css, JQuery",
+                "role": "UI work in HTML5, S(CSS), JQuery",
                 "link": "https://steligence.arcelormittal.com/"
             },
             {
                 "year": "2017",
                 "title": "Ferratum Investor Relation",
                 "madeAt": "Investis Digital",
-                "role": "UI work in HTML, Css, JQuery",
+                "role": "UI work in HTML5, S(CSS), JQuery",
                 "link": "https://ferratumgroup.com"
             },
             {
                 "year": "2016",
                 "title": "Christie Group plc",
                 "madeAt": "Investis Digital",
-                "role": "UI work in HTML, Css, Javascript",
+                "role": "UI work in HTML5, S(CSS), Javascript",
                 "link": "https://www.christiegroup.com"
             }
         ]
