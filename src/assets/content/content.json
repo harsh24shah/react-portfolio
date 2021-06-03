@@ -13,7 +13,7 @@
         "panels": [
             {
                 "label": "Few technologies and tools I've been working with",
-                "content": "<div class='flex-auto'><ul class='bullets'><li>Javascript</li><li>Typescript</li><li>Angular</li><li>React</li><li>HTML & S(CSS)</li><li>Gulp</li></ul><ul class='bullets'><li>Git & Github</li><li>Figma</li><li>Photoshop</li><li>Prototyping</li><li>Wireframing</li></ul></div>"
+                "content": "<div class='flex-auto'><ul class='bullets'><li>Javascript</li><li>Typescript</li><li>Angular</li><li>React</li><li>HTML & S(CSS)</li><li>Gulp</li></ul><ul class='bullets'><li>Nodejs</li><li>Git & Github</li><li>Figma</li><li>Photoshop</li><li>Prototyping</li><li>Wireframing</li></ul></div>"
             },
             {
                 "label": "Where I've worked",
