@@ -44,7 +44,7 @@ export default class Contact extends Component {
                 <div className='inline-block my-12 contacts-logo' data-sal='slide-up' data-sal-delay='900' data-sal-easing='ease'>
                   <span className='mr-20'><a href='https://www.linkedin.com/in/24harshjshah' title='Linkedin - opens in a new tab' rel='noopener noreferrer' target='_blank' className='hover-this'><IoLogoLinkedin size='30px' /></a></span>
                   <span className='mr-20'><a href='https://www.facebook.com/24hjs' title='Facebook - opens in a new tab' rel='noopener noreferrer' target='_blank' className='hover-this'><IoLogoFacebook size='30px' /></a></span>
-                  <span className='mr-20'><a href='https://www.instagram.com/24harshjshah' title='Instagram - opens in a new tab' rel='noopener noreferrer' target='_blank' className='hover-this'><AiFillInstagram size='30px' /></a></span>
+                  <span className='mr-20'><a href='https://www.instagram.com/harshjshahh' title='Instagram - opens in a new tab' rel='noopener noreferrer' target='_blank' className='hover-this'><AiFillInstagram size='30px' /></a></span>
                 </div>
                 <div className='mt-50' data-sal='slide-up' data-sal-delay='1000' data-sal-easing='ease'><small>Copyright © {this.copyrightYear}, {Content.copyRightText}</small></div>
               </div>
